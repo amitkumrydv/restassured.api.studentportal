@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-19T12:56:42 IST" name="Default suite" finished-at="2024-10-19T12:56:44 IST" duration-ms="1281">
+  <suite started-at="2024-10-21T19:08:46 IST" name="Default suite" finished-at="2024-10-21T19:08:55 IST" duration-ms="8872">
     <groups>
     </groups>
-    <test started-at="2024-10-19T12:56:42 IST" name="Default test" finished-at="2024-10-19T12:56:44 IST" duration-ms="1281">
-      <class name="api.test.UserTest">
-        <test-method signature="testPostUser()[pri:0, instance:api.test.UserTest@543588e6]" started-at="2024-10-19T12:56:42 IST" name="testPostUser" finished-at="2024-10-19T12:56:44 IST" duration-ms="1259" status="PASS">
+    <test started-at="2024-10-21T19:08:46 IST" name="Default test" finished-at="2024-10-21T19:08:55 IST" duration-ms="8872">
+      <class name="api.test.GetVideosForHomeTest">
+        <test-method signature="getVideosForHomeTestAPI()[pri:0, instance:api.test.GetVideosForHomeTest@543588e6]" started-at="2024-10-21T19:08:46 IST" name="getVideosForHomeTestAPI" finished-at="2024-10-21T19:08:55 IST" duration-ms="8802" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUser -->
-      </class> <!-- api.test.UserTest -->
+        </test-method> <!-- getVideosForHomeTestAPI -->
+      </class> <!-- api.test.GetVideosForHomeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

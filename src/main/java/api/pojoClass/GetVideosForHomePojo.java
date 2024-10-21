@@ -1,13 +1,14 @@
-package api.payload;
+package api.pojoClass;
 
 import java.util.List;
 
-public class User {
+public class GetVideosForHomePojo {
 	
 	
 	private String currentAcadYear;
 	private String currentAcadMonth;
-	private List<String> currentSemPSSId;
+	private int[] currentSemPSSId;
+	
 	
 	
 	
@@ -23,11 +24,13 @@ public class User {
 	public void setCurrentAcadMonth(String currentAcadMonth) {
 		this.currentAcadMonth = currentAcadMonth;
 	}
-	public List<String> getCurrentSemPSSId() {
+	public int[] getCurrentSemPSSId() {
 		return currentSemPSSId;
 	}
-	public void setCurrentSemPSSId(List<String> currentSemPSSId) {
-		this.currentSemPSSId = currentSemPSSId;
+	public void setCurrentSemPSSId(int[] currentSemPSSIdArr) {
+		this.currentSemPSSId = currentSemPSSIdArr;
 	}
-
+	
+	
+	
 }
