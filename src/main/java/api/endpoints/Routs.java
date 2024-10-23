@@ -10,7 +10,10 @@ public class Routs {
 	
 	
 	//POST urls
-	public static String post_url = base_url+ "authenticate/m/getVideosForHome";
+	public static String post_url_getVideosForHome = base_url+ "authenticate/m/getVideosForHome";
+	
+	
+	public static String post_url_CoursesWithPSSIdV2 = base_url+ "studentportal/m/CoursesWithPSSIdV2";
 	
 	
 

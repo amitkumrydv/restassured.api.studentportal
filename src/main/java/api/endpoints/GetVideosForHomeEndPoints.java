@@ -2,6 +2,7 @@ package api.endpoints;
 
 import static io.restassured.RestAssured.given;
 
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 import org.json.JSONObject;
@@ -12,13 +13,13 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class UserEndPoints {
+public class GetVideosForHomeEndPoints {
 	
 	 
 	
 	
 
-	public static Response createUser() {
+	public static Response createUser() throws FileNotFoundException {
 		
 		GetVideosForHomePaload getVideosForHomePaload = new GetVideosForHomePaload();
 		
@@ -65,7 +66,7 @@ public class UserEndPoints {
 		Response response = given()
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
-				.body(getVideosForHomePaload.getVideosForHomePaloadData())
+				.body(getVideosForHomePaload.getVideosForHomePaloadJSON())
 
 			.when().post(Routs.post_url);
 
