@@ -12,7 +12,6 @@ import com.google.gson.JsonElement;
 
 import api.endpoints.GetVideosForHomeEndPoints;
 import api.payload.GetVideosForHomePaload;
-import api.responce.GetVideosForHomeResponse;
 import io.restassured.internal.path.json.JSONAssertion;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

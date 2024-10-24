@@ -68,7 +68,7 @@ public class GetVideosForHomeEndPoints {
 				.accept(ContentType.JSON)
 				.body(getVideosForHomePaload.getVideosForHomePaloadJSON())
 
-			.when().post(Routs.post_url);
+			.when().post(Routs.post_url_getVideosForHome);
 
 		return response;
 	}
