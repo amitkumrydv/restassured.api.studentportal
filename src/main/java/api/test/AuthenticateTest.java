@@ -1,5 +1,7 @@
 package api.test;
 
+import static org.hamcrest.CoreMatchers.instanceOf;
+
 import org.testng.annotations.Test;
 
 import api.endpoints.AuthenticateEndPoint;
@@ -16,15 +18,16 @@ public class AuthenticateTest {
 
 		response.then()
 				// Verify that the response Content-Type is JSON
-				.contentType("")
+				.contentType("application/json; charset=UTF-8")
 
-				.log().all();
-
-		
+				  .log().all()
+				 .and().
+		            body("sem", instanceOf(Integer.class)).
+                    body("sapid", instanceOf(String.class));
+                int codeStatus = response.getStatusCode();
+		        String contenttype = response.getContentType();
 		        
-		        int codeStatus = response.getStatusCode();
-		        
-		        System.out.println("codeStatus-->  "+codeStatus);
+		        System.out.println("codeStatus-->  "+codeStatus + " contenttype --> "+contenttype);
 		        
 
 	

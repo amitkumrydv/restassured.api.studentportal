@@ -1,5 +1,7 @@
 package api.endpoints;
 
+import api.payload.AuthenticatePyload;
+
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
@@ -8,15 +10,16 @@ import io.restassured.http.ContentType;
 
 public class AuthenticateEndPoint {
 	
-	static String  json_string =  "{\"spaid\": \"77221782653\"}";
+	
 	
 	
 	public  static Response authenticateResponse() {
+	 AuthenticatePyload authenticate = new AuthenticatePyload();
 		
 		Response resonse = given()
 				              .contentType(ContentType.JSON)
 				              .accept(ContentType.JSON)
-				              .body(json_string)
+				              .body(authenticate.authenticatePyloadData())
 				          .when()
 				              .post(Routs.Authenticate_url);
 				     
