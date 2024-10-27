@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T17:20:54 IST" name="Default suite" finished-at="2024-10-24T17:20:56 IST" duration-ms="1983">
+  <suite started-at="2024-10-27T17:39:46 IST" name="Default suite" finished-at="2024-10-27T17:39:50 IST" duration-ms="3586">
     <groups>
     </groups>
-    <test started-at="2024-10-24T17:20:54 IST" name="Default test" finished-at="2024-10-24T17:20:56 IST" duration-ms="1983">
+    <test started-at="2024-10-27T17:39:46 IST" name="Default test" finished-at="2024-10-27T17:39:50 IST" duration-ms="3586">
       <class name="api.test.AuthenticateTest">
-        <test-method signature="AuthenticateTestApi()[pri:0, instance:api.test.AuthenticateTest@3e11f9e9]" started-at="2024-10-24T17:20:54 IST" name="AuthenticateTestApi" finished-at="2024-10-24T17:20:56 IST" duration-ms="1945" status="PASS">
+        <test-method signature="AuthenticateTestApi()[pri:0, instance:api.test.AuthenticateTest@3e11f9e9]" started-at="2024-10-27T17:39:46 IST" name="AuthenticateTestApi" finished-at="2024-10-27T17:39:50 IST" duration-ms="3492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AuthenticateTestApi -->
