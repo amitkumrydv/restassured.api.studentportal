@@ -7,19 +7,24 @@ import java.io.FileReader;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import api.endpoints.AuthenticateEndPoint;
+import api.jsonPath.AuthenticateJSONPath;
 import api.pojoClass.GetVideosForHomePojo;
+import io.restassured.response.Response;
 
 public class GetVideosForHomePaload {
 
 	public GetVideosForHomePojo getVideosForHomePaloadData() {
+		
+		Response authenticateResponse = AuthenticateEndPoint.authenticateResponse();
 
 		GetVideosForHomePojo getVideosForHomePojo = new GetVideosForHomePojo();
 
-		int currentSemPSSIdArr[] = { 2549, 2550, 2551, 2552, 2553, 2554 };
+		
 
-		getVideosForHomePojo.setCurrentAcadMonth("Jul");
-		getVideosForHomePojo.setCurrentAcadYear("2024");
-		getVideosForHomePojo.setCurrentSemPSSId(currentSemPSSIdArr);
+		getVideosForHomePojo.getCurrentAcadMonth();
+		getVideosForHomePojo.getCurrentAcadYear();
+		getVideosForHomePojo.getCurrentSemPSSId();
 
 		System.out.println("getVideosForHomePojo --> " + getVideosForHomePojo);
 		return getVideosForHomePojo;

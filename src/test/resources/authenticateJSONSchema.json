@@ -1,0 +1,994 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "student": {
+      "type": "object",
+      "properties": {
+        "certificatePrograms": {},
+        "sapid": {
+          "type": "string"
+        },
+        "sem": {},
+        "email": {},
+        "lastName": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "middleName": {
+          "type": "string"
+        },
+        "fatherName": {
+          "type": "string"
+        },
+        "husbandName": {
+          "type": "string"
+        },
+        "motherName": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "program": {
+          "type": "string"
+        },
+        "enrollmentMonth": {
+          "type": "string"
+        },
+        "enrollmentYear": {
+          "type": "string"
+        },
+        "emailId": {
+          "type": "string"
+        },
+        "mobile": {
+          "type": "string"
+        },
+        "altPhone": {
+          "type": "string"
+        },
+        "dob": {
+          "type": "string"
+        },
+        "regDate": {
+          "type": "string"
+        },
+        "isLateral": {
+          "type": "string"
+        },
+        "isReReg": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "houseNoName": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "landMark": {
+          "type": "string"
+        },
+        "locality": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "shippingAddress": {},
+        "examMode": {
+          "type": "string"
+        },
+        "designation": {
+          "type": "string"
+        },
+        "industry": {
+          "type": "string"
+        },
+        "userId": {},
+        "password": {},
+        "pin": {
+          "type": "string"
+        },
+        "centerCode": {
+          "type": "string"
+        },
+        "centerName": {
+          "type": "string"
+        },
+        "validityEndMonth": {
+          "type": "string"
+        },
+        "validityEndYear": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "createdDate": {
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "type": "string"
+        },
+        "lastModifiedDate": {
+          "type": "string"
+        },
+        "errorMessage": {
+          "type": "string"
+        },
+        "errorRecord": {
+          "type": "boolean"
+        },
+        "prgmStructApplicable": {
+          "type": "string"
+        },
+        "updatedByStudent": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        },
+        "subjectsCleared": {},
+        "oldProgram": {
+          "type": "string"
+        },
+        "programChanged": {
+          "type": "string"
+        },
+        "acadYear": {},
+        "acadMonth": {},
+        "subject": {},
+        "fromEmailId": {},
+        "spouseName": {},
+        "body": {},
+        "previousStudentId": {
+          "type": "string"
+        },
+        "waivedOffSubjects": {
+          "type": "array",
+          "items": {},
+          "minItems": 0
+        },
+        "waivedInSubjects": {
+          "type": "array",
+          "items": {},
+          "minItems": 0
+        },
+        "waivedInSubjectSemMapping": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "programForHeader": {
+          "type": "string"
+        },
+        "programStatus": {
+          "type": "string"
+        },
+        "programRemarks": {
+          "type": "string"
+        },
+        "smsContent": {},
+        "notificationType": {},
+        "programCleared": {
+          "type": "string"
+        },
+        "deRegistered": {
+          "type": "string"
+        },
+        "onesignalId": {
+          "type": "string"
+        },
+        "isPushnotification": {},
+        "pushContent": {},
+        "changedPassword": {
+          "type": "string"
+        },
+        "n_Password": {},
+        "c_password": {},
+        "programStructure": {},
+        "role": {},
+        "loginType": {},
+        "programSemSubjectId": {},
+        "bloodGroup": {},
+        "programType": {
+          "type": "string"
+        },
+        "lc": {},
+        "newConsumerProgramStructureId": {},
+        "louConfirmed": {
+          "type": "boolean"
+        },
+        "louConfirmedTimestamp": {
+          "type": "string"
+        },
+        "batchName": {},
+        "abcId": {},
+        "settingType": {},
+        "isEnable": {},
+        "ufm_notice_viewed": {
+          "type": "number"
+        },
+        "linkedinUrl": {},
+        "readWelcomeNote": {
+          "type": "boolean"
+        },
+        "perspective": {},
+        "validityExpired": {
+          "type": "string"
+        },
+        "almashinesId": {
+          "type": "number"
+        },
+        "industryList": {
+          "type": "array",
+          "items": {}
+        },
+        "designationList": {
+          "type": "array",
+          "items": {}
+        },
+        "year": {},
+        "month": {},
+        "emailSentProgramCleared": {
+          "type": "string"
+        },
+        "existingStudentNoForDiscount": {
+          "type": "string"
+        },
+        "errorFlag": {
+          "type": "string"
+        },
+        "totalExperience": {
+          "type": "string"
+        },
+        "annualSalary": {
+          "type": "string"
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "ugQualification": {
+          "type": "string"
+        },
+        "age": {
+          "type": "string"
+        },
+        "highestQualification": {
+          "type": "string"
+        },
+        "consumerType": {
+          "type": "string"
+        },
+        "consumerProgramStructureId": {
+          "type": "string"
+        },
+        "firebaseToken": {
+          "type": "string"
+        },
+        "leadId": {},
+        "registrationNum": {},
+        "error": {
+          "type": "boolean"
+        },
+        "detailsConfirmedByStudent": {
+          "type": "string"
+        },
+        "status": {},
+        "purchasedOtherPackages": {
+          "type": "boolean"
+        },
+        "highContrast": {
+          "type": "number"
+        },
+        "textToSpeech": {
+          "type": "number"
+        },
+        "coachMark": {
+          "type": "number"
+        },
+        "subjectsCount": {},
+        "provisionalAdmission": {
+          "type": "number"
+        },
+        "validStudent": {
+          "type": "boolean"
+        },
+        "certificateStudent": {
+          "type": "boolean"
+        },
+        "postalCode": {},
+        "corporateExamCenterStudent": {
+          "type": "boolean"
+        },
+        "rconsumerProgramStructureId": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "certificatePrograms",
+        "sapid",
+        "sem",
+        "email",
+        "lastName",
+        "firstName",
+        "middleName",
+        "fatherName",
+        "husbandName",
+        "motherName",
+        "gender",
+        "program",
+        "enrollmentMonth",
+        "enrollmentYear",
+        "emailId",
+        "mobile",
+        "altPhone",
+        "dob",
+        "regDate",
+        "isLateral",
+        "isReReg",
+        "address",
+        "houseNoName",
+        "street",
+        "landMark",
+        "locality",
+        "city",
+        "state",
+        "country",
+        "shippingAddress",
+        "examMode",
+        "designation",
+        "industry",
+        "userId",
+        "password",
+        "pin",
+        "centerCode",
+        "centerName",
+        "validityEndMonth",
+        "validityEndYear",
+        "createdBy",
+        "createdDate",
+        "lastModifiedBy",
+        "lastModifiedDate",
+        "errorMessage",
+        "errorRecord",
+        "prgmStructApplicable",
+        "updatedByStudent",
+        "imageUrl",
+        "subjectsCleared",
+        "oldProgram",
+        "programChanged",
+        "acadYear",
+        "acadMonth",
+        "subject",
+        "fromEmailId",
+        "spouseName",
+        "body",
+        "previousStudentId",
+        "waivedOffSubjects",
+        "waivedInSubjects",
+        "waivedInSubjectSemMapping",
+        "programForHeader",
+        "programStatus",
+        "programRemarks",
+        "smsContent",
+        "notificationType",
+        "programCleared",
+        "deRegistered",
+        "onesignalId",
+        "isPushnotification",
+        "pushContent",
+        "changedPassword",
+        "n_Password",
+        "c_password",
+        "programStructure",
+        "role",
+        "loginType",
+        "programSemSubjectId",
+        "bloodGroup",
+        "programType",
+        "lc",
+        "newConsumerProgramStructureId",
+        "louConfirmed",
+        "louConfirmedTimestamp",
+        "batchName",
+        "abcId",
+        "settingType",
+        "isEnable",
+        "ufm_notice_viewed",
+        "linkedinUrl",
+        "readWelcomeNote",
+        "perspective",
+        "validityExpired",
+        "almashinesId",
+        "industryList",
+        "designationList",
+        "year",
+        "month",
+        "emailSentProgramCleared",
+        "existingStudentNoForDiscount",
+        "errorFlag",
+        "totalExperience",
+        "annualSalary",
+        "companyName",
+        "ugQualification",
+        "age",
+        "highestQualification",
+        "consumerType",
+        "consumerProgramStructureId",
+        "firebaseToken",
+        "leadId",
+        "registrationNum",
+        "error",
+        "detailsConfirmedByStudent",
+        "status",
+        "purchasedOtherPackages",
+        "highContrast",
+        "textToSpeech",
+        "coachMark",
+        "subjectsCount",
+        "provisionalAdmission",
+        "validStudent",
+        "certificateStudent",
+        "postalCode",
+        "corporateExamCenterStudent",
+        "rconsumerProgramStructureId"
+      ]
+    },
+    "announcements": {},
+    "userId": {
+      "type": "string"
+    },
+    "isStudent": {},
+    "personDetails": {},
+    "userBean": {},
+    "validityExpired": {
+      "type": "string"
+    },
+    "applicableSubjects": {},
+    "regData": {
+      "type": "object",
+      "properties": {
+        "certificatePrograms": {},
+        "sapid": {
+          "type": "string"
+        },
+        "sem": {
+          "type": "string"
+        },
+        "email": {},
+        "lastName": {},
+        "firstName": {},
+        "middleName": {},
+        "fatherName": {},
+        "husbandName": {},
+        "motherName": {},
+        "gender": {},
+        "program": {
+          "type": "string"
+        },
+        "enrollmentMonth": {},
+        "enrollmentYear": {},
+        "emailId": {},
+        "mobile": {},
+        "altPhone": {},
+        "dob": {},
+        "regDate": {},
+        "isLateral": {},
+        "isReReg": {},
+        "address": {},
+        "houseNoName": {},
+        "street": {},
+        "landMark": {},
+        "locality": {},
+        "city": {},
+        "state": {},
+        "country": {},
+        "shippingAddress": {},
+        "examMode": {
+          "type": "string"
+        },
+        "designation": {},
+        "industry": {},
+        "userId": {},
+        "password": {},
+        "pin": {},
+        "centerCode": {},
+        "centerName": {},
+        "validityEndMonth": {},
+        "validityEndYear": {},
+        "createdBy": {
+          "type": "string"
+        },
+        "createdDate": {
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "type": "string"
+        },
+        "lastModifiedDate": {
+          "type": "string"
+        },
+        "errorMessage": {
+          "type": "string"
+        },
+        "errorRecord": {
+          "type": "boolean"
+        },
+        "prgmStructApplicable": {},
+        "updatedByStudent": {},
+        "imageUrl": {},
+        "subjectsCleared": {},
+        "oldProgram": {},
+        "programChanged": {},
+        "acadYear": {},
+        "acadMonth": {},
+        "subject": {},
+        "fromEmailId": {},
+        "spouseName": {},
+        "body": {},
+        "previousStudentId": {},
+        "waivedOffSubjects": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 0
+        },
+        "waivedInSubjects": {
+          "type": "array",
+           "items": { "type": "string" },
+          "minItems": 0
+        },
+        "waivedInSubjectSemMapping": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "programForHeader": {
+          "type": "string"
+        },
+        "programStatus": {},
+        "programRemarks": {},
+        "smsContent": {},
+        "notificationType": {},
+        "programCleared": {},
+        "deRegistered": {},
+        "onesignalId": {},
+        "isPushnotification": {},
+        "pushContent": {},
+        "changedPassword": {},
+        "n_Password": {},
+        "c_password": {},
+        "programStructure": {},
+        "role": {},
+        "loginType": {},
+        "programSemSubjectId": {},
+        "bloodGroup": {},
+        "programType": {},
+        "lc": {},
+        "newConsumerProgramStructureId": {},
+        "louConfirmed": {
+          "type": "boolean"
+        },
+        "louConfirmedTimestamp": {},
+        "batchName": {},
+        "abcId": {},
+        "settingType": {},
+        "isEnable": {},
+        "ufm_notice_viewed": {
+          "type": "number"
+        },
+        "linkedinUrl": {},
+        "readWelcomeNote": {
+          "type": "boolean"
+        },
+        "perspective": {},
+        "validityExpired": {},
+        "almashinesId": {},
+        "industryList": {
+          "type": "array",
+          "items": {}
+        },
+        "designationList": {
+          "type": "array",
+          "items": {}
+        },
+        "year": {
+          "type": "string"
+        },
+        "month": {
+          "type": "string"
+        },
+        "emailSentProgramCleared": {},
+        "existingStudentNoForDiscount": {},
+        "errorFlag": {},
+        "totalExperience": {},
+        "annualSalary": {},
+        "companyName": {},
+        "ugQualification": {},
+        "age": {},
+        "highestQualification": {},
+        "consumerType": {},
+        "consumerProgramStructureId": {
+          "type": "string"
+        },
+        "firebaseToken": {},
+        "leadId": {},
+        "registrationNum": {},
+        "error": {
+          "type": "boolean"
+        },
+        "detailsConfirmedByStudent": {},
+        "status": {},
+        "purchasedOtherPackages": {
+          "type": "boolean"
+        },
+        "highContrast": {
+          "type": "number"
+        },
+        "textToSpeech": {
+          "type": "number"
+        },
+        "coachMark": {
+          "type": "number"
+        },
+        "subjectsCount": {},
+        "provisionalAdmission": {},
+        "validStudent": {
+          "type": "boolean"
+        },
+        "certificateStudent": {
+          "type": "boolean"
+        },
+        "postalCode": {},
+        "corporateExamCenterStudent": {
+          "type": "boolean"
+        },
+        "rconsumerProgramStructureId": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "certificatePrograms",
+        "sapid",
+        "sem",
+        "email",
+        "lastName",
+        "firstName",
+        "middleName",
+        "fatherName",
+        "husbandName",
+        "motherName",
+        "gender",
+        "program",
+        "enrollmentMonth",
+        "enrollmentYear",
+        "emailId",
+        "mobile",
+        "altPhone",
+        "dob",
+        "regDate",
+        "isLateral",
+        "isReReg",
+        "address",
+        "houseNoName",
+        "street",
+        "landMark",
+        "locality",
+        "city",
+        "state",
+        "country",
+        "shippingAddress",
+        "examMode",
+        "designation",
+        "industry",
+        "userId",
+        "password",
+        "pin",
+        "centerCode",
+        "centerName",
+        "validityEndMonth",
+        "validityEndYear",
+        "createdBy",
+        "createdDate",
+        "lastModifiedBy",
+        "lastModifiedDate",
+        "errorMessage",
+        "errorRecord",
+        "prgmStructApplicable",
+        "updatedByStudent",
+        "imageUrl",
+        "subjectsCleared",
+        "oldProgram",
+        "programChanged",
+        "acadYear",
+        "acadMonth",
+        "subject",
+        "fromEmailId",
+        "spouseName",
+        "body",
+        "previousStudentId",
+        "waivedOffSubjects",
+        "waivedInSubjects",
+        "waivedInSubjectSemMapping",
+        "programForHeader",
+        "programStatus",
+        "programRemarks",
+        "smsContent",
+        "notificationType",
+        "programCleared",
+        "deRegistered",
+        "onesignalId",
+        "isPushnotification",
+        "pushContent",
+        "changedPassword",
+        "n_Password",
+        "c_password",
+        "programStructure",
+        "role",
+        "loginType",
+        "programSemSubjectId",
+        "bloodGroup",
+        "programType",
+        "lc",
+        "newConsumerProgramStructureId",
+        "louConfirmed",
+        "louConfirmedTimestamp",
+        "batchName",
+        "abcId",
+        "settingType",
+        "isEnable",
+        "ufm_notice_viewed",
+        "linkedinUrl",
+        "readWelcomeNote",
+        "perspective",
+        "validityExpired",
+        "almashinesId",
+        "industryList",
+        "designationList",
+        "year",
+        "month",
+        "emailSentProgramCleared",
+        "existingStudentNoForDiscount",
+        "errorFlag",
+        "totalExperience",
+        "annualSalary",
+        "companyName",
+        "ugQualification",
+        "age",
+        "highestQualification",
+        "consumerType",
+        "consumerProgramStructureId",
+        "firebaseToken",
+        "leadId",
+        "registrationNum",
+        "error",
+        "detailsConfirmedByStudent",
+        "status",
+        "purchasedOtherPackages",
+        "highContrast",
+        "textToSpeech",
+        "coachMark",
+        "subjectsCount",
+        "provisionalAdmission",
+        "validStudent",
+        "certificateStudent",
+        "postalCode",
+        "corporateExamCenterStudent",
+        "rconsumerProgramStructureId"
+      ]
+    },
+    "stukent": {},
+    "harvard": {},
+    "regOrder": {
+      "type": "number"
+    },
+    "maxOrderWhereContentLive": {
+      "type": "number"
+    },
+    "currentOrder": {
+      "type": "number"
+    },
+    "currentSemPSSId": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "isLoginAsLead": {},
+    "earlyAccess": {
+      "type": "string"
+    },
+    "liveSessionPssIdAccess": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "featureViseAccess": {
+      "type": "object",
+      "properties": {
+        "Career_Forum": {
+          "type": "boolean"
+        },
+        "Learning_Portal": {
+          "type": "boolean"
+        },
+        "Job_Search": {
+          "type": "boolean"
+        },
+        "Career_Counselling": {
+          "type": "boolean"
+        },
+        "Practice_Interviews": {
+          "type": "boolean"
+        },
+        "newCSAccess": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "Career_Forum",
+        "Learning_Portal",
+        "Job_Search",
+        "Career_Counselling",
+        "Practice_Interviews",
+        "newCSAccess"
+      ]
+    },
+    "consumerProgramStructureHasCSAccess": {
+      "type": "boolean"
+    },
+    "acadSessionLiveOrder": {
+      "type": "number"
+    },
+    "csAdmin": {},
+    "courseraAccess": {
+      "type": "boolean"
+    },
+    "validityEndDate": {
+      "type": "string"
+    },
+    "errorMessage": {},
+    "encryptedSapId": {
+      "type": "string"
+    },
+    "subjectCodeId": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "currentSubjectCodeIds": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "backlogSubjectCodeIds": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "defaultAcadsUrl": {
+      "type": "string"
+    },
+    "defaultExamUrl": {
+      "type": "string"
+    },
+    "defaultContentUrl": {
+      "type": "string"
+    },
+    "defaultAnnouncementUrl": {
+      "type": "string"
+    },
+    "defaultknowyourpolicyUrl": {
+      "type": "string"
+    },
+    "defaultjobsearchUrl": {
+      "type": "string"
+    },
+    "defaultMarksheetUrl": {
+      "type": "string"
+    },
+    "defaultalmashinesyUrl": {
+      "type": "string"
+    },
+    "defaultinternalassessmentyUrl": {
+      "type": "string"
+    },
+    "defaultservicerequestUrl": {
+      "type": "string"
+    },
+    "defaultreportingtoolUrl": {
+      "type": "string"
+    },
+    "defaultltidemoUrl": {
+      "type": "string"
+    },
+    "currentAcadMonth": {
+      "type": "string"
+    },
+    "currentAcadYear": {
+      "type": "string"
+    },
+    "defaultSearchAppUrl": {
+      "type": "string"
+    },
+    "defaultForumUrl": {
+      "type": "string"
+    },
+    "defaultStudentportalUrl": {
+      "type": "string"
+    },
+    "defaultIAUrl": {
+      "type": "string"
+    },
+    "error": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "student",
+    "announcements",
+    "userId",
+    "isStudent",
+    "personDetails",
+    "userBean",
+    "validityExpired",
+    "applicableSubjects",
+    "regData",
+    "stukent",
+    "harvard",
+    "regOrder",
+    "maxOrderWhereContentLive",
+    "currentOrder",
+    "currentSemPSSId",
+    "isLoginAsLead",
+    "earlyAccess",
+    "liveSessionPssIdAccess",
+    "featureViseAccess",
+    "consumerProgramStructureHasCSAccess",
+    "acadSessionLiveOrder",
+    "csAdmin",
+    "courseraAccess",
+    "validityEndDate",
+    "errorMessage",
+    "encryptedSapId",
+    "subjectCodeId",
+    "currentSubjectCodeIds",
+    "backlogSubjectCodeIds",
+    "defaultAcadsUrl",
+    "defaultExamUrl",
+    "defaultContentUrl",
+    "defaultAnnouncementUrl",
+    "defaultknowyourpolicyUrl",
+    "defaultjobsearchUrl",
+    "defaultMarksheetUrl",
+    "defaultalmashinesyUrl",
+    "defaultinternalassessmentyUrl",
+    "defaultservicerequestUrl",
+    "defaultreportingtoolUrl",
+    "defaultltidemoUrl",
+    "currentAcadMonth",
+    "currentAcadYear",
+    "defaultSearchAppUrl",
+    "defaultForumUrl",
+    "defaultStudentportalUrl",
+    "defaultIAUrl",
+    "error"
+  ]
+}
