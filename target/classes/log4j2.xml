@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!-- Configuration status level set to WARN for internal logging -->
+    <Properties>
+        <Property name="logPath">./logs</Property>
+        <!-- Directory where log files are stored -->
+        
+        <Property name="logFileName">APILogs</Property>
+        <!-- Base name for application log files -->
+        
+        <Property name="logFilePattern">${logPath}/${logFileName}-%d{yyyy-MM-dd}.log.gz</Property>
+        <!-- Pattern for daily rolled log files, compressed with GZip -->
+        
+        <Property name="testLogFileName">TestLogs</Property>
+        <!-- Base name for test log files -->
+        
+        <Property name="testLogFilePattern">${logPath}/${testLogFileName}-%d{yyyy-MM-dd}.log.gz</Property>
+        <!-- Pattern for daily rolled test log files, compressed with GZip -->
+        
+        <Property name="isTestMode">${env:TEST_MODE:-true}</Property>
+        <!-- Environment variable to toggle test mode, default is 'false' -->
+    </Properties>
+
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <!-- Console appender to output logs to the console -->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n" />
+            <!-- Defines the log format: timestamp, thread, level, class, and message -->
+        </Console>
+
+        <RollingFile name="RollingFileAppender"
+            fileName="${logPath}/${logFileName}.log"
+            filePattern="${logFilePattern}">
+            <!-- Rolling file appender for application logs -->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n" />
+            <!-- Same format as ConsoleAppender for consistency -->
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <!-- Roll the file daily -->
+                
+                <SizeBasedTriggeringPolicy size="100MB" />
+                <!-- Roll the file when it reaches 100MB -->
+            </Policies>
+            <DefaultRolloverStrategy fileIndex="max" max="10" />
+            <!-- Maintains a maximum of 10 old compressed log files -->
+        </RollingFile>
+
+        <RollingFile name="TestRollingFileAppender"
+            fileName="${logPath}/${testLogFileName}.log"
+            filePattern="${testLogFilePattern}">
+            <!-- Rolling file appender for test logs -->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n" />
+            <!-- Same format for test logs to ensure consistency -->
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <!-- Roll the file daily for test logs -->
+                
+                <SizeBasedTriggeringPolicy size="100MB" />
+                <!-- Roll test logs when they reach 100MB -->
+            </Policies>
+            <DefaultRolloverStrategy fileIndex="max" max="10" />
+            <!-- Maintain a maximum of 10 old compressed test log files -->
+        </RollingFile>
+
+        <Async name="AsyncFileAppender" includeLocation="false">
+            <!-- Asynchronous appender to improve logging performance -->
+            <AppenderRef ref="RollingFileAppender" />
+            <!-- Reference to the main rolling file appender -->
+        </Async>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <!-- Root logger for all application logs at 'info' level -->
+            <AppenderRef ref="ConsoleAppender" />
+            <!-- Reference to the console appender for output -->
+            <AppenderRef ref="AsyncFileAppender" />
+            <!-- Reference to the async file appender for logging to file -->
+        </Root>
+
+        <Logger name="com.api.endpoint" level="debug" additivity="false">
+            <!-- Package-specific logger set to 'debug' level -->
+            <AppenderRef ref="AsyncFileAppender" />
+            <!-- Reference to the async file appender for this package -->
+        </Logger>
+        
+          <Logger name="com.api.payload" level="debug" additivity="false">
+            <!-- Package-specific logger set to 'debug' level -->
+            <AppenderRef ref="AsyncFileAppender" />
+            <!-- Reference to the async file appender for this package -->
+        </Logger>
+        
+         <Logger name="com.api.jsonPath" level="debug" additivity="false">
+            <!-- Package-specific logger set to 'debug' level -->
+            <AppenderRef ref="AsyncFileAppender" />
+            <!-- Reference to the async file appender for this package -->
+        </Logger>
+        
+
+        <Logger name="com.api.test" level="debug" additivity="false">
+            <!-- Logger for test classes set to 'debug' level -->
+            <AppenderRef ref="TestRollingFileAppender" />
+            <!-- Reference to the test rolling file appender -->
+        </Logger>
+
+       <!--  <Logger name="org.example.tests.MySpecificTest" level="debug" additivity="false">
+            Logger for a specific test class set to 'debug' level
+            <AppenderRef ref="TestRollingFileAppender" />
+            Reference to the test rolling file appender for this specific test
+        </Logger> -->
+    </Loggers>
+</Configuration>

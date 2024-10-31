@@ -110,6 +110,37 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
+
+		<!-- SLF4J API (Logging Facade) -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.36</version>
+		</dependency>
+
+		<!-- Log4j2 Implementation for SLF4J -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+
+		<!-- Log4j2 Core Library (for async logging support) -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+
+		<!-- Log4j2 API -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+
+
 	</dependencies>
 
 

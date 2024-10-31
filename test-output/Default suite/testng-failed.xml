@@ -5,7 +5,7 @@
     <classes>
       <class name="com.api.test.AuthenticateTest">
         <methods>
-          <include name="AuthenticateTestApi"/>
+          <include name="authenticateTestApi"/>
         </methods>
       </class> <!-- com.api.test.AuthenticateTest -->
     </classes>
