@@ -1,0 +1,27 @@
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# IDE specific
+*.idea/
+*.iml
+*.gradle/
+build/
+out/
+target/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# TestNG specific
+test-output/
+*.xml
+
+# Miscellaneous
+*.user
+*.sublime-workspace
+*.sublime-project
