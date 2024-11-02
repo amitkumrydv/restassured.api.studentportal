@@ -21,7 +21,7 @@ public class GetVideosForHomeEndPoints {
 	
 	
 
-	public static Response createUser() {
+	public static Response getVideosForHomeHeaderPost() {
 
 		
         //Request body
@@ -36,7 +36,19 @@ public class GetVideosForHomeEndPoints {
 	}
 	
 	
-// Validate JSON
+   public static Response getVideosForHomeHeaderGet() {
+
+		
+        //Request body
+		Response response = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.body(AuthenticateJSONPath .authenticateJSONPath())
+
+			.when().get(Routs.post_url_getVideosForHome);
+
+		return response;
+	}
 	
 	
 	

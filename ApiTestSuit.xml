@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="StudentportalDashboard-API" allow-return-values="true"
+	verbose="100" parallel="false" preserve-order="true">
+
+	<!-- <listeners>
+
+		<listener
+			class-name="" />
+
+	</listeners> -->
+
+	<test name="Dashboard-API">
+
+		<classes>
+
+
+       <class name="com.api.test.AuthenticateTest"></class>
+       <class name="com.api.test.GetVideosForHomeTest"></class>
+
+
+
+		</classes>
+
+	</test>
+
+</suite> 

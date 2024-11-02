@@ -16,10 +16,13 @@ public class AuthenticatePyload {
 		
 		logger.info("Set the userId and password in the Authentication payload ");
 		ReadConfig readConfig = new ReadConfig();
+		String userName=readConfig.getUsername();
+		String password=readConfig.getPassword();
+		
 		AuthenticationPojo  authenticationPojo = new AuthenticationPojo();
 		
-		authenticationPojo.setUserId("77777777168");
-		authenticationPojo.setPassword("admin@ngasce20");
+		authenticationPojo.setUserId(userName);
+		authenticationPojo.setPassword(password);
 		
 		return authenticationPojo;
 		
