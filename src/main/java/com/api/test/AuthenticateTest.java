@@ -10,13 +10,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class AuthenticateTest {
-	
-	private static final Logger logger =  (Logger) LoggerFactory.getLogger(AuthenticateTest.class);
+
+	private static final Logger logger = (Logger) LoggerFactory.getLogger(AuthenticateTest.class);
 
 	@Test
 	public void authenticateTestApi() {
 		logger.info("Start authenticateTestApi test");
-		
 
 		// @formatter:off
 		Response response = AuthenticateEndPoint.authenticateResponse();
