@@ -2,9 +2,11 @@ package com.api.pojoClass;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+//Only consider the specified fields; ignore all others.
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GetVideosForHomePojo {
 	
@@ -12,7 +14,7 @@ public class GetVideosForHomePojo {
 	private int id;
 	private String subject;
 	private String description;
-	private Timestamp sessionDate;
+	private String sessionDate;
 	private String facultyName;
 	private int programSemSubjectId;
 	
@@ -63,10 +65,10 @@ public class GetVideosForHomePojo {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Timestamp getSessionDate() {
+	public String getSessionDate() {
 		return sessionDate;
 	}
-	public void setSessionDate(Timestamp sessionDate) {
+	public void setSessionDate(String sessionDate) {
 		this.sessionDate = sessionDate;
 	}
 	public String getFacultyName() {

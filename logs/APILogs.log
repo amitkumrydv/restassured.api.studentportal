@@ -7,3 +7,11 @@
 2024-11-04 11:57:41 [main] INFO  AuthenticatePyload - Set the userId and password in the Authentication payload 
 2024-11-04 12:42:25 [main] INFO  AuthenticatePyload - Set the userId and password in the Authentication payload 
 2024-11-04 12:42:30 [main] INFO  AuthenticatePyload - Set the userId and password in the Authentication payload 
+2024-11-04 21:29:51 [main] INFO  AuthenticatePyload - Set the userId and password in the Authentication payload 
+2024-11-04 21:31:46 [main] INFO  AuthenticatePyload - Set the userId and password in the Authentication payload 
+2024-11-04 21:31:50 [main] INFO  GetVideosForHomeResponceValidation - Starting GetVideosForHomeResponsValidation method
+2024-11-04 21:31:51 [main] INFO  GetVideosForHomeResponceValidation - Successfully mapped response to List<GetVideosForHomePojo>
+2024-11-04 21:31:51 [main] INFO  GetVideosForHomeResponceValidation - Finished validating data types in GetVideosForHomeResponsValidation
+2024-11-04 21:31:51 [main] INFO  AuthenticatePyload - Set the userId and password in the Authentication payload 
+2024-11-04 21:33:33 [main] INFO  AuthenticatePyload - Set the userId and password in the Authentication payload 
+2024-11-04 21:33:38 [main] INFO  GetVideosForHomeResponceValidation - Starting GetVideosForHomeResponsValidation method

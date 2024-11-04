@@ -1,1 +1,4 @@
 2024-11-04 11:57:49 [main] ERROR GetVideosForHomeTest - Assertion error: Response time is within acceptable range expected [true] but found [false]
+2024-11-04 21:29:57 [main] WARN  GetVideosForHomeTest - An error occurred: null
+2024-11-04 21:33:38 [main] WARN  GetVideosForHomeTest - An error occurred: Unrecognized field "createdBy" (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: "programSemSubjectId", "currentAcadMonth", "sessionDate", "currentSemPSSId", "id", "subject", "facultyName", "currentAcadYear", "description"])
+ at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]->com.api.pojoClass.GetVideosForHomePojo["createdBy"])

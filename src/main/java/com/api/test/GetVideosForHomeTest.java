@@ -1,58 +1,36 @@
 package com.api.test;
 
 import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.api.comman.GetVideosForHomeResponceValidation;
 import com.api.comman.HeaderValidator;
 import com.api.endpoints.GetVideosForHomeEndPoints;
-import com.api.pojoClass.GetVideosForHomePojo;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import static org.assertj.core.api.Assertions.assertThat;
-
 import io.restassured.response.Response;
 
 public class GetVideosForHomeTest {
 
 	// @formatter:off
 	private static final Logger logger = (Logger) LoggerFactory.getLogger(GetVideosForHomeTest.class);
-	HeaderValidator headerValidator;
+
 	@Test
 	public void getVideosForHomePostHeaderTest() throws JsonMappingException, JsonProcessingException {
+		HeaderValidator headerValidator = new HeaderValidator();
+		GetVideosForHomeResponceValidation getVideosForHomeResponceValidation = new GetVideosForHomeResponceValidation();
 
 		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderPost();
 		Long responseTime = response.getTime();
 		
-		ObjectMapper mapper = new ObjectMapper();
-
-        List<GetVideosForHomePojo> videos = mapper.readValue(
-            response.asString(),
-            new TypeReference<List<GetVideosForHomePojo>>() {}
-        );
-
-	        // Validate data types
-        for (GetVideosForHomePojo video : videos) {
-          
-        	int id = video.getId(); // Replace `getIsActive` with the actual getter
-
-        	    assertThat(id).isNotNull().isInstanceOf(Integer.class);
-        }
+		
 	        
 		try {
 			headerValidator.validateCommonHeaders(response);
-		//	response.then()
-             //  .body("id", notNullValue());
-			     //   .assertThat(getVideosForHomePojo.getId()).isInstanceOf(Integer.class);
+			getVideosForHomeResponceValidation.GetVideosForHomeResponsValidation(response);
 			
 			
 			// Validate the response status code
