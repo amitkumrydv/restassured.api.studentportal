@@ -38,20 +38,6 @@ public class ReadConfig {
 		return password;
 	}
 
-	public String getChrome() {
-		String Chromepath = pro.getProperty("Chromepath");
-		return Chromepath;
-	}
-
-	public String getIEPath() {
-		String iepath = pro.getProperty("iepath");
-		return iepath;
-	}
-
-	public String getFireFoxPath() {
-		String firefoxpath = pro.getProperty("firefoxpath");
-		return firefoxpath;
-	}
 
 	public String getStudentDetailsExcel() {
 		String studentDetailsExcel = pro.getProperty("STUDENT_BASIC_DETAILS");

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 04 21:33:32 IST 2024</td>
+<td>Started on:</td><td>Tue Nov 05 11:25:17 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5852 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (35 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,9 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest()'><b>getVideosForHomePostHeaderTest</b><br>Test class: com.api.test.GetVideosForHomeTest</td>
-<td><div><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdBy&quot; (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: &quot;programSemSubjectId&quot;, &quot;currentAcadMonth&quot;, &quot;sessionDate&quot;, &quot;currentSemPSSId&quot;, &quot;id&quot;, &quot;subject&quot;, &quot;facultyName&quot;, &quot;currentAcadYear&quot;, &quot;description&quot;])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]-&gt;com.api.pojoClass.GetVideosForHomePojo[&quot;createdBy&quot;])
-	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:53)
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The package org.hamcrest is accessible from more than one module: &lt;unnamed&gt;, org.hamcrest, org.hamcrest.core.deprecated
+	Matchers cannot be resolved
+	Matchers cannot be resolved
+	Matchers cannot be resolved
+
+	at com.api.comman.HeaderValidator.&lt;init&gt;(HeaderValidator.java:6)
+	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,29 +112,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdBy&quot; (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: &quot;programSemSubjectId&quot;, &quot;currentAcadMonth&quot;, &quot;sessionDate&quot;, &quot;currentSemPSSId&quot;, &quot;id&quot;, &quot;subject&quot;, &quot;facultyName&quot;, &quot;currentAcadYear&quot;, &quot;description&quot;])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]-&gt;com.api.pojoClass.GetVideosForHomePojo[&quot;createdBy&quot;])
-	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3531)
-	at com.api.comman.GetVideosForHomeResponceValidation.GetVideosForHomeResponsValidation(GetVideosForHomeResponceValidation.java:31)
-	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:33)
-	... 28 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace822063782", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace822063782'><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdBy&quot; (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: &quot;programSemSubjectId&quot;, &quot;currentAcadMonth&quot;, &quot;sessionDate&quot;, &quot;currentSemPSSId&quot;, &quot;id&quot;, &quot;subject&quot;, &quot;facultyName&quot;, &quot;currentAcadYear&quot;, &quot;description&quot;])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]-&gt;com.api.pojoClass.GetVideosForHomePojo[&quot;createdBy&quot;])
-	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace105751207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace105751207'><pre>java.lang.Error: Unresolved compilation problems: 
+	The package org.hamcrest is accessible from more than one module: &lt;unnamed&gt;, org.hamcrest, org.hamcrest.core.deprecated
+	Matchers cannot be resolved
+	Matchers cannot be resolved
+	Matchers cannot be resolved
+
+	at com.api.comman.HeaderValidator.&lt;init&gt;(HeaderValidator.java:6)
+	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,28 +149,9 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdBy&quot; (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: &quot;programSemSubjectId&quot;, &quot;currentAcadMonth&quot;, &quot;sessionDate&quot;, &quot;currentSemPSSId&quot;, &quot;id&quot;, &quot;subject&quot;, &quot;facultyName&quot;, &quot;currentAcadYear&quot;, &quot;description&quot;])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]-&gt;com.api.pojoClass.GetVideosForHomePojo[&quot;createdBy&quot;])
-	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3531)
-	at com.api.comman.GetVideosForHomeResponceValidation.GetVideosForHomeResponsValidation(GetVideosForHomeResponceValidation.java:31)
-	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:33)
-	... 28 more
 </pre></div></td>
-<td>5</td>
-<td>com.api.test.GetVideosForHomeTest@7fd4acee</td></tr>
+<td>0</td>
+<td>com.api.test.GetVideosForHomeTest@18f20260</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -190,7 +162,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 </tr>
 <tr>
 <td title='com.api.test.GetVideosForHomeTest.getVideosForHomeGetHeaderTest()'><b>getVideosForHomeGetHeaderTest</b><br>Test class: com.api.test.GetVideosForHomeTest</td>
-<td><div><pre>java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@7fd4acee] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@18f20260] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -210,8 +182,8 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1025266421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1025266421'><pre>java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@7fd4acee] depends on not successfully finished methods
+</pre></div><a href='#' onClick='toggleBox("stack-trace1648458262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648458262'><pre>java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@18f20260] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -233,7 +205,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.api.test.GetVideosForHomeTest@7fd4acee</td></tr>
+<td>com.api.test.GetVideosForHomeTest@18f20260</td></tr>
 </table><p>
 </body>
 </html>

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\amity.DESKTOP-HKLU73H\AppData\Local\Temp\testng-eclipse--1838451048\testng-customsuite.xml</span>
+                    <span>C:\Users\amit.yadav.ext\AppData\Local\Temp\testng-eclipse-1678075944\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -144,9 +144,14 @@
                   <a name="getVideosForHomePostHeaderTest">
                   </a> <!-- getVideosForHomePostHeaderTest -->
                   <span class="method-name">getVideosForHomePostHeaderTest</span>
-                  <div class="stack-trace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdBy&quot; (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: &quot;programSemSubjectId&quot;, &quot;currentAcadMonth&quot;, &quot;sessionDate&quot;, &quot;currentSemPSSId&quot;, &quot;id&quot;, &quot;subject&quot;, &quot;facultyName&quot;, &quot;currentAcadYear&quot;, &quot;description&quot;])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]-&gt;com.api.pojoClass.GetVideosForHomePojo[&quot;createdBy&quot;])
-	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:53)
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problems: 
+	The package org.hamcrest is accessible from more than one module: &lt;unnamed&gt;, org.hamcrest, org.hamcrest.core.deprecated
+	Matchers cannot be resolved
+	Matchers cannot be resolved
+	Matchers cannot be resolved
+
+	at com.api.comman.HeaderValidator.&lt;init&gt;(HeaderValidator.java:6)
+	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -175,25 +180,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdBy&quot; (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: &quot;programSemSubjectId&quot;, &quot;currentAcadMonth&quot;, &quot;sessionDate&quot;, &quot;currentSemPSSId&quot;, &quot;id&quot;, &quot;subject&quot;, &quot;facultyName&quot;, &quot;currentAcadYear&quot;, &quot;description&quot;])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]-&gt;com.api.pojoClass.GetVideosForHomePojo[&quot;createdBy&quot;])
-	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3531)
-	at com.api.comman.GetVideosForHomeResponceValidation.GetVideosForHomeResponsValidation(GetVideosForHomeResponceValidation.java:31)
-	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:33)
-	... 28 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -211,7 +197,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
                   <a name="getVideosForHomeGetHeaderTest">
                   </a> <!-- getVideosForHomeGetHeaderTest -->
                   <span class="method-name">getVideosForHomeGetHeaderTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@7fd4acee] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@18f20260] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -240,7 +226,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\amity.DESKTOP-HKLU73H\AppData\Local\Temp\testng-eclipse--1838451048\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\amit.yadav.ext\AppData\Local\Temp\testng-eclipse-1678075944\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -293,7 +279,7 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getVideosForHomePostHeaderTest')
 data.setCell(0, 2, 'com.api.test.GetVideosForHomeTest')
-data.setCell(0, 3, 5766);
+data.setCell(0, 3, 5);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getVideosForHomeGetHeaderTest')
 data.setCell(1, 2, 'com.api.test.GetVideosForHomeTest')
@@ -302,7 +288,7 @@ window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 5 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -337,7 +323,7 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getVideosForHomeGetHeaderTest</span>
-                <span class="method-start">5779 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

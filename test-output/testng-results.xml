@@ -2,21 +2,30 @@
 <testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-04T21:33:32 IST" name="Default suite" finished-at="2024-11-04T21:33:38 IST" duration-ms="5852">
+  <suite started-at="2024-11-05T11:25:17 IST" name="Default suite" finished-at="2024-11-05T11:25:17 IST" duration-ms="35">
     <groups>
     </groups>
-    <test started-at="2024-11-04T21:33:32 IST" name="Default test" finished-at="2024-11-04T21:33:38 IST" duration-ms="5852">
+    <test started-at="2024-11-05T11:25:17 IST" name="Default test" finished-at="2024-11-05T11:25:17 IST" duration-ms="35">
       <class name="com.api.test.GetVideosForHomeTest">
-        <test-method signature="getVideosForHomePostHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@7fd4acee]" started-at="2024-11-04T21:33:32 IST" name="getVideosForHomePostHeaderTest" finished-at="2024-11-04T21:33:38 IST" duration-ms="5766" status="FAIL">
-          <exception class="java.lang.RuntimeException">
+        <test-method signature="getVideosForHomePostHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@18f20260]" started-at="2024-11-05T11:25:17 IST" name="getVideosForHomePostHeaderTest" finished-at="2024-11-05T11:25:17 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "createdBy" (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: "programSemSubjectId", "currentAcadMonth", "sessionDate", "currentSemPSSId", "id", "subject", "facultyName", "currentAcadYear", "description"])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]->com.api.pojoClass.GetVideosForHomePojo["createdBy"])]]>
+              <![CDATA[Unresolved compilation problems: 
+The package org.hamcrest is accessible from more than one module: <unnamed>, org.hamcrest, org.hamcrest.core.deprecated
+Matchers cannot be resolved
+Matchers cannot be resolved
+Matchers cannot be resolved
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "createdBy" (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: "programSemSubjectId", "currentAcadMonth", "sessionDate", "currentSemPSSId", "id", "subject", "facultyName", "currentAcadYear", "description"])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]->com.api.pojoClass.GetVideosForHomePojo["createdBy"])
-at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:53)
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+The package org.hamcrest is accessible from more than one module: <unnamed>, org.hamcrest, org.hamcrest.core.deprecated
+Matchers cannot be resolved
+Matchers cannot be resolved
+Matchers cannot be resolved
+
+at com.api.comman.HeaderValidator.<init>(HeaderValidator.java:6)
+at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,38 +54,19 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "createdBy" (class com.api.pojoClass.GetVideosForHomePojo), not marked as ignorable (9 known properties: "programSemSubjectId", "currentAcadMonth", "sessionDate", "currentSemPSSId", "id", "subject", "facultyName", "currentAcadYear", "description"])
- at [Source: (StringReader); line: 1, column: 19] (through reference chain: java.util.ArrayList[0]->com.api.pojoClass.GetVideosForHomePojo["createdBy"])
-at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
-at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
-at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
-at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
-at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
-at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
-at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
-at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3531)
-at com.api.comman.GetVideosForHomeResponceValidation.GetVideosForHomeResponsValidation(GetVideosForHomeResponceValidation.java:31)
-at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:33)
-... 28 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getVideosForHomePostHeaderTest -->
-        <test-method signature="getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@7fd4acee]" started-at="2024-11-04T21:33:38 IST" name="getVideosForHomeGetHeaderTest" finished-at="2024-11-04T21:33:38 IST" depends-on-methods="com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="0" status="SKIP">
+        <test-method signature="getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@18f20260]" started-at="2024-11-05T11:25:17 IST" name="getVideosForHomeGetHeaderTest" finished-at="2024-11-05T11:25:17 IST" depends-on-methods="com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@7fd4acee] depends on not successfully finished methods]]>
+              <![CDATA[Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@18f20260] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@7fd4acee] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@18f20260] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
