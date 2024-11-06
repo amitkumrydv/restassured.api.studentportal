@@ -17,9 +17,8 @@ public class Routs {
 	
 	//POST urls
 	public static String post_url_getVideosForHome = base_url+ "authenticate/m/getVideosForHome";
-	
-	
 	public static String post_url_CoursesWithPSSIdV2 = base_url+ "studentportal/m/CoursesWithPSSIdV2";
+	public static String post_url_viewAssignmentsForm = base_url+ "exam/m/viewAssignmentsForm";
 	
 	
 

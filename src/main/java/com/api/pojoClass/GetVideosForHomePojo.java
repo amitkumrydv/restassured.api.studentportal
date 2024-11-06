@@ -6,7 +6,10 @@ import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-//Only consider the specified fields; ignore all others.
+/*
+Only consider the specified fields
+Ignore all others JSON.
+*/
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GetVideosForHomePojo {
 	

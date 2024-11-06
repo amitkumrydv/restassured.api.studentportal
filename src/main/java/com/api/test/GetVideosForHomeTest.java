@@ -16,7 +16,7 @@ import io.restassured.response.Response;
 public class GetVideosForHomeTest {
 
 	// @formatter:off
-	private static final Logger logger = (Logger) LoggerFactory.getLogger(GetVideosForHomeTest.class);
+	private static final Logger logger = LoggerFactory.getLogger(GetVideosForHomeTest.class);
 
 	@Test
 	public void getVideosForHomePostHeaderTest() throws JsonMappingException, JsonProcessingException {

@@ -10,17 +10,14 @@ import com.api.utilities.ReadConfig;
 public class AuthenticatePyload {
 	
 	private static final Logger logger = LoggerFactory.getLogger(AuthenticatePyload.class);
-	
+	ReadConfig readConfig = new ReadConfig();
+    AuthenticationPojo  authenticationPojo = new AuthenticationPojo();
 	
 	public AuthenticationPojo authenticatePyloadData() {
 		
 		logger.info("Set the userId and password in the Authentication payload ");
-		ReadConfig readConfig = new ReadConfig();
-		String userName=readConfig.getUsername();
+        String userName=readConfig.getUsername();
 		String password=readConfig.getPassword();
-		
-		AuthenticationPojo  authenticationPojo = new AuthenticationPojo();
-		
 		authenticationPojo.setUserId(userName);
 		authenticationPojo.setPassword(password);
 		

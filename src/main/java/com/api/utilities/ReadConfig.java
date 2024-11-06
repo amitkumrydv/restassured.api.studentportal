@@ -54,4 +54,9 @@ public class ReadConfig {
 		return currentAcadYear;
 	}
 
+	public String getAssignmentLiveStatus() {
+		String Assignment_Live=pro.getProperty("Assignment_Live");
+		return Assignment_Live;
+	}
+	
 }
