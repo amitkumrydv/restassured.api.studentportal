@@ -9,14 +9,18 @@ import org.testng.annotations.Test;
 
 import com.api.comman.HeaderValidator;
 import com.api.endpoints.ViewAssignmentsFormEndPoint;
+import com.api.response.mapper.ViewAssignmentsFormMpper;
 
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 
 public class ViewAssignmentsFormTest {
 	
 	
 	private static Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormTest.class);
 	HeaderValidator headerValidator = new HeaderValidator();
+	ViewAssignmentsFormMpper viewAssignment = new ViewAssignmentsFormMpper();
+	
 	
 	@Test
 	public void viewAssignmentsFormPostHeaderTest() {
@@ -28,7 +32,11 @@ public class ViewAssignmentsFormTest {
 		try {
 			headerValidator.validateCommonHeaders(response);
 			
-			System.out.println("viewAssignmentsFormPostHeaderTest  content type "+response.contentType());
+			ResponseBody responsebody = response.body();
+			String data =responsebody.asString();
+			viewAssignment.ViewAssignmentsFormMapperResponsValidation(data);
+			
+			
 			
 			
 			// Validate the response status code

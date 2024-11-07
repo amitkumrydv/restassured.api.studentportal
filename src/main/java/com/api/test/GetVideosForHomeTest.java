@@ -6,9 +6,9 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.api.comman.GetVideosForHomeResponceValidation;
 import com.api.comman.HeaderValidator;
 import com.api.endpoints.GetVideosForHomeEndPoints;
+import com.api.response.mapper.GetVideosForHomeMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import io.restassured.response.Response;
@@ -21,7 +21,7 @@ public class GetVideosForHomeTest {
 	@Test
 	public void getVideosForHomePostHeaderTest() throws JsonMappingException, JsonProcessingException {
 		HeaderValidator headerValidator = new HeaderValidator();
-		GetVideosForHomeResponceValidation getVideosForHomeResponceValidation = new GetVideosForHomeResponceValidation();
+		GetVideosForHomeMapper getVideosForHomeMapper = new GetVideosForHomeMapper();
 
 		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderPost();
 		Long responseTime = response.getTime();
@@ -30,7 +30,7 @@ public class GetVideosForHomeTest {
 	        
 		try {
 			headerValidator.validateCommonHeaders(response);
-			getVideosForHomeResponceValidation.GetVideosForHomeResponsValidation(response);
+			getVideosForHomeMapper.GetVideosForHomeResponsValidation(response);
 			
 			
 			// Validate the response status code

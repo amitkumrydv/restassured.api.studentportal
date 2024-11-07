@@ -1,77 +1,8 @@
-2024-11-06 16:34:47 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
-Expected header "Content-Type" was not "application/json", was "text/html;charset=utf-8". Headers are:
-Vary=Origin
-Vary=Access-Control-Request-Method
-Vary=Access-Control-Request-Headers
-Content-Language=en
-Date=Wed, 06 Nov 2024 11:04:46 GMT
-Cache-Control=no-cache, no-store, max-age=0, must-revalidate
-Pragma=no-cache
-Expires=0
-X-Content-Type-Options=nosniff
-Strict-Transport-Security=max-age=31536000 ; includeSubDomains
-X-XSS-Protection=1 ; mode=block
-Referrer-Policy=origin
-Content-Type=text/html;charset=utf-8
-Content-Length=1127
-Connection=close
-Set-Cookie=cookiesession1=678B2867B62A6F1B96D8C772C63341F6;Expires=Thu, 06 Nov 2025 11:07:01 GMT;Path=/;HttpOnly
-
-2024-11-06 16:45:18 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
-Expected header "Content-Type" was not "application/json", was "text/html;charset=utf-8". Headers are:
-Vary=Origin
-Vary=Access-Control-Request-Method
-Vary=Access-Control-Request-Headers
-Content-Language=en
-Date=Wed, 06 Nov 2024 11:15:17 GMT
-Cache-Control=no-cache, no-store, max-age=0, must-revalidate
-Pragma=no-cache
-Expires=0
-X-Content-Type-Options=nosniff
-Strict-Transport-Security=max-age=31536000 ; includeSubDomains
-X-XSS-Protection=1 ; mode=block
-Referrer-Policy=origin
-Content-Type=text/html;charset=utf-8
-Content-Length=1127
-Connection=close
-Set-Cookie=cookiesession1=678B2867D6AE97813B61D598AD1F2665;Expires=Thu, 06 Nov 2025 11:17:32 GMT;Path=/;HttpOnly
-
-2024-11-06 16:46:50 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
-Expected header "Connection" was not "keep-alive", was "close". Headers are:
-Vary=Origin
-Vary=Access-Control-Request-Method
-Vary=Access-Control-Request-Headers
-Content-Language=en
-Date=Wed, 06 Nov 2024 11:16:50 GMT
-Cache-Control=no-cache, no-store, max-age=0, must-revalidate
-Pragma=no-cache
-Expires=0
-X-Content-Type-Options=nosniff
-Strict-Transport-Security=max-age=31536000 ; includeSubDomains
-X-XSS-Protection=1 ; mode=block
-Referrer-Policy=origin
-Content-Type=text/html;charset=utf-8
-Content-Length=1127
-Connection=close
-Set-Cookie=cookiesession1=678B28671E4E4005DC05C4901C3AD94B;Expires=Thu, 06 Nov 2025 11:19:04 GMT;Path=/;HttpOnly
-
-2024-11-06 16:47:52 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
-Expected header "Connection" was not "keep-alive", was "close". Headers are:
-Vary=Origin
-Vary=Access-Control-Request-Method
-Vary=Access-Control-Request-Headers
-Content-Language=en
-Date=Wed, 06 Nov 2024 11:17:52 GMT
-Cache-Control=no-cache, no-store, max-age=0, must-revalidate
-Pragma=no-cache
-Expires=0
-X-Content-Type-Options=nosniff
-Strict-Transport-Security=max-age=31536000 ; includeSubDomains
-X-XSS-Protection=1 ; mode=block
-Referrer-Policy=origin
-Content-Type=text/html;charset=utf-8
-Content-Length=1127
-Connection=close
-Set-Cookie=cookiesession1=678B286725C80C5E9A842990AB70B67C;Expires=Thu, 06 Nov 2025 11:20:06 GMT;Path=/;HttpOnly
-
-2024-11-06 16:52:22 [main] ERROR ViewAssignmentsFormTest - Assertion error: Status code validation expected [200] but found [400]
+2024-11-07 11:46:57 [main] WARN  GetVideosForHomeTest - An error occurred: class java.util.LinkedHashMap cannot be cast to class com.api.pojoClass.GetVideosForHomePojo (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.api.pojoClass.GetVideosForHomePojo is in unnamed module of loader 'app')
+2024-11-07 14:43:52 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
+2024-11-07 14:44:12 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
+2024-11-07 14:47:51 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
+2024-11-07 15:02:44 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
+2024-11-07 15:21:24 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
+2024-11-07 15:34:37 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
+2024-11-07 15:36:48 [main] WARN  ViewAssignmentsFormTest - An error occurred: null

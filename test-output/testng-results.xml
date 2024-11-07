@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-06T17:07:06 IST" name="Default suite" finished-at="2024-11-06T17:07:08 IST" duration-ms="1278">
+  <suite started-at="2024-11-07T16:16:42 IST" name="Default suite" finished-at="2024-11-07T16:16:43 IST" duration-ms="1168">
     <groups>
     </groups>
-    <test started-at="2024-11-06T17:07:06 IST" name="Default test" finished-at="2024-11-06T17:07:08 IST" duration-ms="1278">
+    <test started-at="2024-11-07T16:16:42 IST" name="Default test" finished-at="2024-11-07T16:16:43 IST" duration-ms="1168">
       <class name="com.api.test.ViewAssignmentsFormTest">
-        <test-method signature="viewAssignmentsFormPostHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@7383eae2]" started-at="2024-11-06T17:07:06 IST" name="viewAssignmentsFormPostHeaderTest" finished-at="2024-11-06T17:07:08 IST" duration-ms="1258" status="PASS">
+        <test-method signature="viewAssignmentsFormPostHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@473b3b7a]" started-at="2024-11-07T16:16:42 IST" name="viewAssignmentsFormPostHeaderTest" finished-at="2024-11-07T16:16:43 IST" duration-ms="1147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAssignmentsFormPostHeaderTest -->

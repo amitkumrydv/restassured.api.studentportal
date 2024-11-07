@@ -1,52 +1,123 @@
 package com.api.pojoClass;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ViewAssignmentsFormPojo {
 	
-	    private int count;
-	    private String year;
-	    private String month;
-	    private String subject;
-	    private String sem;
-	    private String startDate;
-	    private String endDate;
-	    private String createdBy;
-	    private String createdDate;
-	    private String lastModifiedBy;
-	    private String lastModifiedDate;
-	    private String sapId;
-	    private String questionFilePreviewPath;
-	    private String attempts;
-	    private String status;
-	    private String attemptsLeft;
-	    private String errorMessage;
-	    private boolean errorRecord;
-	    private String evaluated;
-	    private String evaluationCount;
-	    private String markedForRevaluation;
-	    private String revaluated;
-	    private String revaluationCount;
-	    private String revisited;
-	    private String faculty2EvaluationCount;
-	    private String faculty3EvaluationCount;
-	    private int minMatchPercent;
-	    private String toBeEvaluated;
-	    private boolean submissionAllowed;
-	    private String submissionAllow;
-	    private int threshold2;
-	    private String currentSemSubject;
-	
+	    @JsonProperty("count")
+	    private Integer count;
 
-	//    private ArrayList<CurrentSemAssignmentFilesList> currentSemAssignmentFilesList;
+	    @JsonProperty("year")
+	    private String year;
+
+	    @JsonProperty("month")
+	    private String month;
+
+	    @JsonProperty("subject")
+	    private String subject;
+
+	    @JsonProperty("sem")
+	    private String sem;
+
+	    @JsonProperty("startDate")
+	    private String startDate;
+
+	    @JsonProperty("endDate")
+	    private String endDate;
+
+	    @JsonProperty("createdBy")
+	    private String createdBy;
+
+	    @JsonProperty("createdDate")
+	    private String createdDate;
+
+	    @JsonProperty("lastModifiedBy")
+	    private String lastModifiedBy;
+
+	    @JsonProperty("lastModifiedDate")
+	    private String lastModifiedDate;
+
+	    @JsonProperty("sapId")
+	    private String sapId;
+
+	    @JsonProperty("questionFilePreviewPath")
+	    private String questionFilePreviewPath;
+
+	    @JsonProperty("attempts")
+	    private String attempts;
+
+	    @JsonProperty("status")
+	    private String status;
+
+	    @JsonProperty("attemptsLeft")
+	    private String attemptsLeft;
+
+	    @JsonProperty("errorMessage")
+	    private String errorMessage;
+
+	    @JsonProperty("errorRecord")
+	    private Boolean errorRecord;
+
+	    @JsonProperty("evaluated")
+	    private String evaluated;
+
+	    @JsonProperty("evaluationCount")
+	    private String evaluationCount;
+
+	    @JsonProperty("markedForRevaluation")
+	    private String markedForRevaluation;
+
+	    @JsonProperty("revaluated")
+	    private String revaluated;
+
+	    @JsonProperty("revaluationCount")
+	    private String revaluationCount;
+
+	    @JsonProperty("revisited")
+	    private String revisited;
+
+	    @JsonProperty("faculty2EvaluationCount")
+	    private String faculty2EvaluationCount;
+
+	    @JsonProperty("faculty3EvaluationCount")
+	    private String faculty3EvaluationCount;
+
+	    @JsonProperty("minMatchPercent")
+	    private Integer minMatchPercent;
+
+	    @JsonProperty("toBeEvaluated")
+	    private String toBeEvaluated;
+
+	    @JsonProperty("submissionAllowed")
+	    private boolean submissionAllowed;
+
+	    @JsonProperty("submissionAllow")
+	    private String submissionAllow;
+
+	    @JsonProperty("threshold2")
+	    private int threshold2;
+
+	    @JsonProperty("currentSemSubject")
+	    private String currentSemSubject;
+
+	    //    @JsonProperty("currentSemAssignmentFilesList")
+	    //    private ArrayList<CurrentSemAssignmentFilesList> currentSemAssignmentFilesList;
+
+	    @JsonProperty("failSubjectsCount")
 	    private int failSubjectsCount;
+
+	    @JsonProperty("failSubjectSubmissionCount")
 	    private int failSubjectSubmissionCount;
+
+	    @JsonProperty("currentSemEndDateTime")
 	    private String currentSemEndDateTime;
+
+	    @JsonProperty("failSubjectsEndDateTime")
 	    private String failSubjectsEndDateTime;
 	    
 	    
 	    //Getter and setter
-		public int getCount() {
+		public Integer getCount() {
 			return count;
 		}
 		public void setCount(int count) {
@@ -148,7 +219,7 @@ public class ViewAssignmentsFormPojo {
 		public void setErrorMessage(String errorMessage) {
 			this.errorMessage = errorMessage;
 		}
-		public boolean isErrorRecord() {
+		public Boolean isErrorRecord() {
 			return errorRecord;
 		}
 		public void setErrorRecord(boolean errorRecord) {
@@ -202,7 +273,7 @@ public class ViewAssignmentsFormPojo {
 		public void setFaculty3EvaluationCount(String faculty3EvaluationCount) {
 			this.faculty3EvaluationCount = faculty3EvaluationCount;
 		}
-		public int getMinMatchPercent() {
+		public Integer getMinMatchPercent() {
 			return minMatchPercent;
 		}
 		public void setMinMatchPercent(int minMatchPercent) {

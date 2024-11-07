@@ -5,10 +5,9 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 
 import io.restassured.response.Response;
 
-public interface GetVideosForHomeResponsValidation {
+public interface ViewAssignmentsFormResponseValidation {
 	
-	
-	public void GetVideosForHomeResponsValidation(Response response) throws JsonMappingException, JsonProcessingException;
-
+	public void ViewAssignmentsFormMapperResponsValidation(String responBodyData)
+	        throws JsonMappingException, JsonProcessingException;
 
 }

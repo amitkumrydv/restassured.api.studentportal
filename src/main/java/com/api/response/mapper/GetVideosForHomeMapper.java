@@ -1,4 +1,5 @@
-package com.api.comman;
+package com.api.response.mapper;
+
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -16,17 +17,18 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.restassured.response.Response;
 
-public class GetVideosForHomeResponceValidation implements GetVideosForHomeResponsValidation {
+public class GetVideosForHomeMapper implements GetVideosForHomeResponsValidation {
 
-	private static final Logger logger = (Logger)LoggerFactory.getLogger(GetVideosForHomeResponceValidation.class);
-
+	private static final Logger logger = LoggerFactory.getLogger(GetVideosForHomeMapper.class);
+	ObjectMapper mapper = new ObjectMapper();
+	
 	    @Override
 	    public void GetVideosForHomeResponsValidation(Response response) 
 	            throws JsonMappingException, JsonProcessingException {
 	        
 	        logger.info("Starting GetVideosForHomeResponsValidation method");
 
-	        ObjectMapper mapper = new ObjectMapper();
+	        
 
 	        List<GetVideosForHomePojo> responsedata = mapper.readValue(
 	            response.asString(),

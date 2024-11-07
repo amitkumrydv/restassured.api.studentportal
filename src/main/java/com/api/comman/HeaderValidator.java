@@ -26,12 +26,7 @@ public class HeaderValidator implements HeaderResponceValidation{
 	    }
 	
 	
-	public void ViewAssignmentsFormHeaders(Response response) {
-		
-		response.then();
-		//.header("Content-Type", "text/html;charset=utf-8");
-		
-	}
+
 	
 
 }
