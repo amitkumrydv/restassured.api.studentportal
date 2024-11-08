@@ -23,7 +23,7 @@ public class ViewAssignmentsFormTest {
 	
 	
 	@Test
-	public void viewAssignmentsFormPostHeaderTest() {
+	public void viewAssignmentsFormPOSTHeaderTest() {
 		
 		
 		Response response= ViewAssignmentsFormEndPoint.viewAssignmentsFormEndPointHeaderPost();
@@ -35,6 +35,9 @@ public class ViewAssignmentsFormTest {
 			ResponseBody responsebody = response.body();
 			String data =responsebody.asString();
 			viewAssignment.ViewAssignmentsFormMapperResponsValidation(data);
+			
+			String cookieValue = response.getCookie("SESSION");
+			logger.info("cookieValue " ,cookieValue);
 			
 			// Validate the response status code
 			Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");
@@ -58,8 +61,81 @@ public class ViewAssignmentsFormTest {
 
 	}
 		
+	
+	
+	@Test(dependsOnMethods = "viewAssignmentsFormPOSTHeaderTest")
+	public void viewAssignmentsFormGETHeaderTest() {
 		
-		
+		Response response= ViewAssignmentsFormEndPoint.viewAssignmentsFormEndPointHeaderGET();
+		Long responseTime = response.getTime();
+		try {
+			response.then()
+			             .assertThat()
+					     .statusCode(405);
+
+			String cookieValue = response.getCookie("SESSION");
+			logger.info("cookieValue " ,cookieValue);
+			// Validate the response body is not empty
+			Assert.assertNotNull(response.getBody(), "Response body Null");
+
+			assertTrue(responseTime < 2000, "Response time is within acceptable range");
+
+		}
+		// Rethrow the assertion error to mark the test as failed
+		catch (AssertionError assertionError) {
+			logger.error("Assertion error: " + assertionError.getMessage());
+			// This will mark the test as failed
+			throw assertionError;
+		}
+		// Optionally re-throw this exception to fail the test as well
+		catch (Exception e) {
+			logger.warn("An error occurred: " + e.getMessage());
+			// Mark as failed due to a non-assertion error
+			throw new RuntimeException(e);
+		}
+
 	}
+	
+	
+	@Test(dependsOnMethods = "viewAssignmentsFormGETHeaderTest")
+	public void viewAssignmentsFormDELETEHeaderTest() {
+		
+		Response response= ViewAssignmentsFormEndPoint.viewAssignmentsFormEndPointHeaderDELETE();
+		Long responseTime = response.getTime();
+		try {
+			response.then()
+			             .assertThat()
+					     .statusCode(405);
+
+			String cookieValue = response.getCookie("SESSION");
+			logger.info("cookieValue " ,cookieValue);
+			// Validate the response body is not empty
+			Assert.assertNotNull(response.getBody(), "Response body Null");
+
+			assertTrue(responseTime < 2000, "Response time is within acceptable range");
+
+		}
+		// Rethrow the assertion error to mark the test as failed
+		catch (AssertionError assertionError) {
+			logger.error("Assertion error: " + assertionError.getMessage());
+			// This will mark the test as failed
+			throw assertionError;
+		}
+		// Optionally re-throw this exception to fail the test as well
+		catch (Exception e) {
+			logger.warn("An error occurred: " + e.getMessage());
+			// Mark as failed due to a non-assertion error
+			throw new RuntimeException(e);
+		}
+
+	}
+	
+		
+}
+	
+	
+	
+	
+		
 
 

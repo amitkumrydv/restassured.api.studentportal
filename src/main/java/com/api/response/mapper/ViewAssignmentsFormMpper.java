@@ -60,7 +60,7 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	            jsonFieldsEncountered.add(fieldName);
 
 	            if (jsonFieldValue == null) {
-	                logger.info("Skipping null field: {}", fieldName);
+	             //   logger.info("Skipping null field: {}", fieldName);
 	                continue;
 	            }
 

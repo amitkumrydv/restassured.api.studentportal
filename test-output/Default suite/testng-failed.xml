@@ -5,7 +5,9 @@
     <classes>
       <class name="com.api.test.ViewAssignmentsFormTest">
         <methods>
-          <include name="viewAssignmentsFormPostHeaderTest"/>
+          <include name="viewAssignmentsFormGETHeaderTest"/>
+          <include name="viewAssignmentsFormDELETEHeaderTest"/>
+          <include name="viewAssignmentsFormPOSTHeaderTest"/>
         </methods>
       </class> <!-- com.api.test.ViewAssignmentsFormTest -->
     </classes>
