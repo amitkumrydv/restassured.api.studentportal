@@ -1,7 +1,16 @@
 package com.api.pojoClass;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
+/*
+Only consider the specified fields
+Ignore all others JSON.
+@JsonProperty This annotation is particularly useful when the JSON property name differs from the field name in the Java object 
+*/
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ViewAssignmentsFormPojo {
 	
 	    @JsonProperty("count")
@@ -89,13 +98,13 @@ public class ViewAssignmentsFormPojo {
 	    private String toBeEvaluated;
 
 	    @JsonProperty("submissionAllowed")
-	    private boolean submissionAllowed;
+	    private Boolean submissionAllowed;
 
 	    @JsonProperty("submissionAllow")
 	    private String submissionAllow;
 
 	    @JsonProperty("threshold2")
-	    private int threshold2;
+	    private Integer threshold2;
 
 	    @JsonProperty("currentSemSubject")
 	    private String currentSemSubject;
@@ -285,7 +294,7 @@ public class ViewAssignmentsFormPojo {
 		public void setToBeEvaluated(String toBeEvaluated) {
 			this.toBeEvaluated = toBeEvaluated;
 		}
-		public boolean isSubmissionAllowed() {
+		public Boolean isSubmissionAllowed() {
 			return submissionAllowed;
 		}
 		public void setSubmissionAllowed(boolean submissionAllowed) {
@@ -297,7 +306,7 @@ public class ViewAssignmentsFormPojo {
 		public void setSubmissionAllow(String submissionAllow) {
 			this.submissionAllow = submissionAllow;
 		}
-		public int getThreshold2() {
+		public Integer getThreshold2() {
 			return threshold2;
 		}
 		public void setThreshold2(int threshold2) {

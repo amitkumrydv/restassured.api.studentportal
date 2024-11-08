@@ -1,8 +1,3 @@
-2024-11-07 11:46:57 [main] WARN  GetVideosForHomeTest - An error occurred: class java.util.LinkedHashMap cannot be cast to class com.api.pojoClass.GetVideosForHomePojo (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.api.pojoClass.GetVideosForHomePojo is in unnamed module of loader 'app')
-2024-11-07 14:43:52 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
-2024-11-07 14:44:12 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
-2024-11-07 14:47:51 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
-2024-11-07 15:02:44 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
-2024-11-07 15:21:24 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
-2024-11-07 15:34:37 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
-2024-11-07 15:36:48 [main] WARN  ViewAssignmentsFormTest - An error occurred: null
+2024-11-08 10:40:19 [main] ERROR ViewAssignmentsFormTest - Assertion error: Type mismatch for field
+2024-11-08 10:42:55 [main] ERROR ViewAssignmentsFormTest - Assertion error: Type mismatch for field Boolean   boolean
+2024-11-08 11:10:19 [main] ERROR ViewAssignmentsFormTest - Assertion error: Type mismatch for field: submissionAllowed

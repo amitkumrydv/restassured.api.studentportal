@@ -36,9 +36,6 @@ public class ViewAssignmentsFormTest {
 			String data =responsebody.asString();
 			viewAssignment.ViewAssignmentsFormMapperResponsValidation(data);
 			
-			
-			
-			
 			// Validate the response status code
 			Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");
 			// Validate the response body is not empty
