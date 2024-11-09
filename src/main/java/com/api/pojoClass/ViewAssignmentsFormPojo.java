@@ -10,11 +10,11 @@ Ignore all others JSON.
 @JsonProperty This annotation is particularly useful when the JSON property name differs from the field name in the Java object 
 */
 
-@JsonIgnoreProperties(ignoreUnknown = true)
+//@JsonIgnoreProperties(ignoreUnknown = true)
 public class ViewAssignmentsFormPojo {
 	
 	    @JsonProperty("count")
-	    private Integer count;
+	    private Integer cou_nt;
 
 	    @JsonProperty("year")
 	    private String year;
@@ -80,7 +80,7 @@ public class ViewAssignmentsFormPojo {
 	    private String revaluated;
 
 	    @JsonProperty("revaluationCount")
-	    private String revaluationCount;
+	    private String revaluation_Count;
 
 	    @JsonProperty("revisited")
 	    private String revisited;
@@ -127,10 +127,10 @@ public class ViewAssignmentsFormPojo {
 	    
 	    //Getter and setter
 		public Integer getCount() {
-			return count;
+			return cou_nt;
 		}
 		public void setCount(int count) {
-			this.count = count;
+			this.cou_nt = count;
 		}
 		public String getYear() {
 			return year;
@@ -259,10 +259,10 @@ public class ViewAssignmentsFormPojo {
 			this.revaluated = revaluated;
 		}
 		public String getRevaluationCount() {
-			return revaluationCount;
+			return revaluation_Count;
 		}
 		public void setRevaluationCount(String revaluationCount) {
-			this.revaluationCount = revaluationCount;
+			this.revaluation_Count = revaluationCount;
 		}
 		public String getRevisited() {
 			return revisited;
