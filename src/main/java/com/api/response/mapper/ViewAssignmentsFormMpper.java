@@ -23,7 +23,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseValidation{
 	
 	
-	 static final Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormMpper.class);
+	 public static final Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormMpper.class);
 	ObjectMapper objectMapper = new ObjectMapper();
 	
 	private String getJsonPropertyName(Field field) {

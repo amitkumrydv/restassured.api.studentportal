@@ -6,6 +6,9 @@ import org.testng.annotations.Test;
 
 import com.api.comman.HeaderValidator;
 import com.api.endpoints.AuthenticateEndPoint;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+
 import io.restassured.response.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +18,7 @@ public class AuthenticateTest {
 	private static final Logger logger = (Logger) LoggerFactory.getLogger(AuthenticateTest.class);
 
 	@Test
-	public void authenticateTestApi() {
+	public void authenticateTestApi() throws JsonMappingException, JsonProcessingException {
 		
 		HeaderValidator headerValidator = new HeaderValidator();
 		logger.info("Start authenticateTestApi test");

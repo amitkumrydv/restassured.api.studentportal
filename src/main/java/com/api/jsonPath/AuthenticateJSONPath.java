@@ -28,7 +28,7 @@ public class AuthenticateJSONPath {
         logger.info("Starting authentication JSON path process.");
 
         // Call authenticate endpoint
-        Response authenticateResponse = AuthenticateEndPoint.authenticateResponse();
+        Response authenticateResponse = ;
         
         if (authenticateResponse == null) {
             logger.error("Received null response from authenticate endpoint.");

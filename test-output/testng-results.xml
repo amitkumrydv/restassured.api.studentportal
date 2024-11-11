@@ -1,21 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="2" failed="3" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-09T15:23:20 IST" name="Default suite" finished-at="2024-11-09T15:23:23 IST" duration-ms="3060">
+  <suite started-at="2024-11-11T20:21:25 IST" name="StudentportalDashboard-API" finished-at="2024-11-11T20:21:31 IST" duration-ms="5828">
     <groups>
     </groups>
-    <test started-at="2024-11-09T15:23:20 IST" name="Default test" finished-at="2024-11-09T15:23:23 IST" duration-ms="3060">
+    <test started-at="2024-11-11T20:21:25 IST" name="Dashboard-API" finished-at="2024-11-11T20:21:31 IST" duration-ms="5828">
+      <class name="com.api.test.GetVideosForHomeTest">
+        <test-method signature="getVideosForHomePostHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@1d01dfa5]" started-at="2024-11-11T20:21:30 IST" name="getVideosForHomePostHeaderTest" finished-at="2024-11-11T20:21:30 IST" duration-ms="25" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.api.payload.GetVideosForHomePaload.getVideosForHomePaloadData(GetVideosForHomePaload.java:26)
+at com.api.endpoints.GetVideosForHomeEndPoints.getVideosForHomeHeaderPost(GetVideosForHomeEndPoints.java:19)
+at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVideosForHomePostHeaderTest -->
+        <test-method signature="getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@1d01dfa5]" started-at="2024-11-11T20:21:30 IST" name="getVideosForHomeGetHeaderTest" finished-at="2024-11-11T20:21:30 IST" depends-on-methods="com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@1d01dfa5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@1d01dfa5] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVideosForHomeGetHeaderTest -->
+      </class> <!-- com.api.test.GetVideosForHomeTest -->
       <class name="com.api.test.ViewAssignmentsFormTest">
-        <test-method signature="viewAssignmentsFormPOSTHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@402f80f5]" started-at="2024-11-09T15:23:20 IST" name="viewAssignmentsFormPOSTHeaderTest" finished-at="2024-11-09T15:23:23 IST" duration-ms="2756" status="PASS">
+        <test-method signature="viewAssignmentsFormPOSTHeaderTest()[pri:1, instance:com.api.test.ViewAssignmentsFormTest@7ec58feb]" started-at="2024-11-11T20:21:30 IST" name="viewAssignmentsFormPOSTHeaderTest" finished-at="2024-11-11T20:21:30 IST" duration-ms="459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAssignmentsFormPOSTHeaderTest -->
-        <test-method signature="viewAssignmentsFormGETHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@402f80f5]" started-at="2024-11-09T15:23:23 IST" name="viewAssignmentsFormGETHeaderTest" finished-at="2024-11-09T15:23:23 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="127" status="PASS">
+        <test-method signature="viewAssignmentsFormGETHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@7ec58feb]" started-at="2024-11-11T20:21:30 IST" name="viewAssignmentsFormGETHeaderTest" finished-at="2024-11-11T20:21:31 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAssignmentsFormGETHeaderTest -->
-        <test-method signature="viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@402f80f5]" started-at="2024-11-09T15:23:23 IST" name="viewAssignmentsFormDELETEHeaderTest" finished-at="2024-11-09T15:23:23 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest" duration-ms="106" status="FAIL">
+        <test-method signature="viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@7ec58feb]" started-at="2024-11-11T20:21:31 IST" name="viewAssignmentsFormDELETEHeaderTest" finished-at="2024-11-11T20:21:31 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest" duration-ms="198" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -33,8 +108,6 @@ at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
@@ -52,7 +125,7 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest(ViewAssignmentsFormTest.java:108)
+at com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest(ViewAssignmentsFormTest.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,6 +161,121 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- viewAssignmentsFormDELETEHeaderTest -->
       </class> <!-- com.api.test.ViewAssignmentsFormTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.api.test.AuthenticateTest">
+        <test-method signature="authenticateTestApi()[pri:0, instance:com.api.test.AuthenticateTest@27e32fe4]" started-at="2024-11-11T20:21:25 IST" name="authenticateTestApi" finished-at="2024-11-11T20:21:30 IST" duration-ms="4550" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected header "Content-Type" was not "application/json; charset=UTF-8", was "application/json;charset=UTF-8". Headers are:
+Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Date=Mon, 11 Nov 2024 14:51:29 GMT
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+X-XSS-Protection=1 ; mode=block
+Referrer-Policy=origin
+Content-Type=application/json;charset=UTF-8
+Keep-Alive=timeout=60
+Connection=keep-alive
+Set-Cookie=cookiesession1=678B2867B6B9B9190F9914A882071FA5;Expires=Tue, 11 Nov 2025 14:53:48 GMT;Path=/;HttpOnly
+content-length=8039
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected header "Content-Type" was not "application/json; charset=UTF-8", was "application/json;charset=UTF-8". Headers are:
+Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Date=Mon, 11 Nov 2024 14:51:29 GMT
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+X-XSS-Protection=1 ; mode=block
+Referrer-Policy=origin
+Content-Type=application/json;charset=UTF-8
+Keep-Alive=timeout=60
+Connection=keep-alive
+Set-Cookie=cookiesession1=678B2867B6B9B9190F9914A882071FA5;Expires=Tue, 11 Nov 2025 14:53:48 GMT;Path=/;HttpOnly
+content-length=8039
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:191)
+at io.restassured.specification.ResponseSpecification$header$0.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:198)
+at io.restassured.internal.ValidatableResponseOptionsImpl.header(ValidatableResponseOptionsImpl.java:124)
+at com.api.comman.HeaderValidator.validateAuthenticateHeaders(HeaderValidator.java:23)
+at com.api.test.AuthenticateTest.authenticateTestApi(AuthenticateTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticateTestApi -->
+      </class> <!-- com.api.test.AuthenticateTest -->
+    </test> <!-- Dashboard-API -->
+  </suite> <!-- StudentportalDashboard-API -->
 </testng-results>

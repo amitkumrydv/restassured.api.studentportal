@@ -1,7 +1,6 @@
 package com.api.test;
 
 import static org.testng.Assert.assertTrue;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -11,9 +10,22 @@ import com.api.comman.HeaderValidator;
 import com.api.endpoints.ViewAssignmentsFormEndPoint;
 import com.api.response.mapper.ViewAssignmentsFormMpper;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 
+
+
+
+@Epic(value = "")
+@Story("")
+@Feature("")
 public class ViewAssignmentsFormTest {
 	
 	
@@ -22,7 +34,10 @@ public class ViewAssignmentsFormTest {
 	ViewAssignmentsFormMpper viewAssignment = new ViewAssignmentsFormMpper();
 	
 	
-	@Test
+	@Test(priority = 1)
+	@Step("")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("")
 	public void viewAssignmentsFormPOSTHeaderTest() {
 		
 		

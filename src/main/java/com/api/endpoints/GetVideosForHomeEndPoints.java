@@ -2,6 +2,8 @@ package com.api.endpoints;
 
 import static io.restassured.RestAssured.given;
 import com.api.jsonPath.AuthenticateJSONPath;
+import com.api.payload.GetVideosForHomePaload;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -14,7 +16,7 @@ public class GetVideosForHomeEndPoints {
 		Response response = given()
 				                 .contentType(ContentType.JSON)
 				                 .accept(ContentType.JSON)
-				                 .body(AuthenticateJSONPath .authenticateJSONPath())
+				                 .body(GetVideosForHomePaload.getVideosForHomePaloadData())
 
 			               .when()
 			                    .post(Routs.post_url_getVideosForHome);

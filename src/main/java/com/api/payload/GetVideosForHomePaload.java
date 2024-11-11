@@ -9,25 +9,28 @@ import org.json.JSONTokener;
 
 import com.api.endpoints.AuthenticateEndPoint;
 import com.api.jsonPath.AuthenticateJSONPath;
+import com.api.pojoClass.AuthenticationPojo;
+import com.api.pojoClass.CommanPojo;
 import com.api.pojoClass.GetVideosForHomePojo;
 
 import io.restassured.response.Response;
 
 public class GetVideosForHomePaload {
 
-	public  static GetVideosForHomePojo getVideosForHomePaloadData() {
+	public  static AuthenticationPojo getVideosForHomePaloadData() {
 
-		Response authenticateResponse = AuthenticateEndPoint.authenticateResponse();
+		AuthenticationPojo AuthenticationPojo = CommanPojo.getAuthenticationPojo();
 
-		GetVideosForHomePojo getVideosForHomePojo = new GetVideosForHomePojo();
+	//	GetVideosForHomePojo getVideosForHomePojo = new GetVideosForHomePojo();
 
-		String month = getVideosForHomePojo.getCurrentAcadMonth();
-		getVideosForHomePojo.getCurrentAcadYear();
-		getVideosForHomePojo.getCurrentSemPSSId();
+		String month = AuthenticationPojo.getCurrentAcadMonth();
+		System.out.println("month ---------------------"+month);
+		AuthenticationPojo.getCurrentAcadYear();
+		AuthenticationPojo.getCurrentSemPSSId();
 		
 		
 		
-		return getVideosForHomePojo;
+		return AuthenticationPojo;
 
 	}
 
