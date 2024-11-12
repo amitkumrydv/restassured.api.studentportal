@@ -130,7 +130,10 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	            Object jsonFieldValue = entry.getValue();
 	            jsonFieldsEncountered.add(fieldName);
 
-	            if (jsonFieldValue == null) continue;
+	            if (jsonFieldValue == null) {
+	            	logger.warn("Response field: {} is null" );
+	            	continue;
+	            }
 
 	            Class<?> jsonFieldType = jsonFieldValue.getClass();
 
@@ -167,24 +170,8 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	        }
 	    }
 
-	    logger.info("Validation of currentSemAssignmentFilesList completed.");
+	    logger.info("Validation of Assignment Files List completed.");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 
 }

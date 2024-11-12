@@ -20,8 +20,8 @@ public class HeaderValidator implements HeaderResponceValidation{
 	@Override
 	  public void validateAuthenticateHeaders(Response response) {
 	        response.then()
-	                    .header("Content-Type", "application/json; charset=utf-8")
-                        .header("Cache-Control", "no-cache")
+	                    .header("Content-Type", "application/json;charset=UTF-8")
+                        .header("Cache-Control", Matchers.equalTo("no-cache, no-store, max-age=0, must-revalidate"))
 	                    .header("Connection", Matchers.equalTo("keep-alive"));
 	    }
 	

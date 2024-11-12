@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-09T15:23:20 IST" name="Default suite" finished-at="2024-11-09T15:23:23 IST" duration-ms="3060">
+  <suite started-at="2024-11-12T17:02:52 IST" name="Default suite" finished-at="2024-11-12T17:02:53 IST" duration-ms="1314">
     <groups>
     </groups>
-    <test started-at="2024-11-09T15:23:20 IST" name="Default test" finished-at="2024-11-09T15:23:23 IST" duration-ms="3060">
+    <test started-at="2024-11-12T17:02:52 IST" name="Default test" finished-at="2024-11-12T17:02:53 IST" duration-ms="1314">
       <class name="com.api.test.ViewAssignmentsFormTest">
-        <test-method signature="viewAssignmentsFormPOSTHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@402f80f5]" started-at="2024-11-09T15:23:20 IST" name="viewAssignmentsFormPOSTHeaderTest" finished-at="2024-11-09T15:23:23 IST" duration-ms="2756" status="PASS">
+        <test-method signature="viewAssignmentsFormPOSTHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@153f66e7]" started-at="2024-11-12T17:02:52 IST" name="viewAssignmentsFormPOSTHeaderTest" finished-at="2024-11-12T17:02:53 IST" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAssignmentsFormPOSTHeaderTest -->
-        <test-method signature="viewAssignmentsFormGETHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@402f80f5]" started-at="2024-11-09T15:23:23 IST" name="viewAssignmentsFormGETHeaderTest" finished-at="2024-11-09T15:23:23 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="127" status="PASS">
+        <test-method signature="viewAssignmentsFormGETHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@153f66e7]" started-at="2024-11-12T17:02:53 IST" name="viewAssignmentsFormGETHeaderTest" finished-at="2024-11-12T17:02:53 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAssignmentsFormGETHeaderTest -->
-        <test-method signature="viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@402f80f5]" started-at="2024-11-09T15:23:23 IST" name="viewAssignmentsFormDELETEHeaderTest" finished-at="2024-11-09T15:23:23 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest" duration-ms="106" status="FAIL">
+        <test-method signature="viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@153f66e7]" started-at="2024-11-12T17:02:53 IST" name="viewAssignmentsFormDELETEHeaderTest" finished-at="2024-11-12T17:02:53 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest" duration-ms="77" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
