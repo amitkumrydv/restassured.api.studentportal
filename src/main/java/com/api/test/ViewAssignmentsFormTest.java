@@ -11,9 +11,16 @@ import com.api.comman.HeaderValidatorComman;
 import com.api.endpoints.ViewAssignmentsFormEndPoint;
 import com.api.response.mapper.ViewAssignmentsFormMpper;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 
+@Epic("View Assignments")
+@Feature("Assignment ")
+@Story("User submits valid credentials (userid and password) for login")
 public class ViewAssignmentsFormTest {
 	
 	
@@ -22,7 +29,8 @@ public class ViewAssignmentsFormTest {
 	ViewAssignmentsFormMpper viewAssignment = new ViewAssignmentsFormMpper();
 	
 	
-	@Test
+	@Test(priority=1)
+	@Description("Send a POST request to the ViewAssignmentsFormTest URL and validate the response")
 	public void viewAssignmentsFormPOSTHeaderTest() {
 		
 		
@@ -63,7 +71,8 @@ public class ViewAssignmentsFormTest {
 		
 	
 	
-	@Test(dependsOnMethods = "viewAssignmentsFormPOSTHeaderTest")
+	@Test(priority=2 , dependsOnMethods = "viewAssignmentsFormPOSTHeaderTest")
+	@Description("Send a GET request to the ViewAssignmentsFormTest URL and validate the response")
 	public void viewAssignmentsFormGETHeaderTest() {
 		
 		Response response= ViewAssignmentsFormEndPoint.viewAssignmentsFormEndPointHeaderGET();
@@ -97,7 +106,8 @@ public class ViewAssignmentsFormTest {
 	}
 	
 	
-	@Test(dependsOnMethods = "viewAssignmentsFormGETHeaderTest")
+	@Test(priority=3 , dependsOnMethods = "viewAssignmentsFormPOSTHeaderTest")
+	@Description("Send a DELETE request to the ViewAssignmentsFormTest URL and validate the response")
 	public void viewAssignmentsFormDELETEHeaderTest() {
 		
 		Response response= ViewAssignmentsFormEndPoint.viewAssignmentsFormEndPointHeaderDELETE();

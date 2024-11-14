@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="3" failed="2" skipped="1">
+<testng-results ignored="0" total="9" passed="6" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T09:46:57 IST" name="StudentportalDashboard-API" finished-at="2024-11-14T09:46:59 IST" duration-ms="2541">
+  <suite started-at="2024-11-14T17:48:00 IST" name="Student-portal Dashboard-API List" finished-at="2024-11-14T17:48:03 IST" duration-ms="3144">
     <groups>
     </groups>
-    <test started-at="2024-11-14T09:46:57 IST" name="Dashboard-API" finished-at="2024-11-14T09:46:59 IST" duration-ms="2541">
+    <test started-at="2024-11-14T17:48:00 IST" name="Dashboard-API" finished-at="2024-11-14T17:48:03 IST" duration-ms="3144">
       <class name="com.api.test.ViewAssignmentsFormTest">
-        <test-method signature="viewAssignmentsFormPOSTHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@72fe8a4f]" started-at="2024-11-14T09:46:59 IST" name="viewAssignmentsFormPOSTHeaderTest" finished-at="2024-11-14T09:46:59 IST" duration-ms="205" status="PASS">
+        <test-method signature="viewAssignmentsFormPOSTHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@13047d7d]" started-at="2024-11-14T17:48:03 IST" name="viewAssignmentsFormPOSTHeaderTest" finished-at="2024-11-14T17:48:03 IST" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAssignmentsFormPOSTHeaderTest -->
-        <test-method signature="viewAssignmentsFormGETHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@72fe8a4f]" started-at="2024-11-14T09:46:59 IST" name="viewAssignmentsFormGETHeaderTest" finished-at="2024-11-14T09:46:59 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="91" status="FAIL">
+        <test-method signature="viewAssignmentsFormGETHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@13047d7d]" started-at="2024-11-14T17:48:03 IST" name="viewAssignmentsFormGETHeaderTest" finished-at="2024-11-14T17:48:03 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="103" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -46,7 +46,7 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest(ViewAssignmentsFormTest.java:74)
+at com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest(ViewAssignmentsFormTest.java:83)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,13 +81,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAssignmentsFormGETHeaderTest -->
-        <test-method signature="viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@72fe8a4f]" started-at="2024-11-14T09:46:59 IST" name="viewAssignmentsFormDELETEHeaderTest" finished-at="2024-11-14T09:46:59 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest" duration-ms="0" status="SKIP">
+        <test-method signature="viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@13047d7d]" started-at="2024-11-14T17:48:03 IST" name="viewAssignmentsFormDELETEHeaderTest" finished-at="2024-11-14T17:48:03 IST" depends-on-methods="com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@72fe8a4f] depends on not successfully finished methods]]>
+              <![CDATA[Method ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@13047d7d] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@72fe8a4f] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@13047d7d] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -115,20 +115,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- viewAssignmentsFormDELETEHeaderTest -->
       </class> <!-- com.api.test.ViewAssignmentsFormTest -->
       <class name="com.api.test.GetVideosForHomeTest">
-        <test-method signature="getVideosForHomePostHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@155d1021]" started-at="2024-11-14T09:46:58 IST" name="getVideosForHomePostHeaderTest" finished-at="2024-11-14T09:46:59 IST" duration-ms="690" status="PASS">
+        <test-method signature="getVideosForHomePostHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@f2c488]" started-at="2024-11-14T17:48:02 IST" name="getVideosForHomePostHeaderTest" finished-at="2024-11-14T17:48:02 IST" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getVideosForHomePostHeaderTest -->
-        <test-method signature="getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@155d1021]" started-at="2024-11-14T09:46:59 IST" name="getVideosForHomeGetHeaderTest" finished-at="2024-11-14T09:46:59 IST" depends-on-methods="com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="316" status="FAIL">
+        <test-method signature="getVideosForHomeGetHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@f2c488]" started-at="2024-11-14T17:48:02 IST" name="getVideosForHomeGetHeaderTest" finished-at="2024-11-14T17:48:03 IST" depends-on-methods="com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVideosForHomeGetHeaderTest -->
+        <test-method signature="getVideosForHomeDELETEHeaderTest()[pri:0, instance:com.api.test.GetVideosForHomeTest@f2c488]" started-at="2024-11-14T17:48:03 IST" name="getVideosForHomeDELETEHeaderTest" finished-at="2024-11-14T17:48:03 IST" depends-on-methods="com.api.test.GetVideosForHomeTest.getVideosForHomeGetHeaderTest" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVideosForHomeDELETEHeaderTest -->
+      </class> <!-- com.api.test.GetVideosForHomeTest -->
+      <class name="com.api.test.AuthenticateTest">
+        <test-method signature="authenticatePOSTHeaderTest()[pri:0, instance:com.api.test.AuthenticateTest@4bd2f0dc]" started-at="2024-11-14T17:48:00 IST" name="authenticatePOSTHeaderTest" finished-at="2024-11-14T17:48:01 IST" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticatePOSTHeaderTest -->
+        <test-method signature="authenticateGETHeaderTest()[pri:0, instance:com.api.test.AuthenticateTest@4bd2f0dc]" started-at="2024-11-14T17:48:01 IST" name="authenticateGETHeaderTest" finished-at="2024-11-14T17:48:01 IST" depends-on-methods="com.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticateGETHeaderTest -->
+        <test-method signature="authenticateDELETEHeaderTest()[pri:0, instance:com.api.test.AuthenticateTest@4bd2f0dc]" started-at="2024-11-14T17:48:01 IST" name="authenticateDELETEHeaderTest" finished-at="2024-11-14T17:48:02 IST" depends-on-methods="com.api.test.AuthenticateTest.authenticateGETHeaderTest" duration-ms="130" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-Expected status code <300> but was <405>.
+Expected status code <405> but was <500>.
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <300> but was <405>.
+Expected status code <405> but was <500>.
 
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -151,17 +169,12 @@ at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
 at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.api.test.GetVideosForHomeTest.getVideosForHomeGetHeaderTest(GetVideosForHomeTest.java:67)
+at com.api.test.AuthenticateTest.authenticateDELETEHeaderTest(AuthenticateTest.java:116)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -195,14 +208,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getVideosForHomeGetHeaderTest -->
-      </class> <!-- com.api.test.GetVideosForHomeTest -->
-      <class name="com.api.test.AuthenticateTest">
-        <test-method signature="authenticateTestApi()[pri:0, instance:com.api.test.AuthenticateTest@3c443976]" started-at="2024-11-14T09:46:57 IST" name="authenticateTestApi" finished-at="2024-11-14T09:46:58 IST" duration-ms="1162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- authenticateTestApi -->
+        </test-method> <!-- authenticateDELETEHeaderTest -->
       </class> <!-- com.api.test.AuthenticateTest -->
     </test> <!-- Dashboard-API -->
-  </suite> <!-- StudentportalDashboard-API -->
+  </suite> <!-- Student-portal Dashboard-API List -->
 </testng-results>

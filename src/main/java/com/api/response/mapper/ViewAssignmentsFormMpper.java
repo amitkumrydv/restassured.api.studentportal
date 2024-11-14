@@ -131,7 +131,7 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	            jsonFieldsEncountered.add(fieldName);
 
 	            if (jsonFieldValue == null) {
-	            	logger.warn("Response field: {} is null",jsonFieldValue );
+	            	logger.warn("Response field: {} is ",jsonFieldValue );
 	            	continue;
 	            }
 
@@ -139,7 +139,6 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 
 	            if (pojoFieldNames.contains(fieldName)) {
 	            	
-	            	System.out.println("------"+pojoFieldNames);
 	                try {
 	                	
 	                	// Logic for Type validation

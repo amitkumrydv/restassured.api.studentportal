@@ -17,7 +17,7 @@ public class GetVideosForHomePayload {
 
 	public  static GetVideosForHomePojo getVideosForHomePaloadData() {
 
-		Response authenticateResponse = AuthenticateEndPoint.authenticateResponse();
+		Response authenticateResponse = AuthenticateEndPoint.authenticateResponseForPOST();
 
 		GetVideosForHomePojo getVideosForHomePojo = new GetVideosForHomePojo();
 

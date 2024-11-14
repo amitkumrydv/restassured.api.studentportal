@@ -20,7 +20,7 @@ public class AuthenticateEndPoint {
 	
 	 private static  final Logger  logger = LoggerFactory.getLogger(AuthenticateEndPoint.class);
 
-	    public static Response authenticateResponse() {
+	    public static Response authenticateResponseForPOST() {
 	        AuthenticatePayload authenticate = new AuthenticatePayload();
 
 	        logger.info("Sending authentication request to URL: {}", Routs.Authenticate_url);
@@ -38,5 +38,42 @@ public class AuthenticateEndPoint {
 	        return response;
 	    }
 	
+	    
+	    public static Response authenticateResponseForGET() {
+	        AuthenticatePayload authenticate = new AuthenticatePayload();
+
+	        logger.info("Sending authentication request to URL: {}", Routs.Authenticate_url);
+	        
+	        Response response = RestAssured.given()
+	                .contentType(ContentType.JSON)
+	                .accept(ContentType.JSON)
+	                .body(authenticate.authenticatePyloadData())
+	                .when()
+	                .get(Routs.Authenticate_url);
+
+	        logger.info("Received response with status code: {}", response.getStatusCode());
+	        logger.debug("Response body: {}", response.getBody().asPrettyString());
+
+	        return response;
+	    }
+	    
+	    
+	    public static Response authenticateResponseForDELETE() {
+	        AuthenticatePayload authenticate = new AuthenticatePayload();
+
+	        logger.info("Sending authentication request to URL: {}", Routs.Authenticate_url);
+	        
+	        Response response = RestAssured.given()
+	                .contentType(ContentType.JSON)
+	                .accept(ContentType.JSON)
+	                .body(authenticate.authenticatePyloadData())
+	                .when()
+	                .delete(Routs.Authenticate_url);
+
+	        logger.info("Received response with status code: {}", response.getStatusCode());
+	        logger.debug("Response body: {}", response.getBody().asPrettyString());
+
+	        return response;
+	    }
 
 }

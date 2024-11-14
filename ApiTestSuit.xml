@@ -2,7 +2,7 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="StudentportalDashboard-API" allow-return-values="true"
+<suite name="Student-portal Dashboard-API List" allow-return-values="true"
 	verbose="100" parallel="false" preserve-order="true">
 
 	<!-- <listeners>

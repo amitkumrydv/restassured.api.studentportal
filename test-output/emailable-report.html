@@ -8,13 +8,13 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">StudentportalDashboard-API</th></tr>
-<tr><td><a href="#t0">Dashboard-API</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">2,541</td><td></td><td></td></tr>
+<tr><th colspan="8">Student-portal Dashboard-API List</th></tr>
+<tr><td><a href="#t0">Dashboard-API</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">3,144</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">StudentportalDashboard-API</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Dashboard-API &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.api.test.GetVideosForHomeTest</td><td><a href="#m0">getVideosForHomeGetHeaderTest</a></td><td rowspan="1">1731557819324</td><td rowspan="1">316</td></tr><tr class="failedodd"><td rowspan="1">com.api.test.ViewAssignmentsFormTest</td><td><a href="#m1">viewAssignmentsFormGETHeaderTest</a></td><td rowspan="1">1731557819850</td><td rowspan="1">91</td></tr><tr><th colspan="4">Dashboard-API &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.api.test.ViewAssignmentsFormTest</td><td><a href="#m2">viewAssignmentsFormDELETEHeaderTest</a></td><td rowspan="1">1731557819943</td><td rowspan="1">0</td></tr><tr><th colspan="4">Dashboard-API &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.api.test.AuthenticateTest</td><td><a href="#m3">authenticateTestApi</a></td><td rowspan="1">1731557817423</td><td rowspan="1">1162</td></tr><tr class="passedodd"><td rowspan="1">com.api.test.GetVideosForHomeTest</td><td><a href="#m4">getVideosForHomePostHeaderTest</a></td><td rowspan="1">1731557818631</td><td rowspan="1">690</td></tr><tr class="passedeven"><td rowspan="1">com.api.test.ViewAssignmentsFormTest</td><td><a href="#m5">viewAssignmentsFormPOSTHeaderTest</a></td><td rowspan="1">1731557819644</td><td rowspan="1">205</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Student-portal Dashboard-API List</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Dashboard-API &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.api.test.AuthenticateTest</td><td><a href="#m0">authenticateDELETEHeaderTest</a></td><td rowspan="1">1731586681925</td><td rowspan="1">130</td></tr><tr class="failedodd"><td rowspan="1">com.api.test.ViewAssignmentsFormTest</td><td><a href="#m1">viewAssignmentsFormGETHeaderTest</a></td><td rowspan="1">1731586683530</td><td rowspan="1">103</td></tr><tr><th colspan="4">Dashboard-API &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.api.test.ViewAssignmentsFormTest</td><td><a href="#m2">viewAssignmentsFormDELETEHeaderTest</a></td><td rowspan="1">1731586683636</td><td rowspan="1">0</td></tr><tr><th colspan="4">Dashboard-API &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.api.test.AuthenticateTest</td><td><a href="#m3">authenticateGETHeaderTest</a></td><td rowspan="1">1731586681721</td><td rowspan="1">201</td></tr><tr class="passedeven"><td><a href="#m4">authenticatePOSTHeaderTest</a></td><td rowspan="1">1731586680519</td><td rowspan="1">1160</td></tr><tr class="passedodd"><td rowspan="3">com.api.test.GetVideosForHomeTest</td><td><a href="#m5">getVideosForHomeDELETEHeaderTest</a></td><td rowspan="1">1731586683055</td><td rowspan="1">300</td></tr><tr class="passedodd"><td><a href="#m6">getVideosForHomeGetHeaderTest</a></td><td rowspan="1">1731586682756</td><td rowspan="1">296</td></tr><tr class="passedodd"><td><a href="#m7">getVideosForHomePostHeaderTest</a></td><td rowspan="1">1731586682060</td><td rowspan="1">693</td></tr><tr class="passedeven"><td rowspan="1">com.api.test.ViewAssignmentsFormTest</td><td><a href="#m8">viewAssignmentsFormPOSTHeaderTest</a></td><td rowspan="1">1731586683357</td><td rowspan="1">170</td></tr></tbody>
 </table>
-<h2>Dashboard-API</h2><h3 id="m0">com.api.test.GetVideosForHomeTest#getVideosForHomeGetHeaderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;300&gt; but was &lt;405&gt;.
+<h2>Dashboard-API</h2><h3 id="m0">com.api.test.AuthenticateTest#authenticateDELETEHeaderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;500&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -37,17 +37,12 @@ Expected status code &lt;300&gt; but was &lt;405&gt;.
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
 	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.api.test.GetVideosForHomeTest.getVideosForHomeGetHeaderTest(GetVideosForHomeTest.java:67)
+	at com.api.test.AuthenticateTest.authenticateDELETEHeaderTest(AuthenticateTest.java:116)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -104,7 +99,7 @@ Expected status code &lt;500&gt; but was &lt;405&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest(ViewAssignmentsFormTest.java:74)
+	at com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest(ViewAssignmentsFormTest.java:83)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -134,7 +129,7 @@ Expected status code &lt;500&gt; but was &lt;405&gt;.
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.api.test.ViewAssignmentsFormTest#viewAssignmentsFormDELETEHeaderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@72fe8a4f] depends on not successfully finished methods
+<h3 id="m2">com.api.test.ViewAssignmentsFormTest#viewAssignmentsFormDELETEHeaderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()[pri:0, instance:com.api.test.ViewAssignmentsFormTest@13047d7d] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -155,8 +150,11 @@ Expected status code &lt;500&gt; but was &lt;405&gt;.
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.api.test.AuthenticateTest#authenticateTestApi</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.api.test.GetVideosForHomeTest#getVideosForHomePostHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.api.test.ViewAssignmentsFormTest#viewAssignmentsFormPOSTHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.api.test.AuthenticateTest#authenticateGETHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.api.test.AuthenticateTest#authenticatePOSTHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.api.test.GetVideosForHomeTest#getVideosForHomeDELETEHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.api.test.GetVideosForHomeTest#getVideosForHomeGetHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.api.test.GetVideosForHomeTest#getVideosForHomePostHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.api.test.ViewAssignmentsFormTest#viewAssignmentsFormPOSTHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

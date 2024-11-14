@@ -1,0 +1,3 @@
+testValidLogin: 1001
+testInvalidLogin: 1002
+testRegisterUser: 2001
