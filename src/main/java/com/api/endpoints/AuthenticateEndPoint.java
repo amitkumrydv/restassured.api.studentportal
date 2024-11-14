@@ -7,7 +7,7 @@ import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.api.payload.AuthenticatePyload;
+import com.api.payload.AuthenticatePayload;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -21,7 +21,7 @@ public class AuthenticateEndPoint {
 	 private static  final Logger  logger = LoggerFactory.getLogger(AuthenticateEndPoint.class);
 
 	    public static Response authenticateResponse() {
-	        AuthenticatePyload authenticate = new AuthenticatePyload();
+	        AuthenticatePayload authenticate = new AuthenticatePayload();
 
 	        logger.info("Sending authentication request to URL: {}", Routs.Authenticate_url);
 	        

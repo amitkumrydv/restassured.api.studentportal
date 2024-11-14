@@ -131,14 +131,18 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	            jsonFieldsEncountered.add(fieldName);
 
 	            if (jsonFieldValue == null) {
-	            	logger.warn("Response field: {} is null" );
+	            	logger.warn("Response field: {} is null",jsonFieldValue );
 	            	continue;
 	            }
 
 	            Class<?> jsonFieldType = jsonFieldValue.getClass();
 
 	            if (pojoFieldNames.contains(fieldName)) {
+	            	
+	            	System.out.println("------"+pojoFieldNames);
 	                try {
+	                	
+	                	// Logic for Type validation
 	                    Field pojoField = ViewAssignmentsFormPojo.class.getDeclaredField(
 	                        Arrays.stream(pojoFields)
 	                              .filter(f -> getJsonPropertyName(f).equals(fieldName))
@@ -160,6 +164,7 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	                }
 	            } else {
 	                logger.warn("Field {} is not present in POJO", fieldName);
+	                Assert.fail("Field is not present in POJO" + fieldName);
 	            }
 	        }
 	    }

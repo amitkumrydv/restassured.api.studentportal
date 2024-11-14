@@ -414,6 +414,29 @@ public class AuthenticationPojo {
 
 	    @JsonProperty("isStudent")
 	    private Object isStudent;
+	    @JsonProperty("number_of_assignments")
+	    private int numberOfAssignments;
+
+	    @JsonProperty("unmark_cc_list")
+	    private int unMarkCCList;
+
+	    @JsonProperty("fail_subject_submission_count")
+	    private int failSubjectSubmissionCount;
+
+	    @JsonProperty("fail_subjects_end_date_time")
+	    private String failSubjectsEndDateTime;
+
+	    @JsonProperty("current_sem_end_date_time")
+	    private String currentSemEndDateTime;
+
+	    @JsonProperty("fail_subjects_count")
+	    private int failSubjectsCount;
+
+	    @JsonProperty("success_message")
+	    private String successMessage;
+
+	    @JsonProperty("faculties")
+	    private String faculties;
 
 		public Boolean getCareerForum() {
 			return careerForum;
@@ -1469,6 +1492,70 @@ public class AuthenticationPojo {
 
 		public void setIsStudent(Object isStudent) {
 			this.isStudent = isStudent;
+		}
+
+		public int getNumberOfAssignments() {
+			return numberOfAssignments;
+		}
+
+		public void setNumberOfAssignments(int numberOfAssignments) {
+			this.numberOfAssignments = numberOfAssignments;
+		}
+
+		public int getUnMarkCCList() {
+			return unMarkCCList;
+		}
+
+		public void setUnMarkCCList(int unMarkCCList) {
+			this.unMarkCCList = unMarkCCList;
+		}
+
+		public int getFailSubjectSubmissionCount() {
+			return failSubjectSubmissionCount;
+		}
+
+		public void setFailSubjectSubmissionCount(int failSubjectSubmissionCount) {
+			this.failSubjectSubmissionCount = failSubjectSubmissionCount;
+		}
+
+		public String getFailSubjectsEndDateTime() {
+			return failSubjectsEndDateTime;
+		}
+
+		public void setFailSubjectsEndDateTime(String failSubjectsEndDateTime) {
+			this.failSubjectsEndDateTime = failSubjectsEndDateTime;
+		}
+
+		public String getCurrentSemEndDateTime() {
+			return currentSemEndDateTime;
+		}
+
+		public void setCurrentSemEndDateTime(String currentSemEndDateTime) {
+			this.currentSemEndDateTime = currentSemEndDateTime;
+		}
+
+		public int getFailSubjectsCount() {
+			return failSubjectsCount;
+		}
+
+		public void setFailSubjectsCount(int failSubjectsCount) {
+			this.failSubjectsCount = failSubjectsCount;
+		}
+
+		public String getSuccessMessage() {
+			return successMessage;
+		}
+
+		public void setSuccessMessage(String successMessage) {
+			this.successMessage = successMessage;
+		}
+
+		public String getFaculties() {
+			return faculties;
+		}
+
+		public void setFaculties(String faculties) {
+			this.faculties = faculties;
 		}
 
 	    // Continue for remaining fields...

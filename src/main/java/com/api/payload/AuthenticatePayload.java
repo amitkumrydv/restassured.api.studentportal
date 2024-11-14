@@ -7,9 +7,9 @@ import org.slf4j.LoggerFactory;
 import com.api.pojoClass.AuthenticationPojo;
 import com.api.utilities.ReadConfig;
 
-public class AuthenticatePyload {
+public class AuthenticatePayload {
 	
-	private static final Logger logger = LoggerFactory.getLogger(AuthenticatePyload.class);
+	private static final Logger logger = LoggerFactory.getLogger(AuthenticatePayload.class);
 	ReadConfig readConfig = new ReadConfig();
     AuthenticationPojo  authenticationPojo = new AuthenticationPojo();
 	

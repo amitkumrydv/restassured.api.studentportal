@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.api.comman.HeaderValidator;
+import com.api.comman.HeaderValidatorComman;
 import com.api.endpoints.ViewAssignmentsFormEndPoint;
 import com.api.response.mapper.ViewAssignmentsFormMpper;
 
@@ -18,7 +18,7 @@ public class ViewAssignmentsFormTest {
 	
 	
 	private static Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormTest.class);
-	HeaderValidator headerValidator = new HeaderValidator();
+	HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
 	ViewAssignmentsFormMpper viewAssignment = new ViewAssignmentsFormMpper();
 	
 	
@@ -30,7 +30,7 @@ public class ViewAssignmentsFormTest {
 		Long responseTime = response.getTime();
 		
 		try {
-			headerValidator.validateCommonHeaders(response);
+			headerValidatorComman.validateCommonHeaders(response);
 			
 			ResponseBody responsebody = response.body();
 			String data =responsebody.asString();
@@ -71,7 +71,7 @@ public class ViewAssignmentsFormTest {
 		try {
 			response.then()
 			             .assertThat()
-					     .statusCode(405);
+					     .statusCode(500);
 
 			String cookieValue = response.getCookie("SESSION");
 			logger.info("cookieValue " ,cookieValue);

@@ -38,7 +38,7 @@ public class ViewAssignmentsFormEndPoint {
             logger.info("POST request completed with status code: {}", response.getStatusCode());
             logger.debug("POST response body: {}", response.getBody().asString());
         } catch (Exception e) {
-            logger.error("Exception occurred during POST request: ", e);
+            logger.error("Exception occurred for the ", Routs.post_url_viewAssignmentsForm, " ",e);
             throw e;
         }
 

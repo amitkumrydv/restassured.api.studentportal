@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.api.comman.HeaderValidator;
+import com.api.comman.HeaderValidatorComman;
 import com.api.endpoints.GetVideosForHomeEndPoints;
 import com.api.response.mapper.GetVideosForHomeMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -20,7 +20,7 @@ public class GetVideosForHomeTest {
 
 	@Test
 	public void getVideosForHomePostHeaderTest() throws JsonMappingException, JsonProcessingException {
-		HeaderValidator headerValidator = new HeaderValidator();
+		HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
 		GetVideosForHomeMapper getVideosForHomeMapper = new GetVideosForHomeMapper();
 
 		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderPost();
@@ -29,7 +29,7 @@ public class GetVideosForHomeTest {
 		
 	        
 		try {
-			headerValidator.validateCommonHeaders(response);
+			headerValidatorComman.validateCommonHeaders(response);
 			getVideosForHomeMapper.GetVideosForHomeResponsValidation(response);
 			
 			
@@ -67,9 +67,8 @@ public class GetVideosForHomeTest {
 					     .statusCode(405);
 
 			String cookieValue = response.getCookie("SESSION");
-			System.out.println(" cookieValue -----------" + cookieValue);
+			logger.info(" cookieValue -----------" + cookieValue);
 
-			System.out.println("response method message " + response.body());
 			// Validate the response body is not empty
 			Assert.assertNotNull(response.getBody(), "Response body Null");
 

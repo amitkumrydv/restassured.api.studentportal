@@ -8,7 +8,7 @@ import com.api.response.validation.HeaderResponceValidation;
 import io.restassured.response.Response;
 
 
-public class HeaderValidator implements HeaderResponceValidation{
+public class HeaderValidatorComman implements HeaderResponceValidation{
 	
 	@Override
 	public void validateCommonHeaders(Response response) {

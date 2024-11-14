@@ -13,7 +13,7 @@ import com.api.pojoClass.GetVideosForHomePojo;
 
 import io.restassured.response.Response;
 
-public class GetVideosForHomePaload {
+public class GetVideosForHomePayload {
 
 	public  static GetVideosForHomePojo getVideosForHomePaloadData() {
 

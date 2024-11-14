@@ -4,7 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import com.api.comman.HeaderValidator;
+import com.api.comman.HeaderValidatorComman;
 import com.api.endpoints.AuthenticateEndPoint;
 import io.restassured.response.Response;
 import org.slf4j.Logger;
@@ -17,14 +17,14 @@ public class AuthenticateTest {
 	@Test
 	public void authenticateTestApi() {
 		
-		HeaderValidator headerValidator = new HeaderValidator();
+		HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
 		logger.info("Start authenticateTestApi test");
 
 		// @formatter:off
 		Response response = AuthenticateEndPoint.authenticateResponse();
 		Long responseTime = response.getTime();
 		  try {
-			  headerValidator.validateAuthenticateHeaders(response);
+			  headerValidatorComman.validateAuthenticateHeaders(response);
 		
 		
 	 //   assertTrue(responseTime < 1500, "Response time is within acceptable range");
