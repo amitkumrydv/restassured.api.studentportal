@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 15 11:35:44 IST 2024</td>
+<td>Started on:</td><td>Fri Nov 15 17:20:51 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1429 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1460 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,24 +75,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest()'><b>getVideosForHomePostHeaderTest</b><br>Test class: com.api.test.GetVideosForHomeTest</td>
+<td title='com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()'><b>viewAssignmentsFormDELETEHeaderTest</b><br>Test class: com.api.test.ViewAssignmentsFormTest</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected header &quot;Connection&quot; was not &quot;keep-alive&quot;, was &quot;close&quot;. Headers are:
-Vary=Origin
-Vary=Access-Control-Request-Method
-Vary=Access-Control-Request-Headers
-Date=Fri, 15 Nov 2024 06:05:45 GMT
-Cache-Control=no-cache, no-store, max-age=0, must-revalidate
-Pragma=no-cache
-Expires=0
-X-Content-Type-Options=nosniff
-Strict-Transport-Security=max-age=31536000 ; includeSubDomains
-X-XSS-Protection=1 ; mode=block
-Referrer-Policy=origin
-Content-Type=application/json
-Content-Length=0
-Connection=close
-Set-Cookie=cookiesession1=678B2867D9DA28329AD01B8964EC48DF;Expires=Sat, 15 Nov 2025 06:08:07 GMT;Path=/;HttpOnly
+Expected status code &lt;405&gt; but was &lt;500&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -116,10 +101,11 @@ Set-Cookie=cookiesession1=678B2867D9DA28329AD01B8964EC48DF;Expires=Sat, 15 Nov 2
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:191)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.header(ValidatableResponseOptionsImpl.java:114)
-	at com.api.comman.HeaderValidatorComman.validateCommonHeaders(HeaderValidatorComman.java:18)
-	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:42)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest(ViewAssignmentsFormTest.java:122)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -148,24 +134,9 @@ Set-Cookie=cookiesession1=678B2867D9DA28329AD01B8964EC48DF;Expires=Sat, 15 Nov 2
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1001114349", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1001114349'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected header &quot;Connection&quot; was not &quot;keep-alive&quot;, was &quot;close&quot;. Headers are:
-Vary=Origin
-Vary=Access-Control-Request-Method
-Vary=Access-Control-Request-Headers
-Date=Fri, 15 Nov 2024 06:05:45 GMT
-Cache-Control=no-cache, no-store, max-age=0, must-revalidate
-Pragma=no-cache
-Expires=0
-X-Content-Type-Options=nosniff
-Strict-Transport-Security=max-age=31536000 ; includeSubDomains
-X-XSS-Protection=1 ; mode=block
-Referrer-Policy=origin
-Content-Type=application/json
-Content-Length=0
-Connection=close
-Set-Cookie=cookiesession1=678B2867D9DA28329AD01B8964EC48DF;Expires=Sat, 15 Nov 2025 06:08:07 GMT;Path=/;HttpOnly
+</pre></div><a href='#' onClick='toggleBox("stack-trace25630139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25630139'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;500&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -189,10 +160,11 @@ Set-Cookie=cookiesession1=678B2867D9DA28329AD01B8964EC48DF;Expires=Sat, 15 Nov 2
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:191)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.header(ValidatableResponseOptionsImpl.java:114)
-	at com.api.comman.HeaderValidatorComman.validateCommonHeaders(HeaderValidatorComman.java:18)
-	at com.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest(GetVideosForHomeTest.java:42)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest(ViewAssignmentsFormTest.java:122)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -222,108 +194,26 @@ Set-Cookie=cookiesession1=678B2867D9DA28329AD01B8964EC48DF;Expires=Sat, 15 Nov 2
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>1</td>
-<td>com.api.test.GetVideosForHomeTest@6622a690</td></tr>
+<td>0</td>
+<td>com.api.test.ViewAssignmentsFormTest@49dbaaf3</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.api.test.GetVideosForHomeTest.getVideosForHomeGetHeaderTest()'><b>getVideosForHomeGetHeaderTest</b><br>Test class: com.api.test.GetVideosForHomeTest</td>
-<td><div><pre>java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:2, instance:com.api.test.GetVideosForHomeTest@6622a690] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace731573979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace731573979'><pre>java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeGetHeaderTest()[pri:2, instance:com.api.test.GetVideosForHomeTest@6622a690] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
+<td title='com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest()'><b>viewAssignmentsFormGETHeaderTest</b><br>Test class: com.api.test.ViewAssignmentsFormTest</td>
+<td></td>
 <td>0</td>
-<td>com.api.test.GetVideosForHomeTest@6622a690</td></tr>
+<td>com.api.test.ViewAssignmentsFormTest@49dbaaf3</td></tr>
 <tr>
-<td title='com.api.test.GetVideosForHomeTest.getVideosForHomeDELETEHeaderTest()'><b>getVideosForHomeDELETEHeaderTest</b><br>Test class: com.api.test.GetVideosForHomeTest</td>
-<td><div><pre>java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeDELETEHeaderTest()[pri:3, instance:com.api.test.GetVideosForHomeTest@6622a690] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1583992583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1583992583'><pre>java.lang.Throwable: Method GetVideosForHomeTest.getVideosForHomeDELETEHeaderTest()[pri:3, instance:com.api.test.GetVideosForHomeTest@6622a690] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.api.test.GetVideosForHomeTest@6622a690</td></tr>
+<td title='com.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest()'><b>viewAssignmentsFormPOSTHeaderTest</b><br>Test class: com.api.test.ViewAssignmentsFormTest</td>
+<td></td>
+<td>1</td>
+<td>com.api.test.ViewAssignmentsFormTest@49dbaaf3</td></tr>
 </table><p>
 </body>
 </html>

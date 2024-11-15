@@ -112,6 +112,7 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	    logger.info("Starting validation of current semester assignments...");
 
 	    Map<String, Object> jsonMap = objectMapper.readValue(responseBodyData, Map.class);
+	    //currentSemAssignmentFilesList is in json array
 	    List<Map<String, Object>> assignmentFilesList = 
 	            (List<Map<String, Object>>) jsonMap.get("currentSemAssignmentFilesList");
 

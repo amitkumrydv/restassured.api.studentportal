@@ -17,6 +17,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 
 
 @Epic("Get Videos For Home")
@@ -35,16 +36,19 @@ public class GetVideosForHomeTest {
 
 		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderPost();
 		Long responseTime = response.getTime();
-		
-		
-	        
+   
 		try {
-			headerValidatorComman.commonHeadersValidation(response);
-			getVideosForHomeMapper.GetVideosForHomeResponsValidation(response);
-			
 			
 			// Validate the response status code
 			Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");
+			headerValidatorComman.getVideosForHomeHeadersValidation(response);
+			
+			ResponseBody responsebody = response.body();
+			String data =responsebody.asString();		
+			getVideosForHomeMapper.GetVideosForHomeResponsValidation(response);
+			
+			
+		
 			// Validate the response body is not empty
 			Assert.assertNotNull(response.getBody(), "Response body validation");
 			assertTrue(responseTime < 1500, "Response time is within acceptable range");
@@ -106,7 +110,7 @@ public class GetVideosForHomeTest {
 	@Description("Send a DELETE request to the getVideosForHome URL and validate the response")
 	public void getVideosForHomeDELETEHeaderTest() {
 
-		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderGet();
+		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderDELETE();
 		Long responseTime = response.getTime();
 		try {
 			response.then()

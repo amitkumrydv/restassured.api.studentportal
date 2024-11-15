@@ -1,11 +1,17 @@
 package com.api.test;
 
 import static org.testng.Assert.assertTrue;
+
+import java.net.http.HttpClient;
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.api.comman.HeaderValidatorComman;
 import com.api.endpoints.AuthenticateEndPoint;
 import com.api.endpoints.Routs;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -20,12 +26,13 @@ import org.slf4j.LoggerFactory;
 @Feature("User Authentication")
 @Story("User submits valid credentials (userid and password) for login")
 public class AuthenticateTest {
+	
 
 	private static final Logger logger = (Logger) LoggerFactory.getLogger(AuthenticateTest.class);
 
 	@Test(priority=1)
 	@Description("Send a POST request to the authentication URL and validate the response")
-	public void authenticatePOSTHeaderTest() {
+	public Response authenticatePOSTHeaderTest() {
 		
 		HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
 		logger.info("Start authenticateTestApi test");
@@ -34,6 +41,9 @@ public class AuthenticateTest {
 		Response response = AuthenticateEndPoint.authenticateResponseForPOST();
 		Long responseTime = response.getTime();
 		  try {
+			  
+				// Validate the response status code
+				Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");
 			  headerValidatorComman.authenticateHeadersValidation(response);
 		
 		
@@ -54,7 +64,7 @@ public class AuthenticateTest {
 	            throw new RuntimeException(e); // Mark as failed due to a non-assertion error
 	        }
 		
-
+      return null;
 	}
 	
 	
@@ -74,7 +84,7 @@ public class AuthenticateTest {
 					     .statusCode(405);
 
 			String cookieValue = response.getCookie("SESSION");
-			logger.info(" cookieValue -----------" + cookieValue);
+			logger.info("cookieValue:" + cookieValue);
 
 			// Validate the response body is not empty
 			Assert.assertNotNull(response.getBody(), "Response body Null");
@@ -114,7 +124,7 @@ public class AuthenticateTest {
 					     .statusCode(405);
 
 			String cookieValue = response.getCookie("SESSION");
-			logger.info(" cookieValue -----------" + cookieValue);
+			logger.info("cookieValue:" + cookieValue);
 
 			// Validate the response body is not empty
 			Assert.assertNotNull(response.getBody(), "Response body Null");

@@ -31,7 +31,7 @@ public class HeaderValidatorComman implements HeaderResponceValidation {
 		response.then()
 		        .header("Content-Type", "application/json")
 				.header("Cache-Control", Matchers.equalTo("no-cache, no-store, max-age=0, must-revalidate"))
-				.header("Connection", Matchers.equalTo("keep-alive"));
+				.header("Connection", Matchers.equalTo("close"));
 
 	}
 

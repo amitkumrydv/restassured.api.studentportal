@@ -38,9 +38,12 @@ public class ViewAssignmentsFormTest {
 		Long responseTime = response.getTime();
 		
 		try {
+			
+			// Validate the response status code
+			Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");			
 			headerValidatorComman.commonHeadersValidation(response);
 			
-
+			// Convert response body into String
 			ResponseBody responsebody = response.body();
 			String data =responsebody.asString();
 			viewAssignment.ViewAssignmentsFormMapperResponsValidation(data);
