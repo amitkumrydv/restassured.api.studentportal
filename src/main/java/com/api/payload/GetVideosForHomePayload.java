@@ -6,30 +6,34 @@ import java.io.FileReader;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import com.api.endpoints.AuthenticateEndPoint;
-import com.api.jsonPath.AuthenticateJSONPath;
-import com.api.pojoClass.GetVideosForHomePojo;
+import com.api.comman.PayloadPojoComman;
 
-import io.restassured.response.Response;
+
+
 
 public class GetVideosForHomePayload {
+	
+	private static Logger logger = LoggerFactory.getLogger(GetVideosForHomePayload.class);
 
-	public  static GetVideosForHomePojo getVideosForHomePaloadData() {
+	public  static PayloadPojoComman getVideosForHomePaloadData() {
 
-		Response authenticateResponse = AuthenticateEndPoint.authenticateResponseForPOST();
+		PayloadPojoComman payloadPojoComman = new PayloadPojoComman();
+       try {
+		payloadPojoComman.getCurrentAcadMonth();
+		payloadPojoComman.getCurrentAcadYear();
+		payloadPojoComman.getCurrentSemPSSId();
 
-		GetVideosForHomePojo getVideosForHomePojo = new GetVideosForHomePojo();
+       }catch(Exception e) {
+    	   logger.error("An error occurred while fetching payload data", e);
+    	   
+       }
+       
+	return payloadPojoComman;
 
-		String month = getVideosForHomePojo.getCurrentAcadMonth();
-		getVideosForHomePojo.getCurrentAcadYear();
-		getVideosForHomePojo.getCurrentSemPSSId();
-		
-		
-		
-		return getVideosForHomePojo;
-
-	}
+}
 
 	public String getVideosForHomePaloadJSON() throws FileNotFoundException {
 

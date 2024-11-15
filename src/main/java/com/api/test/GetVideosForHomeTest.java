@@ -39,7 +39,7 @@ public class GetVideosForHomeTest {
 		
 	        
 		try {
-			headerValidatorComman.validateCommonHeaders(response);
+			headerValidatorComman.commonHeadersValidation(response);
 			getVideosForHomeMapper.GetVideosForHomeResponsValidation(response);
 			
 			
@@ -50,7 +50,7 @@ public class GetVideosForHomeTest {
 			assertTrue(responseTime < 1500, "Response time is within acceptable range");
 
 		}
-		// Rethrow the assertion error to mark the test as failed
+		// Assertion error to mark the test as failed
 		catch (AssertionError assertionError) {
 			logger.error("Assertion error: " + assertionError.getMessage());
 
@@ -86,7 +86,7 @@ public class GetVideosForHomeTest {
 			assertTrue(responseTime < 2000, "Response time is within acceptable range");
 
 		}
-		// Rethrow the assertion error to mark the test as failed
+		//Assertion error to mark the test as failed
 		catch (AssertionError assertionError) {
 			logger.error("Assertion error: " + assertionError.getMessage());
 			// This will mark the test as failed
@@ -123,7 +123,7 @@ public class GetVideosForHomeTest {
 			assertTrue(responseTime < 2000, "Response time is within acceptable range");
 
 		}
-		// Rethrow the assertion error to mark the test as failed
+		// Assertion error to mark the test as failed
 		catch (AssertionError assertionError) {
 			logger.error("Assertion error: " + assertionError.getMessage());
 			// This will mark the test as failed

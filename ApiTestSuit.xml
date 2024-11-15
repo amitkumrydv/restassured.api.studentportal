@@ -16,7 +16,7 @@
 
 		<classes>
 
-
+    <!--    <class name=" com.api.test.runner.TestRunner"></class> -->
        <class name="com.api.test.AuthenticateTest"></class>
        <class name="com.api.test.GetVideosForHomeTest"></class>
        <class name="com.api.test.ViewAssignmentsFormTest"></class>

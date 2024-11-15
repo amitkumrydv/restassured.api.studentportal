@@ -145,4 +145,5 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/xalan/xalan/2.7.0/xalan-2.7.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/qameta/allure/allure-testng/2.29.0/allure-testng-2.29.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>

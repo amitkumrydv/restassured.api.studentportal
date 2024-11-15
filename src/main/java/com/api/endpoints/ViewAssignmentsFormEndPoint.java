@@ -2,20 +2,17 @@ package com.api.endpoints;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import com.api.comman.PayloadPojoComman;
 import com.api.payload.ViewAssignmentsFormPayload;
-import com.api.pojoClass.ViewAssignmentsFormPojo;
 import com.api.test.ViewAssignmentsFormTest;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class ViewAssignmentsFormEndPoint {
-
-	//@formatter:off
+	
 	
 
-    
+	//@formatter:off
     private static final Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormTest.class);
 
     // Apply POST method
@@ -23,7 +20,7 @@ public class ViewAssignmentsFormEndPoint {
         logger.info("Initiating POST request to view assignments form endpoint.");
 
         ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        ViewAssignmentsFormPojo requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
+        PayloadPojoComman requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
 
         logger.debug("Request payload for POST: {}", requestBody);
 
@@ -36,7 +33,6 @@ public class ViewAssignmentsFormEndPoint {
                     .post(Routs.post_url_viewAssignmentsForm);
 
             logger.info("POST request completed with status code: {}", response.getStatusCode());
-            logger.debug("POST response body: {}", response.getBody().asString());
         } catch (Exception e) {
             logger.error("Exception occurred for the ", Routs.post_url_viewAssignmentsForm, " ",e);
             throw e;
@@ -50,7 +46,7 @@ public class ViewAssignmentsFormEndPoint {
         logger.info("Initiating GET request to view assignments form endpoint.");
 
         ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        ViewAssignmentsFormPojo requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
+        PayloadPojoComman requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
 
         logger.debug("Request payload for GET (will be ignored by most GET requests): {}", requestBody);
 
@@ -63,7 +59,6 @@ public class ViewAssignmentsFormEndPoint {
                     .get(Routs.post_url_viewAssignmentsForm);
 
             logger.info("GET request completed with status code: {}", response.getStatusCode());
-            logger.debug("GET response body: {}", response.getBody().asString());
         } catch (Exception e) {
             logger.error("Exception occurred during GET request: ", e);
             throw e;
@@ -77,7 +72,7 @@ public class ViewAssignmentsFormEndPoint {
         logger.info("Initiating DELETE request to view assignments form endpoint.");
 
         ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        ViewAssignmentsFormPojo requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
+        PayloadPojoComman requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
 
         logger.debug("Request payload for DELETE (if applicable): {}", requestBody);
 

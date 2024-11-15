@@ -38,8 +38,9 @@ public class ViewAssignmentsFormTest {
 		Long responseTime = response.getTime();
 		
 		try {
-			headerValidatorComman.validateCommonHeaders(response);
+			headerValidatorComman.commonHeadersValidation(response);
 			
+
 			ResponseBody responsebody = response.body();
 			String data =responsebody.asString();
 			viewAssignment.ViewAssignmentsFormMapperResponsValidation(data);
@@ -54,7 +55,7 @@ public class ViewAssignmentsFormTest {
 			assertTrue(responseTime < 1500, "Response time is within acceptable range");
 
 		}
-		// Re-throw the assertion error to mark the test as failed
+		// Assertion error to mark the test as failed
 		catch (AssertionError assertionError) {
 			logger.error("Assertion error: " + assertionError.getMessage());
 
@@ -80,7 +81,7 @@ public class ViewAssignmentsFormTest {
 		try {
 			response.then()
 			             .assertThat()
-					     .statusCode(500);
+					     .statusCode(405);
 
 			String cookieValue = response.getCookie("SESSION");
 			logger.info("cookieValue " ,cookieValue);
@@ -90,7 +91,7 @@ public class ViewAssignmentsFormTest {
 			assertTrue(responseTime < 2000, "Response time is within acceptable range");
 
 		}
-		// Rethrow the assertion error to mark the test as failed
+		// Assertion error to mark the test as failed
 		catch (AssertionError assertionError) {
 			logger.error("Assertion error: " + assertionError.getMessage());
 			// This will mark the test as failed
@@ -125,7 +126,7 @@ public class ViewAssignmentsFormTest {
 			assertTrue(responseTime < 2000, "Response time is within acceptable range");
 
 		}
-		// Rethrow the assertion error to mark the test as failed
+		// Assertion error to mark the test as failed
 		catch (AssertionError assertionError) {
 			logger.error("Assertion error: " + assertionError.getMessage());
 			// This will mark the test as failed

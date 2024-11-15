@@ -4,8 +4,11 @@ import io.restassured.response.Response;
 
 public interface HeaderResponceValidation {
 	
-	public void validateCommonHeaders(Response response);
 
-	void validateAuthenticateHeaders(Response response);
+	void commonHeadersValidation(Response response);
+
+	void getVideosForHomeHeadersValidation(Response response);
+
+	void authenticateHeadersValidation(Response response);
 
 }

@@ -1,15 +1,14 @@
 package com.api.utilities;
 import io.qameta.allure.AllureId;
-import org.yaml.snakeyaml.DumperOptions;
-import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.constructor.Constructor;
-import org.yaml.snakeyaml.representer.Representer;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Map;
 import java.util.UUID;
+
+import org.yaml.snakeyaml.DumperOptions;
+import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.Constructor;
 
 
 
@@ -24,7 +23,7 @@ public class AllureIdManager {
 
     private static void loadMapping() {
         try (FileInputStream inputStream = new FileInputStream(FILE_PATH)) {
-            Yaml yaml = new Yaml(new Constructor(Map.class));
+        	Yaml yaml = new Yaml(new Constructor(MyClass.class));
             idMapping = yaml.load(inputStream);
         } catch (IOException e) {
             throw new RuntimeException("Failed to load AllureId mapping file.", e);

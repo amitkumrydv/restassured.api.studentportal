@@ -34,7 +34,7 @@ public class AuthenticateTest {
 		Response response = AuthenticateEndPoint.authenticateResponseForPOST();
 		Long responseTime = response.getTime();
 		  try {
-			  headerValidatorComman.validateAuthenticateHeaders(response);
+			  headerValidatorComman.authenticateHeadersValidation(response);
 		
 		
 	 //   assertTrue(responseTime < 1500, "Response time is within acceptable range");
@@ -46,11 +46,11 @@ public class AuthenticateTest {
 
 		    } catch (AssertionError assertionError) {
 	            logger.error("Assertion error: " + assertionError.getMessage());
-	            // Rethrow the assertion error to mark the test as failed
+	         // Assertion error to mark the test as failed
 	            throw assertionError;  // This will mark the test as failed
 	        } catch (Exception e) {
 	            logger.warn("An error occurred: " + e.getMessage());
-	            // Optionally rethrow this exception to fail the test as well
+	            // Optionally re-throw this exception to fail the test as well
 	            throw new RuntimeException(e); // Mark as failed due to a non-assertion error
 	        }
 		
@@ -62,7 +62,6 @@ public class AuthenticateTest {
 	@Description("Send a GET request to the authentication URL and validate the response")
 	public void authenticateGETHeaderTest() {
 		
-		HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
 		logger.info("Start authenticateTestApi test");
 
 		// @formatter:off
@@ -85,11 +84,11 @@ public class AuthenticateTest {
 
 		    } catch (AssertionError assertionError) {
 	            logger.error("Assertion error: " + assertionError.getMessage());
-	            // Rethrow the assertion error to mark the test as failed
+	         // Assertion error to mark the test as failed
 	            throw assertionError;  // This will mark the test as failed
 	        } catch (Exception e) {
 	            logger.warn("An error occurred: " + e.getMessage());
-	            // Optionally rethrow this exception to fail the test as well
+	            // Optionally re-throw this exception to fail the test as well
 	            throw new RuntimeException(e); // Mark as failed due to a non-assertion error
 	        }
 		
@@ -103,7 +102,6 @@ public class AuthenticateTest {
 	@Description("Send a DELETE request to the authentication URL and validate the response")
 	public void authenticateDELETEHeaderTest() {
 		
-		HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
 		logger.info("Start authenticateTestApi test");
 
 		// @formatter:off
@@ -122,14 +120,15 @@ public class AuthenticateTest {
 			Assert.assertNotNull(response.getBody(), "Response body Null");
 
 			assertTrue(responseTime < 2000, "Response time is within acceptable range");
-
+			
+			// Assertion error to mark the test as failed
 		    } catch (AssertionError assertionError) {
 	            logger.error("Assertion error: " + assertionError.getMessage());
-	            // Rethrow the assertion error to mark the test as failed
+	  
 	            throw assertionError;  // This will mark the test as failed
 	        } catch (Exception e) {
 	            logger.warn("An error occurred: " + e.getMessage());
-	            // Optionally rethrow this exception to fail the test as well
+	            // Optionally re-throw this exception to fail the test as well
 	            throw new RuntimeException(e); // Mark as failed due to a non-assertion error
 	        }
 		

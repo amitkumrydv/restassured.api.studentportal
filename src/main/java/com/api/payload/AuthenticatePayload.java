@@ -16,11 +16,15 @@ public class AuthenticatePayload {
 	public AuthenticationPojo authenticatePyloadData() {
 		
 		logger.info("Set the userId and password in the Authentication payload ");
+		try {
         String userName=readConfig.getUsername();
 		String password=readConfig.getPassword();
 		authenticationPojo.setUserId(userName);
 		authenticationPojo.setPassword(password);
 		
+		} catch (Exception e) {
+			logger.error("An error occurred while fetching payload data", e);
+		}
 		return authenticationPojo;
 		
 	}

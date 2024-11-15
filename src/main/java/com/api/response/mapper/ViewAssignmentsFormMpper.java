@@ -131,7 +131,7 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	            jsonFieldsEncountered.add(fieldName);
 
 	            if (jsonFieldValue == null) {
-	            	logger.warn("Response field: {} is ",jsonFieldValue );
+	            //	logger.warn("Response field: {} is ",jsonFieldValue );
 	            	continue;
 	            }
 
@@ -156,7 +156,7 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	                                    fieldName, jsonFieldType.getSimpleName(), pojoFieldType.getSimpleName());
 	                        Assert.fail("Type mismatch for field: " + fieldName);
 	                    } else {
-	                        logger.info("Field {} matches type in POJO.", fieldName);
+	                       // logger.info("Field {} matches type in POJO.", fieldName);
 	                    }
 	                } catch (NoSuchFieldException e) {
 	                    logger.error("Field {} unexpectedly not found in POJO despite name match. Possible error in POJO definition.", fieldName);

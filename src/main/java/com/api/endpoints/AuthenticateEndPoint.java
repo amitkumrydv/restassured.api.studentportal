@@ -52,7 +52,6 @@ public class AuthenticateEndPoint {
 	                .get(Routs.Authenticate_url);
 
 	        logger.info("Received response with status code: {}", response.getStatusCode());
-	        logger.debug("Response body: {}", response.getBody().asPrettyString());
 
 	        return response;
 	    }

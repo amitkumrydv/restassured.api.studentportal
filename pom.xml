@@ -187,10 +187,11 @@
 			<version>2.29.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
 		<dependency>
 			<groupId>org.yaml</groupId>
 			<artifactId>snakeyaml</artifactId>
-			<version>1.29</version>
+			<version>2.3</version>
 		</dependency>
 
 
@@ -251,6 +252,11 @@
 				</plugin>
 
 
+				<plugin>
+					<groupId>io.qameta.allure</groupId>
+					<artifactId>allure-maven</artifactId>
+					<version>2.10.0</version>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>

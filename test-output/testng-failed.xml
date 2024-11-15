@@ -7,12 +7,17 @@
         <methods>
           <include name="authenticatePOSTHeaderTest"/>
           <include name="authenticateDELETEHeaderTest"/>
-          <include name="authenticateGETHeaderTest"/>
         </methods>
       </class> <!-- com.api.test.AuthenticateTest -->
+      <class name="com.api.test.GetVideosForHomeTest">
+        <methods>
+          <include name="getVideosForHomePostHeaderTest"/>
+          <include name="getVideosForHomeDELETEHeaderTest"/>
+          <include name="getVideosForHomeGetHeaderTest"/>
+        </methods>
+      </class> <!-- com.api.test.GetVideosForHomeTest -->
       <class name="com.api.test.ViewAssignmentsFormTest">
         <methods>
-          <include name="viewAssignmentsFormGETHeaderTest"/>
           <include name="viewAssignmentsFormDELETEHeaderTest"/>
           <include name="viewAssignmentsFormPOSTHeaderTest"/>
         </methods>
