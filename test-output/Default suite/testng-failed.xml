@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.api.test.GetVideosForHomeTest">
+      <class name="com.api.test.AuthenticateTest">
         <methods>
-          <include name="getVideosForHomePostHeaderTest"/>
-          <include name="getVideosForHomeEmptyPayloadTest"/>
-          <include name="getVideosForHomeDELETEHeaderTest"/>
-          <include name="getVideosForHomeInvalidPayloadTest"/>
-          <include name="getVideosForHomeMissingFieldsTest"/>
-          <include name="getVideosForHomeGetHeaderTest"/>
+          <include name="authenticateResponseForInvalidPayloadTest"/>
+          <include name="authenticateResponseForEmptyPayloadTest"/>
+          <include name="authenticateResponseForMissingFieldsTest"/>
+          <include name="authenticatePOSTHeaderTest"/>
+          <include name="authenticateDELETEHeaderTest"/>
         </methods>
-      </class> <!-- com.api.test.GetVideosForHomeTest -->
+      </class> <!-- com.api.test.AuthenticateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -18842,3 +18842,48 @@ java.lang.NullPointerException: null
 2024-11-19 16:37:50 [main] WARN  ViewAssignmentsFormMpper - Field failSubjectsEndDateTime is present in POJO but missing in the JSON response.
 2024-11-19 16:37:50 [main] INFO  ViewAssignmentsFormMpper - Validation of Assignment Files List completed.
 2024-11-19 16:37:50 [main] INFO  ApplySeverityLevel - severity lavel for succesfuly post method: normal 
+2024-11-19 17:29:35 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:29:35 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:29:37 [main] INFO  AuthenticateEndPoint - Received response with status code: 200
+2024-11-19 17:29:37 [main] INFO  ApplySeverityLevel - severity lavel for succesfuly post method: normal 
+2024-11-19 17:29:37 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:29:37 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:29:37 [main] INFO  AuthenticateEndPoint - Received response with status code: 405
+2024-11-19 17:29:37 [main] INFO  ApplySeverityLevel - severity lavel: normal 
+2024-11-19 17:29:37 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:29:37 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:29:37 [main] INFO  AuthenticateEndPoint - Received response with status code: 500
+2024-11-19 17:29:38 [main] INFO  AuthenticateEndPoint - Expected status code :405
+2024-11-19 17:29:38 [main] INFO  AuthenticateEndPoint - Expected status code :405
+2024-11-19 17:29:38 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:29:38 [main] INFO  AuthenticateEndPoint - Expected status code :200
+2024-11-19 17:34:26 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:34:26 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:34:28 [main] INFO  AuthenticateEndPoint - Received response with status code: 200
+2024-11-19 17:34:28 [main] INFO  ApplySeverityLevel - severity lavel for succesfuly post method: normal 
+2024-11-19 17:34:28 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:34:28 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:34:28 [main] INFO  AuthenticateEndPoint - Received response with status code: 405
+2024-11-19 17:34:28 [main] INFO  ApplySeverityLevel - severity lavel: normal 
+2024-11-19 17:34:28 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:34:28 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:34:28 [main] INFO  AuthenticateEndPoint - Actual status code: 500
+2024-11-19 17:34:28 [main] INFO  AuthenticateEndPoint - Actual status code :405
+2024-11-19 17:34:28 [main] INFO  AuthenticateEndPoint - Actual status code :405
+2024-11-19 17:34:28 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:34:28 [main] INFO  AuthenticateEndPoint - Actual status code :200
+2024-11-19 17:36:14 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:36:14 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:36:15 [main] INFO  AuthenticateEndPoint - Received response with status code: 200
+2024-11-19 17:36:15 [main] INFO  ApplySeverityLevel - severity lavel for succesfuly post method: normal 
+2024-11-19 17:36:15 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:36:15 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:36:15 [main] INFO  AuthenticateEndPoint - Received response with status code: 405
+2024-11-19 17:36:15 [main] INFO  ApplySeverityLevel - severity lavel: normal 
+2024-11-19 17:36:15 [main] INFO  AuthenticateEndPoint - Sending authentication request to URL: https://studentzone-ncdoe.nmims.edu/authenticate/m/authenticate_new
+2024-11-19 17:36:15 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:36:15 [main] INFO  AuthenticateEndPoint - Actual status code: 500
+2024-11-19 17:36:16 [main] INFO  AuthenticateEndPoint - Actual status code :405
+2024-11-19 17:36:16 [main] INFO  AuthenticateEndPoint - Actual status code :405
+2024-11-19 17:36:16 [main] INFO  AuthenticatePayload - Set the userId and password in the Authentication payload 
+2024-11-19 17:36:16 [main] INFO  AuthenticateEndPoint - Actual status code :401

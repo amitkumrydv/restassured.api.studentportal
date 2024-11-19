@@ -2,26 +2,23 @@ package com.api.test;
 
 import static org.testng.Assert.assertTrue;
 
-import java.net.http.HttpClient;
-import java.util.Map;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.api.comman.ApplySeverityLevel;
 import com.api.comman.HeaderValidatorComman;
+import com.api.comman.HttpStatusConstants;
 import com.api.endpoints.AuthenticateEndPoint;
-import com.api.endpoints.Routs;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.qameta.allure.AllureId;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Epic("Authentication")
 @Feature("User Authentication")
@@ -44,12 +41,22 @@ public class AuthenticateTest {
 		  try {
 			  
 				// Validate the response status code
-				Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");
+				Assert.assertEquals(response.getStatusCode(), HttpStatusConstants.OK, "Status code validation");
 			    headerValidatorComman.authenticateHeadersValidation(response);
 
 	            assertTrue(responseTime < 2000, "Response time is within acceptable range");
 	            
                ApplySeverityLevel.severityForPOST(response.getStatusCode());
+               
+               
+               Headers headers = response.getHeaders();
+
+               // Loop through each header and print its key and value
+               for (Header header : headers) {
+                   System.out.println("header--"+header.getName() + ": " + header.getValue());
+               }
+               
+               
 
 		    } catch (AssertionError assertionError) {
 	            logger.error("Assertion error: " + assertionError.getMessage());
@@ -70,14 +77,13 @@ public class AuthenticateTest {
 		
 		logger.info("Start authenticateTestApi test");
 
-		// @formatter:off
 		Response response = AuthenticateEndPoint.authenticateResponseForGET();
 		Long responseTime = response.getTime();
 		try {
 			response.then()
 			             .assertThat()
 					      // Assert that the status code is 405
-					     .statusCode(405);
+					     .statusCode(HttpStatusConstants.METHOD_NOT_ALLOWED);
 			ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
 
 			String cookieValue = response.getCookie("SESSION");
@@ -113,14 +119,12 @@ public class AuthenticateTest {
 		
 		logger.info("Start authenticateTestApi test");
 
-		// @formatter:off
 		Response response = AuthenticateEndPoint.authenticateResponseForDELETE();
 		Long responseTime = response.getTime();
 		try {
 			response.then()
 			             .assertThat()
-					      // Assert that the status code is 405
-					     .statusCode(405);
+					     .statusCode(HttpStatusConstants.METHOD_NOT_ALLOWED);
 
 			ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
 			String cookieValue = response.getCookie("SESSION");
@@ -158,7 +162,7 @@ public class AuthenticateTest {
 			response.then()
 			             .assertThat()
 					      // Assert that the status code is 405
-					     .statusCode(400);
+					     .statusCode(HttpStatusConstants.BAD_REQUEST);
 			ApplySeverityLevel.setSeverityLevelEmptyPayload(response.getStatusCode());
 			String cookieValue = response.getCookie("SESSION");
 			logger.info("cookieValue:" + cookieValue);
@@ -196,7 +200,7 @@ public class AuthenticateTest {
 			response.then()
 			             .assertThat()
 					      // Assert that the status code is 405
-					     .statusCode(400);
+					     .statusCode(HttpStatusConstants.BAD_REQUEST);
 
 			String cookieValue = response.getCookie("SESSION");
 			logger.info("cookieValue:" + cookieValue);
@@ -231,8 +235,7 @@ public class AuthenticateTest {
 	
 			response.then()
 			             .assertThat()
-					      // Assert that the status code is 405
-					     .statusCode(400);
+					     .statusCode(HttpStatusConstants.UNAUTHORIZED);
 
 			String cookieValue = response.getCookie("SESSION");
 			logger.info("cookieValue:" + cookieValue);

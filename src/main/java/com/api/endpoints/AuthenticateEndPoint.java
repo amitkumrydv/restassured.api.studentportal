@@ -66,8 +66,7 @@ public class AuthenticateEndPoint {
 	                .when()
 	                .delete(Routs.Authenticate_url);
 
-	        logger.info("Received response with status code: {}", response.getStatusCode());
-	        logger.debug("Response body: {}", response.getBody().asPrettyString());
+	        logger.info("Actual status code: {}", response.getStatusCode());
 
 	        return response;
 	    }
@@ -86,7 +85,7 @@ public class AuthenticateEndPoint {
 
 
 	      
-	        logger.info("Expected status code :{}",response.statusCode());
+	        logger.info("Actual status code :{}",response.statusCode());
 	        
 	        return response;
 	    }
@@ -105,7 +104,7 @@ public class AuthenticateEndPoint {
 
 
 	        
-	        logger.info("Expected status code :{}",response.statusCode());
+	        logger.info("Actual status code :{}",response.statusCode());
 	        return response;
 	    }
 
@@ -124,7 +123,7 @@ public class AuthenticateEndPoint {
 
 
 	       
-	        logger.info("Expected status code :{}",response.statusCode());
+	        logger.info("Actual status code :{}",response.statusCode());
 	        return response;
 	    }
 	    

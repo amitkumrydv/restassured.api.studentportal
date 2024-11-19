@@ -11,9 +11,10 @@ public class AuthenticatePayload {
 	
 	private static final Logger logger = LoggerFactory.getLogger(AuthenticatePayload.class);
 	ReadConfig readConfig = new ReadConfig();
-    AuthenticationPojo  authenticationPojo = new AuthenticationPojo();
+    
 	
 	public AuthenticationPojo authenticatePyloadData() {
+		AuthenticationPojo  authenticationPojo = new AuthenticationPojo();
 		
 		logger.info("Set the userId and password in the Authentication payload ");
 		try {
@@ -31,11 +32,12 @@ public class AuthenticatePayload {
 	
 	// Missing payload 
     public AuthenticationPojo authenticatePyloadDataForMissingFields() {
+    	AuthenticationPojo  authenticationPojo = new AuthenticationPojo();
 		
 		logger.info("Set the userId and password in the Authentication payload ");
 		try {
-        String userName=readConfig.getUsername();
-		authenticationPojo.setUserId(userName);	
+//        String userName=readConfig.getUsername();
+//		authenticationPojo.setUserId(userName);	
 		} catch (Exception e) {
 			logger.error("An error occurred while fetching payload data", e);
 		}

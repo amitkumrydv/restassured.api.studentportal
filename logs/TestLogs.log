@@ -453,3 +453,60 @@ Expected status code <405> but was <500>.
 2024-11-19 16:37:50 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
 2024-11-19 16:37:50 [main] INFO  ViewAssignmentsFormTest - Actual status code :400
 2024-11-19 16:37:50 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-19 17:29:35 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:29:37 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:29:37 [main] INFO  AuthenticateTest - cookieValue:4D907FCB3EDE427FB9624A814E520E17
+2024-11-19 17:29:37 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:29:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-19 17:29:38 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:29:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-19 17:29:38 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:29:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-19 17:29:38 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:29:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-19 17:34:26 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:34:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:34:28 [main] INFO  AuthenticateTest - cookieValue:1F64B6B5EA9EDCE4CBC7013D956A75C8
+2024-11-19 17:34:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:34:28 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-19 17:34:28 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:34:28 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-19 17:34:28 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:34:28 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-19 17:34:28 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:34:28 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-19 17:36:14 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:36:15 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:36:15 [main] INFO  AuthenticateTest - cookieValue:EA567DA116A1DC5BCC72334D2ECB53FA
+2024-11-19 17:36:15 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-19 17:36:15 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-19 17:36:15 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:36:16 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-19 17:36:16 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:36:16 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-19 17:36:16 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-19 17:36:16 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <401>.
+
