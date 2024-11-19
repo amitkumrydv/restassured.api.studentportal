@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonPojoArrayValidator {
 
-	private static Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormTest.class);
+	private static Logger logger = LoggerFactory.getLogger(JsonPojoArrayValidator.class);
     private final ObjectMapper objectMapper;
 
     public JsonPojoArrayValidator(ObjectMapper objectMapper) {
@@ -21,11 +21,9 @@ public class JsonPojoArrayValidator {
     }
 
     public <T> void validateJsonArrayAgainstPojo(String responseBodyData, Class<T> pojoClass) {
-    	System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
     	
         logger.info("Starting validation of JSON array against POJO: {}", pojoClass.getSimpleName());
         
-        System.out.println("_----------------__------------_----------"+ responseBodyData);
 
         try {
             // Parse JSON array into a List of Maps
@@ -71,15 +69,15 @@ public class JsonPojoArrayValidator {
                             Class<?> pojoFieldType = pojoField.getType();
 
                             if (!pojoFieldType.isAssignableFrom(jsonFieldType)) {
-                                logger.warn("Type mismatch for field: {}. JSON Type: {}, POJO Type: {}",
+                                logger.error("Type mismatch for field: {}. JSON Type: {}, POJO Type: {}",
                                         fieldName, jsonFieldType.getSimpleName(), pojoFieldType.getSimpleName());
-                                Assert.fail("Type mismatch for field: " + fieldName);
+                                Assert.fail("Type mismatch for field:{} " + fieldName );
                             }
                         } catch (NoSuchFieldException e) {
-                            logger.error("Field {} not found in POJO class: {}", fieldName, pojoClass.getSimpleName());
+                            Assert.fail("Field:{} not found in POJO class " + fieldName );
                         }
                     } else {
-                        logger.warn("Field {} is not present in POJO: {}", fieldName, pojoClass.getSimpleName());
+                        logger.error("Field {} is not present in POJO: {}", fieldName, pojoClass.getSimpleName());
                         Assert.fail("Field not present in POJO: " + fieldName);
                     }
                 }
@@ -88,13 +86,14 @@ public class JsonPojoArrayValidator {
             for (String pojoFieldName : pojoFieldNames) {
                 if (!jsonFieldsEncountered.contains(pojoFieldName)) {
                     logger.warn("Field {} is present in POJO but missing in the JSON response.", pojoFieldName);
+                    Assert.fail("Field is present in POJO but missing in the JSON response."+pojoFieldName);
                 }
             }
 
             logger.info("Validation completed for POJO: {}", pojoClass.getSimpleName());
         } catch (Exception e) {
             logger.error("Error during validation: {}", e.getMessage() );
-            throw new RuntimeException("Validation failed.", e);
+            Assert.fail("Error during validation:" ,e);
         }
     }
 

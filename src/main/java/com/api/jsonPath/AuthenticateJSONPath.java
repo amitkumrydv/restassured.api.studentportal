@@ -1,15 +1,11 @@
 package com.api.jsonPath;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.api.endpoints.AuthenticateEndPoint;
-import com.api.pojoClass.GetVideosForHomePojo;
-import com.api.test.GetVideosForHomeTest;
+import com.api.pojoClass.AuthenticationPojo;
 
 import io.restassured.response.Response;
 
@@ -23,7 +19,7 @@ public class AuthenticateJSONPath {
      *    authenticateResponse().
      * 2. Read the response fields using JSONPath and log values.
      */
-    public static GetVideosForHomePojo authenticateJSONPath() {
+    public static AuthenticationPojo authenticateJSONPath() {
 
         logger.info("Starting authentication JSON path process.");
 
@@ -38,7 +34,7 @@ public class AuthenticateJSONPath {
         logger.debug("Authenticate response received: {}", authenticateResponse.asString());
 
         // Initialize GetVideosForHomePojo object
-        GetVideosForHomePojo getVideosForHomePojo = new GetVideosForHomePojo();
+        AuthenticationPojo getVideosForHomePojo = new AuthenticationPojo();
 
         // Extract and log current academic month
         String currentStudentAcadMonth = authenticateResponse.path("currentAcadMonth");

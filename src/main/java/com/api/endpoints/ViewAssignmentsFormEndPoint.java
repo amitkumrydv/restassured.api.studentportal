@@ -2,10 +2,13 @@ package com.api.endpoints;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.api.comman.PayloadPojoComman;
+
+import com.api.payload.GetVideosForHomePayload;
 import com.api.payload.ViewAssignmentsFormPayload;
+import com.api.pojoClass.AuthenticationPojo;
 import com.api.test.ViewAssignmentsFormTest;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class ViewAssignmentsFormEndPoint {
@@ -20,9 +23,11 @@ public class ViewAssignmentsFormEndPoint {
         logger.info("Initiating POST request to view assignments form endpoint.");
 
         ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        PayloadPojoComman requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
+        AuthenticationPojo requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
 
         logger.debug("Request payload for POST: {}", requestBody);
+        
+        
 
         Response response;
         try {
@@ -46,7 +51,7 @@ public class ViewAssignmentsFormEndPoint {
         logger.info("Initiating GET request to view assignments form endpoint.");
 
         ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        PayloadPojoComman requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
+        AuthenticationPojo requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
 
         logger.debug("Request payload for GET (will be ignored by most GET requests): {}", requestBody);
 
@@ -72,7 +77,7 @@ public class ViewAssignmentsFormEndPoint {
         logger.info("Initiating DELETE request to view assignments form endpoint.");
 
         ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        PayloadPojoComman requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
+        AuthenticationPojo requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
 
         logger.debug("Request payload for DELETE (if applicable): {}", requestBody);
 
@@ -93,6 +98,51 @@ public class ViewAssignmentsFormEndPoint {
 
         return response;
     }
+    
+    
+    // Empty payload
+    public static Response viewAssignmentsFormEmptyPayload() {
+        // Sending an empty payload
+        String emptyPayload = "";
+        Response response;
+        try {
+            response = RestAssured.given()
+                    .header("Content-Type", "application/json")
+                    .body(emptyPayload)
+                    .when()
+                    .post(Routs.post_url_viewAssignmentsForm);
+
+      
+        logger.info("Actual status code :{}",response.statusCode());
+        } catch (Exception e) {
+            logger.error("Exception occurred during Empty request: ", e);
+            throw e;
+        }
+        return response;
+    }
+
+    //Invalid Payload
+    public static Response viewAssignmentsFormInvalidPayload() {
+        // Sending an invalid payload (malformed JSON)
+        String invalidPayload = "{ invalidJson ";
+        Response response;
+        try {
+            response = RestAssured.given()
+                    .header("Content-Type", "application/json")
+                    .body(invalidPayload)
+                    .when()
+                    .post(Routs.post_url_viewAssignmentsForm);
+
+      
+        logger.info("Actual status code :{}",response.statusCode());
+        } catch (Exception e) {
+            logger.error("Exception occurred during Invalid request: ", e);
+            throw e;
+        }
+        return response;
+    }
+
+  
     
   //@formatter:on
 }

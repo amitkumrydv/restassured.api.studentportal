@@ -2,26 +2,40 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Student-portal Dashboard-API List" allow-return-values="true"
-	verbose="100" parallel="false" preserve-order="true">
+<suite name="Student-portal Dashboard-API List"
+	allow-return-values="true" verbose="100" parallel="false"
+	preserve-order="true">
 
-	<!-- <listeners>
-
-		<listener
-			class-name="" />
-
-	</listeners> -->
+	<!-- <listeners> <listener class-name="" /> </listeners> -->
 
 	<test name="Dashboard-API">
 
 		<classes>
 
-    <!--    <class name=" com.api.test.runner.TestRunner"></class> -->
-       <class name="com.api.test.AuthenticateTest"></class>
-       <class name="com.api.test.GetVideosForHomeTest"></class>
-       <class name="com.api.test.ViewAssignmentsFormTest"></class>
-
-
+			<class name="com.api.test.AuthenticateTest">
+		<!-- 		<methods>
+					<include name="authenticatePOSTHeaderTest"></include>
+					<include name="authenticateGETHeaderTest"></include>
+					<include name="authenticateDELETEHeaderTest"></include>
+				</methods> -->
+           </class>
+           
+			<class name="com.api.test.GetVideosForHomeTest">
+			
+			<!--      <methods>
+					<include name="getVideosForHomePostHeaderTest"></include>
+					<include name="getVideosForHomeGetHeaderTest"></include>
+					<include name="getVideosForHomeDELETEHeaderTest"></include>
+				</methods> -->
+           </class>
+           
+			<class name="com.api.test.ViewAssignmentsFormTest">
+             <!--     <methods>
+					<include name="viewAssignmentsFormPOSTHeaderTest"></include>
+					<include name="viewAssignmentsFormGETHeaderTest"></include>
+					<include name="viewAssignmentsFormDELETEHeaderTest"></include>
+				</methods> -->
+           </class>
 
 		</classes>
 

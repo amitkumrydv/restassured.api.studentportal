@@ -5,8 +5,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
+import com.api.comman.ApplySeverityLevel;
 import com.api.comman.HeaderValidatorComman;
+import com.api.comman.HttpStatusConstants;
 import com.api.endpoints.GetVideosForHomeEndPoints;
 import com.api.response.mapper.GetVideosForHomeMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -17,130 +18,246 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
 
 
 @Epic("Get Videos For Home")
-@Feature("Visible the videos on Dashboard")
-@Story("not Define")
+@Feature("session visible on the Dashboard")
+@Story("Applicable sessions are should be visible")
 public class GetVideosForHomeTest {
 
 	// @formatter:off
 	private static final Logger logger = LoggerFactory.getLogger(GetVideosForHomeTest.class);
 
-	@Test(priority=1)
+	/*
+	 * This test method depends on the response of the authenticatePOSTHeaderTest.
+	 * The response from that method is used as payload data for this test.
+	 */
+	@Test(priority = 1)
 	@Description("Send a POST request to the getVideosForHome URL and validate the response")
 	public void getVideosForHomePostHeaderTest() throws JsonMappingException, JsonProcessingException {
-		HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
-		GetVideosForHomeMapper getVideosForHomeMapper = new GetVideosForHomeMapper();
+	    HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
+	    GetVideosForHomeMapper getVideosForHomeMapper = new GetVideosForHomeMapper();
 
-		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderPost();
-		Long responseTime = response.getTime();
-   
-		try {
-			
-			// Validate the response status code
-			Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");
-			headerValidatorComman.getVideosForHomeHeadersValidation(response);
-			
-			ResponseBody responsebody = response.body();
-			String data =responsebody.asString();		
-			getVideosForHomeMapper.GetVideosForHomeResponsValidation(response);
-			
-			
-		
-			// Validate the response body is not empty
-			Assert.assertNotNull(response.getBody(), "Response body validation");
-			assertTrue(responseTime < 1500, "Response time is within acceptable range");
+	    Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderPost();
+	    Long responseTime = response.getTime();
 
-		}
-		// Assertion error to mark the test as failed
-		catch (AssertionError assertionError) {
-			logger.error("Assertion error: " + assertionError.getMessage());
+	    try {
+	    	// Set severity Dynamically
+	    	ApplySeverityLevel.severityForPOST(response.getStatusCode());
+	        // Validate that the response status code is 200
+	        Assert.assertEquals(response.getStatusCode(), HttpStatusConstants.OK, "Status code validation");
 
-			throw assertionError;
-		}
-		// Optionally re-throw this exception to fail the test as well
-		catch (Exception e) {
-			logger.warn("An error occurred: " + e.getMessage());
+	        // Validate headers in the response
+	        headerValidatorComman.getVideosForHomeHeadersValidation(response);
 
-			throw new RuntimeException(e); // Mark as failed due to a non-assertion error
-		}
+	        // Validate the response body structure and values
+	        getVideosForHomeMapper.GetVideosForHomeResponsValidation(response);
+	        
+	        logger.info("Severity level: {}", response.getStatusCode() == HttpStatusConstants.OK ? "NORMAL" : "CRITICAL");
 
+
+	        // Ensure the response body is not null
+	        Assert.assertNotNull(response.getBody(), "Response body validation");
+
+	        // Verify the response time is within acceptable limits
+	        assertTrue(responseTime < 1500, "Response time is within acceptable range");
+
+	    } catch (AssertionError assertionError) {
+	        // Log assertion errors and throw to mark the test as failed
+	        logger.error("Assertion error: " + assertionError.getMessage());
+	        throw assertionError;
+	    } catch (Exception e) {
+	        // Log any unexpected errors and throw as RuntimeException
+	        logger.warn("An error occurred: " + e.getMessage());
+	        throw new RuntimeException(e);
+	    }
 	}
 
-	@Test(priority=2 , dependsOnMethods = "getVideosForHomePostHeaderTest")
+	@Test(priority = 2, dependsOnMethods = "getVideosForHomePostHeaderTest")
 	@Description("Send a GET request to the getVideosForHome URL and validate the response")
 	public void getVideosForHomeGetHeaderTest() {
 
-		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderGet();
-		Long responseTime = response.getTime();
-		try {
-			response.then()
-			             .assertThat()
-					      // Assert that the status code is 405
-					     .statusCode(405);
+	    // Send the GET request to the getVideosForHome end-point
+	    Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderGet();
+	    Long responseTime = response.getTime();
 
-			String cookieValue = response.getCookie("SESSION");
-			logger.info(" cookieValue -----------" + cookieValue);
+	    try {
+	        // Validate that the response status code is 405 (method not allowed)
+	        response.then()
+	                .assertThat()
+	                .statusCode(HttpStatusConstants.METHOD_NOT_ALLOWED);
 
-			// Validate the response body is not empty
-			Assert.assertNotNull(response.getBody(), "Response body Null");
+	        ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
+	        
+	        // Retrieve and log the SESSION cookie from the response
+	        String cookieValue = response.getCookie("SESSION");
+	        logger.info("cookieValue: " + cookieValue);
 
-			assertTrue(responseTime < 2000, "Response time is within acceptable range");
+	        // Ensure the response body is not null
+	        Assert.assertNotNull(response.getBody(), "Response body Null");
 
-		}
-		//Assertion error to mark the test as failed
-		catch (AssertionError assertionError) {
-			logger.error("Assertion error: " + assertionError.getMessage());
-			// This will mark the test as failed
-			throw assertionError;
-		}
-		// Optionally re-throw this exception to fail the test as well
-		catch (Exception e) {
-			logger.warn("An error occurred: " + e.getMessage());
-			// Mark as failed due to a non-assertion error
-			throw new RuntimeException(e);
-		}
-
+	        // Verify the response time is within acceptable limits
+	        assertTrue(responseTime < 2000, "Response time is within acceptable range");
+	    } catch (AssertionError assertionError) {
+	        // Log assertion errors and throw to mark the test as failed
+	        logger.error("Assertion error: " + assertionError.getMessage());
+	        throw assertionError;
+	    } catch (Exception e) {
+	        // Log any unexpected errors and throw as RuntimeException
+	        logger.warn("An error occurred: " + e.getMessage());
+	        throw new RuntimeException(e);
+	    }
 	}
-	
-	
-	@Test(priority=3 , dependsOnMethods = "getVideosForHomePostHeaderTest")
+
+	@Test(priority = 3, dependsOnMethods = "getVideosForHomePostHeaderTest")
 	@Description("Send a DELETE request to the getVideosForHome URL and validate the response")
 	public void getVideosForHomeDELETEHeaderTest() {
 
-		Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderDELETE();
+	    // Send the DELETE request to the getVideosForHome endpoint
+	    Response response = GetVideosForHomeEndPoints.getVideosForHomeHeaderDELETE();
+	    Long responseTime = response.getTime();
+
+	    try {
+	        // Validate that the response status code is 405 (method not allowed)
+	        response.then().assertThat().statusCode(405);
+	        
+	        ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
+
+	        // Retrieve and log the SESSION cookie from the response
+	        String cookieValue = response.getCookie("SESSION");
+	        logger.info("cookieValue: " + cookieValue);
+
+	        // Ensure the response body is not null
+	        Assert.assertNotNull(response.getBody(), "Response body Null");
+
+	        // Verify the response time is within acceptable limits
+	        assertTrue(responseTime < 2000, "Response time is within acceptable range");
+	    } catch (AssertionError assertionError) {
+	        // Log assertion errors and throw to mark the test as failed
+	        logger.error("Assertion error: " + assertionError.getMessage());
+	        throw assertionError;
+	    } catch (Exception e) {
+	        // Log any unexpected errors and throw as RuntimeException
+	        logger.warn("An error occurred: " + e.getMessage());
+	        throw new RuntimeException(e);
+	    }
+	}
+
+	
+	// Empty payload
+	@Test(priority=4, dependsOnMethods = "getVideosForHomePostHeaderTest")
+	@Description("Send a Empty payload request and validate the response")
+	public void getVideosForHomeEmptyPayloadTest() {
+		
+		logger.info("Start getVideosForHome API Response For Empty Payload test");
+      try {
+    	  Response response = GetVideosForHomeEndPoints.getVideosForHomeEmptyPayload();
 		Long responseTime = response.getTime();
-		try {
+	
 			response.then()
 			             .assertThat()
-					      // Assert that the status code is 405
-					     .statusCode(405);
+					     .statusCode(HttpStatusConstants.BAD_REQUEST);
+			
+			ApplySeverityLevel.setSeverityLevelEmptyPayload(response.getStatusCode());
 
 			String cookieValue = response.getCookie("SESSION");
-			logger.info(" cookieValue -----------" + cookieValue);
+			logger.info("cookieValue:" + cookieValue);
 
 			// Validate the response body is not empty
 			Assert.assertNotNull(response.getBody(), "Response body Null");
 
 			assertTrue(responseTime < 2000, "Response time is within acceptable range");
+			
+			// Assertion error to mark the test as failed
+		    } catch (AssertionError assertionError) {
+	            logger.error("Assertion error: " + assertionError.getMessage());
+	  
+	            throw assertionError;  // This will mark the test as failed
+	        } catch (Exception e) {
+	            logger.warn("An error occurred: " + e.getMessage());
+	            // Optionally re-throw this exception to fail the test as well
+	            throw new RuntimeException(e); // Mark as failed due to a non-assertion error
+	        }
+		}
+	
+	
+	
+	// Invalid payload
+	@Test(priority=5, dependsOnMethods = "getVideosForHomePostHeaderTest")
+	@Description("Send a Invalid payload request and validate the response")
+	public void getVideosForHomeInvalidPayloadTest() {
+		
+		logger.info("Start getVideosForHome API Response For Empty Payload test");
+      try {
+		// @formatter:off
+    	  Response response = GetVideosForHomeEndPoints.getVideosForHomeInvalidPayload();
+		Long responseTime = response.getTime();
+	
+			response.then()
+			             .assertThat()
+					     .statusCode(HttpStatusConstants.BAD_REQUEST);
 
-		}
-		// Assertion error to mark the test as failed
-		catch (AssertionError assertionError) {
-			logger.error("Assertion error: " + assertionError.getMessage());
-			// This will mark the test as failed
-			throw assertionError;
-		}
-		// Optionally re-throw this exception to fail the test as well
-		catch (Exception e) {
-			logger.warn("An error occurred: " + e.getMessage());
-			// Mark as failed due to a non-assertion error
-			throw new RuntimeException(e);
-		}
+			String cookieValue = response.getCookie("SESSION");
+			logger.info("cookieValue:" + cookieValue);
 
-	}
+			// Validate the response body is not empty
+			Assert.assertNotNull(response.getBody(), "Response body Null");
+
+			assertTrue(responseTime < 2000, "Response time is within acceptable range");
+			
+			// Assertion error to mark the test as failed
+		    } catch (AssertionError assertionError) {
+	            logger.error("Assertion error: " + assertionError.getMessage());
+	  
+	            throw assertionError;  // This will mark the test as failed
+	        } catch (Exception e) {
+	            logger.warn("An error occurred: " + e.getMessage());
+	            // Optionally re-throw this exception to fail the test as well
+	            throw new RuntimeException(e); // Mark as failed due to a non-assertion error
+	        }
+		}
+	
+	// Missing fields
+	@Test(priority=6, dependsOnMethods = "getVideosForHomePostHeaderTest")
+	@Description("Send a missing fields payload request and validate the response")
+	public void getVideosForHomeMissingFieldsTest() {
+		
+		logger.info("Start getVideosForHome API Response For Empty Payload test");
+      try {
+		// @formatter:off
+    	  Response response = GetVideosForHomeEndPoints.getVideosForHomeMissingFields();
+		Long responseTime = response.getTime();
+	
+			response.then()
+			             .assertThat()
+					      // Assert that the status code is 405
+					     .statusCode(HttpStatusConstants.BAD_REQUEST);
+
+			String cookieValue = response.getCookie("SESSION");
+			logger.info("cookieValue:" + cookieValue);
+
+			// Validate the response body is not empty
+			Assert.assertNotNull(response.getBody(), "Response body Null");
+
+			assertTrue(responseTime < 2000, "Response time is within acceptable range");
+			
+			// Assertion error to mark the test as failed
+		    } catch (AssertionError assertionError) {
+	            logger.error("Assertion error: " + assertionError.getMessage());
+	  
+	            throw assertionError;  // This will mark the test as failed
+	        } catch (Exception e) {
+	            logger.warn("An error occurred: " + e.getMessage());
+	            // Optionally re-throw this exception to fail the test as well
+	            throw new RuntimeException(e); // Mark as failed due to a non-assertion error
+	        }
+		}
+	
+	
+	
+	
+	
+	
 	
 	
 	

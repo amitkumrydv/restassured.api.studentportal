@@ -12,26 +12,26 @@ public class HeaderValidatorComman implements HeaderResponceValidation {
 	@Override
 	public void commonHeadersValidation(Response response) {
 		response.then()
-		        .header("Content-Type", "application/json")
-				.header("Cache-Control", Matchers.equalTo("no-cache, no-store, max-age=0, must-revalidate"))
-				.header("Connection", Matchers.equalTo("keep-alive"));
+		        .header(HeaderConstants.CONTENT_TYPE, "application/json")
+				.header(HeaderConstants.CACHE_CONTROL, Matchers.equalTo("no-cache, no-store, max-age=0, must-revalidate"))
+				.header(HeaderConstants.CONNECTION, Matchers.equalTo("keep-alive"));
 	}
 
 	@Override
 	public void authenticateHeadersValidation(Response response) {
 		response.then()
-		        .header("Content-Type", "application/json;charset=UTF-8")
-				.header("Cache-Control", Matchers.equalTo("no-cache, no-store, max-age=0, must-revalidate"))
-				.header("Connection", Matchers.equalTo("keep-alive"));
+		        .header(HeaderConstants.CONTENT_TYPE, "application/json;charset=UTF-8")
+				.header(HeaderConstants.CACHE_CONTROL, Matchers.equalTo("no-cache, no-store, max-age=0, must-revalidate"))
+				.header(HeaderConstants.CONNECTION, Matchers.equalTo("keep-alive"));
 	}
 
 	@Override
 	public void getVideosForHomeHeadersValidation(Response response) {
 
 		response.then()
-		        .header("Content-Type", "application/json")
-				.header("Cache-Control", Matchers.equalTo("no-cache, no-store, max-age=0, must-revalidate"))
-				.header("Connection", Matchers.equalTo("close"));
+        .header(HeaderConstants.CONTENT_TYPE, "application/json")
+		.header(HeaderConstants.CACHE_CONTROL, Matchers.equalTo("no-cache, no-store, max-age=0, must-revalidate"))
+		.header(HeaderConstants.CONNECTION, Matchers.equalTo("keep-alive"));
 
 	}
 

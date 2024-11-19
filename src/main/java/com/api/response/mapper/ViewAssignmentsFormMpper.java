@@ -32,86 +32,15 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	}
 	
 	
-//	@Override	
-//	public void ViewAssignmentsFormMapperResponsValidation(String responseBodyData) 
-//	        throws JsonMappingException, JsonProcessingException {
-//
-//	    // Log the start of validation
-//	    logger.info("Starting validation of current semester assignments...");
-//
-//	    // Parse JSON response to a Map
-//	    Map<String, Object> jsonMap = objectMapper.readValue(responseBodyData, Map.class);
-//	    List<Map<String, Object>> assignmentFilesList = 
-//	            (List<Map<String, Object>>) jsonMap.get("currentSemAssignmentFilesList");
-//
-//	    // Check if assignmentFilesList is missing or null
-//	    Assert.assertNotNull(assignmentFilesList + "Assignment files list is null or missing in the response.");
-//
-//	    // Retrieve POJO fields for comparison
-//	    Field[] pojoFields = ViewAssignmentsFormPojo.class.getDeclaredFields();
-//	    Set<String> pojoFieldNames = Arrays.stream(pojoFields)
-//	                                        .map(this::getJsonPropertyName)
-//	                                        .collect(Collectors.toSet());
-//
-//	    // Track JSON fields encountered
-//	    Set<String> jsonFieldsEncountered = new HashSet<>();
-//
-//	    // Validate each item in assignmentFilesList
-//	    for (Map<String, Object> listItem : assignmentFilesList) {
-//	        for (Map.Entry<String, Object> entry : listItem.entrySet()) {
-//	            String fieldName = entry.getKey();
-//	            Object jsonFieldValue = entry.getValue();
-//
-//	            // Add field to the encountered set
-//	            jsonFieldsEncountered.add(fieldName);
-//
-//	            if (jsonFieldValue == null) {
-//	             //   logger.info("Skipping null field: {}", fieldName);
-//	                continue;
-//	            }
-//
-//	            Class<?> jsonFieldType = jsonFieldValue.getClass();
-//
-//	            // Check if the field exists in the POJO
-//	            if (pojoFieldNames.contains(fieldName)) {
-//	                try {
-//	                    Field pojoField = ViewAssignmentsFormPojo.class.getDeclaredField(fieldName);
-//	                    Class<?> pojoFieldType = pojoField.getType();
-//	                    
-//	                    if (!pojoFieldType.isAssignableFrom(jsonFieldType)) {
-//	                        logger.warn("Type mismatch for field: {}. JSON Type: {}, POJO Type: {}", 
-//	                                    fieldName, jsonFieldType.getSimpleName(), pojoFieldType.getSimpleName());
-//	                        Assert.fail("Type mismatch for field: " + fieldName);
-//	                    } else {
-//	                        logger.info("Field {} matches type in POJO.", fieldName);
-//	                    }
-//	                } catch (NoSuchFieldException e) {
-//	                    logger.error("Field {} unexpectedly not found in POJO despite name match. Possible error in POJO definition.", fieldName);
-//	                }
-//	            } else {
-//	                logger.warn("Field {} is not present in POJO", fieldName);
-//	            }
-//	        }
-//	    }
-//
-//	    // Check for any POJO fields that were not present in the JSON response
-//	    for (String pojoFieldName : pojoFieldNames) {
-//	        if (!jsonFieldsEncountered.contains(pojoFieldName)) {
-//	            logger.warn("Field {} is present in POJO but missing in the JSON response.", pojoFieldName);
-//	        }
-//	    }
-//
-//	    logger.info("Validation of currentSemAssignmentFilesList completed.");
-//	}
-	
-	
 	@Override	
 	public void ViewAssignmentsFormMapperResponsValidation(String responseBodyData)
 	        throws JsonMappingException, JsonProcessingException {
 
 	    logger.info("Starting validation of current semester assignments...");
+	    
+	    
 
-	    Map<String, Object> jsonMap = objectMapper.readValue(responseBodyData, Map.class);
+	 Map<String, Object> jsonMap = objectMapper.readValue(responseBodyData, Map.class);
 	    //currentSemAssignmentFilesList is in json array
 	    List<Map<String, Object>> assignmentFilesList = 
 	            (List<Map<String, Object>>) jsonMap.get("currentSemAssignmentFilesList");

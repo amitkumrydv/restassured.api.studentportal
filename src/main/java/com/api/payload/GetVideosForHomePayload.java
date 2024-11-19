@@ -3,13 +3,12 @@ package com.api.payload;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.api.comman.PayloadPojoComman;
+import com.api.endpoints.AuthenticateEndPoint;
+import com.api.pojoClass.AuthenticationPojo;
 
 
 
@@ -17,23 +16,40 @@ import com.api.comman.PayloadPojoComman;
 public class GetVideosForHomePayload {
 	
 	private static Logger logger = LoggerFactory.getLogger(GetVideosForHomePayload.class);
+	public static AuthenticationPojo payloadData = AuthenticateEndPoint.authenticationPojo;
 
-	public  static PayloadPojoComman getVideosForHomePaloadData() {
+	public  static AuthenticationPojo getVideosForHomePaloadData() {
 
-		PayloadPojoComman payloadPojoComman = new PayloadPojoComman();
+	//	PayloadPojoComman payloadPojoComman = new PayloadPojoComman();
        try {
-		payloadPojoComman.getCurrentAcadMonth();
-		payloadPojoComman.getCurrentAcadYear();
-		payloadPojoComman.getCurrentSemPSSId();
+    	   payloadData.getCurrentAcadMonth();
+    	   payloadData.getCurrentAcadYear();
+    	   payloadData.getCurrentSemPSSId();
 
        }catch(Exception e) {
     	   logger.error("An error occurred while fetching payload data", e);
     	   
        }
        
-	return payloadPojoComman;
+	return payloadData;
 
 }
+	
+	
+	// Missing field payload
+	public  static AuthenticationPojo authenticateResponseForMissingFieldsPayload() {
+
+		//	PayloadPojoComman payloadPojoComman = new PayloadPojoComman();
+	       try {
+	    	   payloadData.getCurrentAcadMonth();
+	       }catch(Exception e) {
+	    	   logger.error("An error occurred while fetching payload data", e);
+	    	   
+	       }
+	       
+		return payloadData;
+
+	}
 
 	public String getVideosForHomePaloadJSON() throws FileNotFoundException {
 

@@ -28,5 +28,19 @@ public class AuthenticatePayload {
 		return authenticationPojo;
 		
 	}
+	
+	// Missing payload 
+    public AuthenticationPojo authenticatePyloadDataForMissingFields() {
+		
+		logger.info("Set the userId and password in the Authentication payload ");
+		try {
+        String userName=readConfig.getUsername();
+		authenticationPojo.setUserId(userName);	
+		} catch (Exception e) {
+			logger.error("An error occurred while fetching payload data", e);
+		}
+		return authenticationPojo;
+		
+	}
 
 }

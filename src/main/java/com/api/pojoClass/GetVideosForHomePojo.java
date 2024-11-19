@@ -22,7 +22,7 @@ public class GetVideosForHomePojo {
 	    private Object lastModifiedDate;
 
 	    @JsonProperty("id")
-	    private int id;
+	    private Integer id;
 
 	    @JsonProperty("year")
 	    private Object year;
@@ -49,7 +49,7 @@ public class GetVideosForHomePojo {
 	    private String errorMessage;
 
 	    @JsonProperty("errorRecord")
-	    private boolean errorRecord;
+	    private Boolean errorRecord;
 
 	    @JsonProperty("duration")
 	    private Object duration;
@@ -67,7 +67,7 @@ public class GetVideosForHomePojo {
 	    private Object videoLink;
 
 	    @JsonProperty("parentVideoId")
-	    private int parentVideoId;
+	    private Integer parentVideoId;
 
 	    @JsonProperty("startTime")
 	    private Object startTime;

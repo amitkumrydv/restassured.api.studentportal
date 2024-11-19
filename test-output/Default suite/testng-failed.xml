@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.api.test.ViewAssignmentsFormTest">
+      <class name="com.api.test.GetVideosForHomeTest">
         <methods>
-          <include name="viewAssignmentsFormDELETEHeaderTest"/>
-          <include name="viewAssignmentsFormPOSTHeaderTest"/>
+          <include name="getVideosForHomePostHeaderTest"/>
+          <include name="getVideosForHomeEmptyPayloadTest"/>
+          <include name="getVideosForHomeDELETEHeaderTest"/>
+          <include name="getVideosForHomeInvalidPayloadTest"/>
+          <include name="getVideosForHomeMissingFieldsTest"/>
+          <include name="getVideosForHomeGetHeaderTest"/>
         </methods>
-      </class> <!-- com.api.test.ViewAssignmentsFormTest -->
+      </class> <!-- com.api.test.GetVideosForHomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
