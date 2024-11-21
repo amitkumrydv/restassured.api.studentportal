@@ -10,6 +10,7 @@
           <include name="authenticateResponseForMissingFieldsTest"/>
           <include name="authenticatePOSTHeaderTest"/>
           <include name="authenticateDELETEHeaderTest"/>
+          <include name="authenticateGETHeaderTest"/>
         </methods>
       </class> <!-- com.api.test.AuthenticateTest -->
     </classes>

@@ -11,6 +11,7 @@ import com.api.comman.ApplySeverityLevel;
 import com.api.comman.HeaderValidatorComman;
 import com.api.comman.HttpStatusConstants;
 import com.api.endpoints.AuthenticateEndPoint;
+import com.api.response.mapper.AuthenticateMapper;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -26,11 +27,11 @@ import io.restassured.response.Response;
 public class AuthenticateTest {
 
 	private static final Logger logger = (Logger) LoggerFactory.getLogger(AuthenticateTest.class);
-	
+    AuthenticateMapper authenticateMapper = new AuthenticateMapper();
 
 	@Test(priority = 1)
 	@Description("Send a POST request to the authentication URL and validate the response")
-	public static void  authenticatePOSTHeaderTest() {
+	public  void  authenticatePOSTHeaderTest() {
 
 		HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
 		logger.info("Start authenticateTestApi test");
@@ -39,17 +40,15 @@ public class AuthenticateTest {
 		Response response = AuthenticateEndPoint.authenticateResponseForPOST();
 		Long responseTime = response.getTime();
 		  try {
-			  
+			    ApplySeverityLevel.severityForPOST(response.getStatusCode());
 				// Validate the response status code
 				Assert.assertEquals(response.getStatusCode(), HttpStatusConstants.OK, "Status code validation");
 			    headerValidatorComman.authenticateHeadersValidation(response);
+			    authenticateMapper.authenticateResponseValidation(response);
 
 	            assertTrue(responseTime < 2000, "Response time is within acceptable range");
-	            
-               ApplySeverityLevel.severityForPOST(response.getStatusCode());
-               
-               
-               Headers headers = response.getHeaders();
+
+                Headers headers = response.getHeaders();
 
                // Loop through each header and print its key and value
                for (Header header : headers) {
@@ -80,11 +79,12 @@ public class AuthenticateTest {
 		Response response = AuthenticateEndPoint.authenticateResponseForGET();
 		Long responseTime = response.getTime();
 		try {
+			ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
 			response.then()
 			             .assertThat()
 					      // Assert that the status code is 405
 					     .statusCode(HttpStatusConstants.METHOD_NOT_ALLOWED);
-			ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
+		
 
 			String cookieValue = response.getCookie("SESSION");
 			logger.info("cookieValue:" + cookieValue);
@@ -122,11 +122,12 @@ public class AuthenticateTest {
 		Response response = AuthenticateEndPoint.authenticateResponseForDELETE();
 		Long responseTime = response.getTime();
 		try {
+			ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
 			response.then()
 			             .assertThat()
 					     .statusCode(HttpStatusConstants.METHOD_NOT_ALLOWED);
 
-			ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
+			
 			String cookieValue = response.getCookie("SESSION");
 			logger.info("cookieValue:" + cookieValue);
 
@@ -154,16 +155,18 @@ public class AuthenticateTest {
 	public void authenticateResponseForEmptyPayloadTest() {
 		
 		logger.info("Start authenticate Response For Empty Payload test");
-      try {
+    
 		// @formatter:off
 		Response response = AuthenticateEndPoint.authenticateResponseForEmptyPayload();
 		Long responseTime = response.getTime();
-	
-			response.then()
-			             .assertThat()
-					      // Assert that the status code is 405
-					     .statusCode(HttpStatusConstants.BAD_REQUEST);
-			ApplySeverityLevel.setSeverityLevelEmptyPayload(response.getStatusCode());
+		
+		  try {
+			    ApplySeverityLevel.setSeverityLevelEmptyPayload(response.getStatusCode());
+			    response.then()
+			                 .assertThat()
+					        // Assert that the status code is 405
+					         .statusCode(HttpStatusConstants.BAD_REQUEST);
+		
 			String cookieValue = response.getCookie("SESSION");
 			logger.info("cookieValue:" + cookieValue);
 

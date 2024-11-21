@@ -20,7 +20,7 @@ public class AuthenticateEndPoint {
 
 	    public static Response authenticateResponseForPOST() {
 
-	        logger.info("Sending authentication request to URL: {}", Routs.Authenticate_url);
+	        logger.info("Sending authentication request.");
 	        
 	        Response response = RestAssured.given()
 	                .contentType(ContentType.JSON)

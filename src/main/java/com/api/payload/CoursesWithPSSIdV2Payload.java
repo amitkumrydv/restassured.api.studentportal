@@ -16,7 +16,7 @@ public class CoursesWithPSSIdV2Payload {
 	public AuthenticationPojo coursesWithPSSIdV2PayloadData() {
 		try {
 			String userName = readConfig.getUsername();
-			payloaddataForCoursesPSSID.setSapid(userName);
+			payloaddataForCoursesPSSID.setSapId(userName);
 		} catch (Exception e) {
 			logger.error("An error occurred while fetching payload data", e);
 		}

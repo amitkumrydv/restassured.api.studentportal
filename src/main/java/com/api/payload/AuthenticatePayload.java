@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.api.pojoClass.AuthenticationPojo;
+import com.api.pojoClass.StudentPojo;
 import com.api.utilities.ReadConfig;
 
 public class AuthenticatePayload {
@@ -13,8 +14,8 @@ public class AuthenticatePayload {
 	ReadConfig readConfig = new ReadConfig();
     
 	
-	public AuthenticationPojo authenticatePyloadData() {
-		AuthenticationPojo  authenticationPojo = new AuthenticationPojo();
+	public StudentPojo authenticatePyloadData() {
+		StudentPojo  authenticationPojo = new StudentPojo();
 		
 		logger.info("Set the userId and password in the Authentication payload ");
 		try {
