@@ -2,16 +2,16 @@ package com.api.payload;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.api.pojoClass.AuthenticationPojo;
+import com.api.pojoClass.StudentPojo;
 import com.api.utilities.ReadConfig;
 
 public class ViewAssignmentsFormPayload {
 
 	private static final Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormPayload.class);
 	ReadConfig readConfig = new ReadConfig();
-	AuthenticationPojo payloadData = new AuthenticationPojo();
+	StudentPojo payloadData = new StudentPojo();
 
-	public AuthenticationPojo viewAssignmentsFormData() {
+	public StudentPojo viewAssignmentsFormData() {
 		try {
 			String userName = readConfig.getUsername();
 			payloadData.setSapId(userName);

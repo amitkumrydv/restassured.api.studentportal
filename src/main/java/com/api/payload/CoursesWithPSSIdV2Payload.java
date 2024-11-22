@@ -2,7 +2,9 @@ package com.api.payload;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import com.api.pojoClass.AuthenticationPojo;
+import com.api.pojoClass.StudentPojo;
 import com.api.utilities.ReadConfig;
 
 public class CoursesWithPSSIdV2Payload {
@@ -10,10 +12,10 @@ public class CoursesWithPSSIdV2Payload {
 	
 	private static final Logger logger= LoggerFactory.getLogger(CoursesWithPSSIdV2Payload.class);
 	ReadConfig readConfig = new ReadConfig();
-	AuthenticationPojo payloaddataForCoursesPSSID = new AuthenticationPojo();
+	StudentPojo payloaddataForCoursesPSSID = new StudentPojo();
 	
 	
-	public AuthenticationPojo coursesWithPSSIdV2PayloadData() {
+	public StudentPojo coursesWithPSSIdV2PayloadData() {
 		try {
 			String userName = readConfig.getUsername();
 			payloaddataForCoursesPSSID.setSapId(userName);

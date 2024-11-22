@@ -9,7 +9,7 @@ public class StudentPojo {
 	    private String certificatePrograms;
 
 	    @JsonProperty("sapid")
-	    private String sapid;
+	    private String sapId;
 
 	    @JsonProperty("sem")
 	    private String sem;
@@ -17,7 +17,7 @@ public class StudentPojo {
 	    @JsonProperty("email")
 	    private String email;
 
-	    @JsonProperty("lastName")
+		@JsonProperty("lastName")
 	    private String lastName;
 
 	    @JsonProperty("firstName")
@@ -386,7 +386,6 @@ public class StudentPojo {
 	    @JsonProperty("certificateStudent")
 	    private boolean certificateStudent;
 
-	    //Getter setter
 		public String getCertificatePrograms() {
 			return certificatePrograms;
 		}
@@ -395,12 +394,12 @@ public class StudentPojo {
 			this.certificatePrograms = certificatePrograms;
 		}
 
-		public String getSapid() {
-			return sapid;
+		public String getSapId() {
+			return sapId;
 		}
 
-		public void setSapid(String sapid) {
-			this.sapid = sapid;
+		public void setSapId(String sapId) {
+			this.sapId = sapId;
 		}
 
 		public String getSem() {
@@ -1402,7 +1401,6 @@ public class StudentPojo {
 		public void setCertificateStudent(boolean certificateStudent) {
 			this.certificateStudent = certificateStudent;
 		}
-
 
 
 }

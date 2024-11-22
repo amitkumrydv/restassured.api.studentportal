@@ -29,7 +29,7 @@ public class CoursesWithPSSIdV2Pojo {
 	    private List<Integer> backlogSubjectCodeIds;
 
 	    @JsonProperty("isRedis")
-	    private boolean isRedis;
+	    private Boolean isRedis;
 
 	    // Getters and Setters
 
@@ -81,11 +81,11 @@ public class CoursesWithPSSIdV2Pojo {
 	        this.backlogSubjectCodeIds = backlogSubjectCodeIds;
 	    }
 
-	    public boolean isRedis() {
+	    public Boolean isRedis() {
 	        return isRedis;
 	    }
 
-	    public void setRedis(boolean isRedis) {
+	    public void setRedis(Boolean isRedis) {
 	        this.isRedis = isRedis;
 	    }
 }

@@ -5,6 +5,9 @@ import org.slf4j.LoggerFactory;
 
 import com.api.comman.JsonPojoArrayValidator;
 import com.api.pojoClass.AuthenticationPojo;
+import com.api.pojoClass.FeatureViseAccessPojo;
+import com.api.pojoClass.RegDataPojo;
+import com.api.pojoClass.StudentPojo;
 import com.api.response.validation.AuthenticateResponseValidation;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -18,19 +21,22 @@ public class AuthenticateMapper implements AuthenticateResponseValidation {
 	ObjectMapper mapper = new ObjectMapper();
 	JsonPojoArrayValidator jsonPojoArrayValidator = new JsonPojoArrayValidator(mapper);
 
-	
+	@Override
 	public void authenticateResponseValidation(Response response){
 		
-        logger.info("Starting the Respons validation...");
+        logger.info("Start the authenticate API Respons validation...");
 
         ResponseBody responsebody = response.body();
 		String responseBodyData =responsebody.asString();
 		
-		jsonPojoArrayValidator.validateJsonWithPojo(responseBodyData,  AuthenticationPojo.class);
-		
-		
-		
-		
+		jsonPojoArrayValidator.validateJsonWithPojo(responseBodyData, AuthenticationPojo.class);		
 		
 	}
+	
+	
+	
+	
+	
+	
+	
 }

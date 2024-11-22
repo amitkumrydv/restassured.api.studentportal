@@ -40,6 +40,7 @@ public class AuthenticateTest {
 		Response response = AuthenticateEndPoint.authenticateResponseForPOST();
 		Long responseTime = response.getTime();
 		  try {
+			  
 			    ApplySeverityLevel.severityForPOST(response.getStatusCode());
 				// Validate the response status code
 				Assert.assertEquals(response.getStatusCode(), HttpStatusConstants.OK, "Status code validation");
