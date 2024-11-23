@@ -1,198 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="5" failed="8" skipped="4">
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-23T12:04:32 IST" name="Student-portal Dashboard-API List" finished-at="2024-11-23T12:04:34 IST" duration-ms="2780">
+  <suite started-at="2024-11-23T17:47:33 IST" name="Default suite" finished-at="2024-11-23T17:47:35 IST" duration-ms="2251">
     <groups>
     </groups>
-    <test started-at="2024-11-23T12:04:32 IST" name="Dashboard-API" finished-at="2024-11-23T12:04:34 IST" duration-ms="2780">
-      <class name="com.nmims.api.test.ViewAssignmentsFormTest">
-        <test-method signature="viewAssignmentsFormPOSTHeaderTest()[pri:1, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd]" started-at="2024-11-23T12:04:34 IST" name="viewAssignmentsFormPOSTHeaderTest" finished-at="2024-11-23T12:04:34 IST" duration-ms="94" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation expected [200] but found [500]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation expected [200] but found [500]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:907)
-at com.nmims.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest(ViewAssignmentsFormTest.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewAssignmentsFormPOSTHeaderTest -->
-        <test-method signature="viewAssignmentsFormGETHeaderTest()[pri:2, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd]" started-at="2024-11-23T12:04:34 IST" name="viewAssignmentsFormGETHeaderTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest()[pri:2, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ViewAssignmentsFormTest.viewAssignmentsFormGETHeaderTest()[pri:2, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewAssignmentsFormGETHeaderTest -->
-        <test-method signature="viewAssignmentsFormDELETEHeaderTest()[pri:3, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd]" started-at="2024-11-23T12:04:34 IST" name="viewAssignmentsFormDELETEHeaderTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()[pri:3, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest()[pri:3, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewAssignmentsFormDELETEHeaderTest -->
-        <test-method signature="ViewAssignmentsFormEmptyPayloadTest()[pri:4, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd]" started-at="2024-11-23T12:04:34 IST" name="ViewAssignmentsFormEmptyPayloadTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ViewAssignmentsFormTest.ViewAssignmentsFormEmptyPayloadTest()[pri:4, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ViewAssignmentsFormTest.ViewAssignmentsFormEmptyPayloadTest()[pri:4, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ViewAssignmentsFormEmptyPayloadTest -->
-        <test-method signature="ViewAssignmentsFormInvalidPayloadTest()[pri:5, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd]" started-at="2024-11-23T12:04:34 IST" name="ViewAssignmentsFormInvalidPayloadTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.ViewAssignmentsFormTest.viewAssignmentsFormPOSTHeaderTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ViewAssignmentsFormTest.ViewAssignmentsFormInvalidPayloadTest()[pri:5, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ViewAssignmentsFormTest.ViewAssignmentsFormInvalidPayloadTest()[pri:5, instance:com.nmims.api.test.ViewAssignmentsFormTest@19569ebd] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ViewAssignmentsFormInvalidPayloadTest -->
-      </class> <!-- com.nmims.api.test.ViewAssignmentsFormTest -->
+    <test started-at="2024-11-23T17:47:33 IST" name="Default test" finished-at="2024-11-23T17:47:35 IST" duration-ms="2251">
       <class name="com.nmims.api.test.AuthenticateTest">
-        <test-method signature="authenticatePOSTHeaderTest()[pri:1, instance:com.nmims.api.test.AuthenticateTest@23e44287]" started-at="2024-11-23T12:04:32 IST" name="authenticatePOSTHeaderTest" finished-at="2024-11-23T12:04:33 IST" duration-ms="1202" status="PASS">
+        <test-method signature="authenticatePOSTHeaderTest()[pri:1, instance:com.nmims.api.test.AuthenticateTest@79ab34c1]" started-at="2024-11-23T17:47:33 IST" name="authenticatePOSTHeaderTest" finished-at="2024-11-23T17:47:34 IST" duration-ms="1735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticatePOSTHeaderTest -->
-        <test-method signature="authenticateGETHeaderTest()[pri:2, instance:com.nmims.api.test.AuthenticateTest@23e44287]" started-at="2024-11-23T12:04:33 IST" name="authenticateGETHeaderTest" finished-at="2024-11-23T12:04:33 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="130" status="PASS">
+        <test-method signature="authenticateGETHeaderTest()[pri:2, instance:com.nmims.api.test.AuthenticateTest@79ab34c1]" started-at="2024-11-23T17:47:34 IST" name="authenticateGETHeaderTest" finished-at="2024-11-23T17:47:34 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticateGETHeaderTest -->
-        <test-method signature="authenticateDELETEHeaderTest()[pri:3, instance:com.nmims.api.test.AuthenticateTest@23e44287]" started-at="2024-11-23T12:04:33 IST" name="authenticateDELETEHeaderTest" finished-at="2024-11-23T12:04:33 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="89" status="FAIL">
+        <test-method signature="authenticateDELETEHeaderTest()[pri:3, instance:com.nmims.api.test.AuthenticateTest@79ab34c1]" started-at="2024-11-23T17:47:34 IST" name="authenticateDELETEHeaderTest" finished-at="2024-11-23T17:47:35 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="73" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -229,7 +52,7 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.nmims.api.test.AuthenticateTest.authenticateDELETEHeaderTest(AuthenticateTest.java:129)
+at com.nmims.api.test.AuthenticateTest.authenticateDELETEHeaderTest(AuthenticateTest.java:130)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -264,7 +87,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticateDELETEHeaderTest -->
-        <test-method signature="authenticateResponseForEmptyPayloadTest()[pri:4, instance:com.nmims.api.test.AuthenticateTest@23e44287]" started-at="2024-11-23T12:04:33 IST" name="authenticateResponseForEmptyPayloadTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="436" status="FAIL">
+        <test-method signature="authenticateResponseForEmptyPayloadTest()[pri:4, instance:com.nmims.api.test.AuthenticateTest@79ab34c1]" started-at="2024-11-23T17:47:35 IST" name="authenticateResponseForEmptyPayloadTest" finished-at="2024-11-23T17:47:35 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="83" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -299,7 +122,7 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.nmims.api.test.AuthenticateTest.authenticateResponseForEmptyPayloadTest(AuthenticateTest.java:169)
+at com.nmims.api.test.AuthenticateTest.authenticateResponseForEmptyPayloadTest(AuthenticateTest.java:170)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -334,7 +157,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticateResponseForEmptyPayloadTest -->
-        <test-method signature="authenticateResponseForInvalidPayloadTest()[pri:5, instance:com.nmims.api.test.AuthenticateTest@23e44287]" started-at="2024-11-23T12:04:34 IST" name="authenticateResponseForInvalidPayloadTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="86" status="FAIL">
+        <test-method signature="authenticateResponseForInvalidPayloadTest()[pri:5, instance:com.nmims.api.test.AuthenticateTest@79ab34c1]" started-at="2024-11-23T17:47:35 IST" name="authenticateResponseForInvalidPayloadTest" finished-at="2024-11-23T17:47:35 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="78" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -369,7 +192,7 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.nmims.api.test.AuthenticateTest.authenticateResponseForInvalidPayloadTest(AuthenticateTest.java:207)
+at com.nmims.api.test.AuthenticateTest.authenticateResponseForInvalidPayloadTest(AuthenticateTest.java:208)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -404,297 +227,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticateResponseForInvalidPayloadTest -->
-        <test-method signature="authenticateResponseForMissingFieldsTest()[pri:6, instance:com.nmims.api.test.AuthenticateTest@23e44287]" started-at="2024-11-23T12:04:34 IST" name="authenticateResponseForMissingFieldsTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="87" status="PASS">
+        <test-method signature="authenticateResponseForMissingFieldsTest()[pri:6, instance:com.nmims.api.test.AuthenticateTest@79ab34c1]" started-at="2024-11-23T17:47:35 IST" name="authenticateResponseForMissingFieldsTest" finished-at="2024-11-23T17:47:35 IST" depends-on-methods="com.nmims.api.test.AuthenticateTest.authenticatePOSTHeaderTest" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticateResponseForMissingFieldsTest -->
       </class> <!-- com.nmims.api.test.AuthenticateTest -->
-      <class name="com.nmims.api.test.GetVideosForHomeTest">
-        <test-method signature="getVideosForHomePostHeaderTest()[pri:1, instance:com.nmims.api.test.GetVideosForHomeTest@675ffd1d]" started-at="2024-11-23T12:04:34 IST" name="getVideosForHomePostHeaderTest" finished-at="2024-11-23T12:04:34 IST" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVideosForHomePostHeaderTest -->
-        <test-method signature="getVideosForHomeGetHeaderTest()[pri:2, instance:com.nmims.api.test.GetVideosForHomeTest@675ffd1d]" started-at="2024-11-23T12:04:34 IST" name="getVideosForHomeGetHeaderTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="94" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVideosForHomeGetHeaderTest -->
-        <test-method signature="getVideosForHomeDELETEHeaderTest()[pri:3, instance:com.nmims.api.test.GetVideosForHomeTest@675ffd1d]" started-at="2024-11-23T12:04:34 IST" name="getVideosForHomeDELETEHeaderTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="63" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <405> but was <500>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeDELETEHeaderTest(GetVideosForHomeTest.java:123)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVideosForHomeDELETEHeaderTest -->
-        <test-method signature="getVideosForHomeEmptyPayloadTest()[pri:4, instance:com.nmims.api.test.GetVideosForHomeTest@675ffd1d]" started-at="2024-11-23T12:04:34 IST" name="getVideosForHomeEmptyPayloadTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="75" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <400> but was <405>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeEmptyPayloadTest(GetVideosForHomeTest.java:160)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVideosForHomeEmptyPayloadTest -->
-        <test-method signature="getVideosForHomeInvalidPayloadTest()[pri:5, instance:com.nmims.api.test.GetVideosForHomeTest@675ffd1d]" started-at="2024-11-23T12:04:34 IST" name="getVideosForHomeInvalidPayloadTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="80" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <400> but was <405>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeInvalidPayloadTest(GetVideosForHomeTest.java:199)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVideosForHomeInvalidPayloadTest -->
-        <test-method signature="getVideosForHomeMissingFieldsTest()[pri:6, instance:com.nmims.api.test.GetVideosForHomeTest@675ffd1d]" started-at="2024-11-23T12:04:34 IST" name="getVideosForHomeMissingFieldsTest" finished-at="2024-11-23T12:04:34 IST" depends-on-methods="com.nmims.api.test.GetVideosForHomeTest.getVideosForHomePostHeaderTest" duration-ms="101" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <400> but was <200>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <200>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeMissingFieldsTest(GetVideosForHomeTest.java:235)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVideosForHomeMissingFieldsTest -->
-      </class> <!-- com.nmims.api.test.GetVideosForHomeTest -->
-    </test> <!-- Dashboard-API -->
-  </suite> <!-- Student-portal Dashboard-API List -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

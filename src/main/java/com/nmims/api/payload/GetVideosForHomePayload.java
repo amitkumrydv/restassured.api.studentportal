@@ -29,11 +29,6 @@ public class GetVideosForHomePayload {
     	   payloadData.getCurrentAcadYear();
     	   payloadData.getCurrentSemPSSId();
     	   
-    	   String getmonth = payloadData.getCurrentAcadMonth();
-    	   String getyesr = payloadData.getCurrentAcadYear();
-    	  List< Integer> getpss = payloadData.getCurrentSemPSSId();
-    	   System.out.println(" get video payload ---------> "+getmonth +" "+ getyesr+" "+getpss);
-
        }catch(Exception e) {
     	   logger.error("An error occurred while fetching payload data", e);
     	   

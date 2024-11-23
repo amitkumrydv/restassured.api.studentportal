@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.nmims.api.comman.ApplySeverityLevel;
-import com.nmims.api.comman.HeaderValidatorComman;
+import com.nmims.api.comman.HeaderValidationCommanImpl;
 import com.nmims.api.comman.HttpStatusConstants;
 import com.nmims.api.endpoints.GetVideosForHomeEndPointsImpl;
 import com.nmims.api.response.mapper.GetVideosForHomeMapper;
@@ -36,7 +36,7 @@ public class GetVideosForHomeTest {
 	@Test(priority = 1)
 	@Description("Send a POST request to the getVideosForHome URL and validate the response")
 	public void getVideosForHomePostHeaderTest() throws JsonMappingException, JsonProcessingException {
-	    HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
+	    HeaderValidationCommanImpl headerValidationCommanImpl = new HeaderValidationCommanImpl();
 	    GetVideosForHomeMapper getVideosForHomeMapper = new GetVideosForHomeMapper();
 
 	    Response response = getVideosForHomeEndPointsImpl.getVideosForHomeHeaderPost();
@@ -49,7 +49,7 @@ public class GetVideosForHomeTest {
 	        Assert.assertEquals(response.getStatusCode(), HttpStatusConstants.OK, "Status code validation");
 
 	        // Validate headers in the response
-	        headerValidatorComman.getVideosForHomeHeadersValidation(response);
+	        headerValidationCommanImpl.getVideosForHomeHeadersValidation(response);
 
 	        // Validate the response body structure and values
 	        getVideosForHomeMapper.GetVideosForHomeResponsValidation(response);

@@ -6,22 +6,19 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.nmims.api.comman.ApplySeverityLevel;
-import com.nmims.api.comman.HeaderValidatorComman;
+import com.nmims.api.comman.HeaderValidationCommanImpl;
 import com.nmims.api.comman.HttpStatusConstants;
 import com.nmims.api.endpoints.ViewAssignmentsFormEndPointsImpl;
 import com.nmims.api.response.mapper.ViewAssignmentsFormMpper;
-
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
+
+
 
 @Epic("Assignments")
 @Feature("Applicable Assignment")
@@ -30,7 +27,7 @@ public class ViewAssignmentsFormTest {
 	
 	
 	private static Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormTest.class);
-	HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
+	HeaderValidationCommanImpl headerValidationCommanImpl = new HeaderValidationCommanImpl();
 	ViewAssignmentsFormMpper viewAssignment = new ViewAssignmentsFormMpper();
 	ViewAssignmentsFormEndPointsImpl viewAssignmentsFormEndPointsImpl = new ViewAssignmentsFormEndPointsImpl();
 	
@@ -47,7 +44,7 @@ public class ViewAssignmentsFormTest {
 			
 			// Validate the response status code
 			Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");			
-			headerValidatorComman.commonHeadersValidation(response);
+			headerValidationCommanImpl.commonHeadersValidation(response);
 			
 			// Convert response body into String
 			ResponseBody responsebody = response.body();

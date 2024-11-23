@@ -130,15 +130,4 @@ public class FailSubjectsAssignmentFilesListModel {
     @JsonProperty("subjectList")
     private List<String> subjectList;
 
-    // Add getters and setters here for all fields
-    // Example:
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    // Similarly, add for all other fields
 }

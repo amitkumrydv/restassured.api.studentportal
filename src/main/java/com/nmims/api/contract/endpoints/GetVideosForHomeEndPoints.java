@@ -4,16 +4,16 @@ import io.restassured.response.Response;
 
 public interface GetVideosForHomeEndPoints {
 
-	Response getVideosForHomeHeaderPost();
+	public Response getVideosForHomeHeaderPost();
 
-	Response getVideosForHomeMissingFields();
+	public Response getVideosForHomeMissingFields();
 
-	Response getVideosForHomeInvalidPayload();
+	public Response getVideosForHomeInvalidPayload();
 
-	Response getVideosForHomeEmptyPayload();
+	public Response getVideosForHomeEmptyPayload();
 
-	Response getVideosForHomeHeaderDELETE();
+	public Response getVideosForHomeHeaderDELETE();
 
-	Response getVideosForHomeHeaderGet();
+	public Response getVideosForHomeHeaderGet();
 
 }

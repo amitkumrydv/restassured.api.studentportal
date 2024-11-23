@@ -2,11 +2,11 @@ package com.nmims.api.comman;
 
 import org.hamcrest.Matchers;
 
-import com.nmims.api.response.validation.HeaderResponceValidation;
+import com.nmims.api.contract.validations.HeaderResponceValidation;
 
 import io.restassured.response.Response;
 
-public class HeaderValidatorComman implements HeaderResponceValidation {
+public class HeaderValidationCommanImpl implements HeaderResponceValidation {
 
 	//@formatter:off
 	@Override

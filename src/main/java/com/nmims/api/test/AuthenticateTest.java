@@ -8,10 +8,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.nmims.api.comman.ApplySeverityLevel;
-import com.nmims.api.comman.HeaderValidatorComman;
+import com.nmims.api.comman.HeaderValidationCommanImpl;
 import com.nmims.api.comman.HttpStatusConstants;
 import com.nmims.api.endpoints.AuthenticateEndPointImpl;
 import com.nmims.api.response.mapper.AuthenticateMapper;
+import com.nmims.api.utilities.DateValidations;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -29,22 +30,22 @@ public class AuthenticateTest {
 	private static final Logger logger = (Logger) LoggerFactory.getLogger(AuthenticateTest.class);
     AuthenticateMapper authenticateMapper = new AuthenticateMapper();
     AuthenticateEndPointImpl authenticateEndPointImpl = new AuthenticateEndPointImpl();
+   
 	@Test(priority = 1)
 	@Description("Send a POST request to the authentication URL and validate the response")
 	public  void  authenticatePOSTHeaderTest() {
 
-		HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
+		HeaderValidationCommanImpl headerValidationCommanImpl = new HeaderValidationCommanImpl();
 		logger.info("Start authenticateTestApi test");
 
 		// @formatter:off
 		Response response = authenticateEndPointImpl.authenticateResponseForPOST();
 		Long responseTime = response.getTime();
 		  try {
-			  
 			    ApplySeverityLevel.severityForPOST(response.getStatusCode());
 				// Validate the response status code
 				Assert.assertEquals(response.getStatusCode(), HttpStatusConstants.OK, "Status code validation");
-			    headerValidatorComman.authenticateHeadersValidation(response);
+			    headerValidationCommanImpl.authenticateHeadersValidation(response);
 			    authenticateMapper.authenticateResponseValidation(response);
 
 	            assertTrue(responseTime < 2000, "Response time is within acceptable range");

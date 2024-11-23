@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import com.nmims.api.contract.endpoints.AuthenticateEndpoint;
 import com.nmims.api.model.AuthenticationModel;
+import com.nmims.api.model.StudentModel;
 import com.nmims.api.payload.AuthenticatePayload;
 
 import io.restassured.RestAssured;
@@ -22,21 +23,18 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 	    @Override
 	    public  Response authenticateResponseForPOST() {
 
-
 	    	logger.info("Sending authentication request.");
 	        
 	        Response response = RestAssured.given()
 	                .contentType(ContentType.JSON)
 	                .accept(ContentType.JSON)
+	                .log().headers()
 	                .body(authenticate.authenticatePyloadData())
 	                .when()
 	                .post(Routs.Authenticate_url);
 
 	        logger.info("Received response with status code: {}", response.getStatusCode());
 	        authenticationModel=response.as(AuthenticationModel.class);
-	        
-	        String auth= authenticationModel.getCurrentAcadMonth();
-	        System.out.println(" auth response store --------------> "+auth);
 
 	        return response;
     }

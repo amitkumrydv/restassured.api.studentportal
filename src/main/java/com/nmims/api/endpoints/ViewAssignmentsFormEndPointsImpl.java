@@ -9,6 +9,7 @@ import com.nmims.api.payload.ViewAssignmentsFormPayload;
 import com.nmims.api.test.ViewAssignmentsFormTest;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class ViewAssignmentsFormEndPointsImpl implements ViewAssignmentsFormEndPoint {
@@ -16,33 +17,24 @@ public class ViewAssignmentsFormEndPointsImpl implements ViewAssignmentsFormEndP
 	
 
 	//@formatter:off
-    private static final Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormEndPointsImpl.class);
+    public static ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
 
     // Apply POST method
     @Override
     public  Response viewAssignmentsFormEndPointHeaderPost() {
         logger.info("Initiating POST request to view assignments form endpoint.");
 
-        ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        StudentModel requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
-
-        logger.debug("Request payload for POST: {}", requestBody);
         
-        
-
-        Response response;
-        try {
-            response = RestAssured.given()
-                    .header("Content-Type", "application/json")
-                    .body(requestBody)
-                    .when()
-                    .post(Routs.post_url_viewAssignmentsForm);
+        	Response response = RestAssured.given()
+        			                         .contentType(ContentType.JSON)
+ 	                                         .accept(ContentType.JSON)
+ 	                                        .log().headers()
+                                             .body(viewAssignmentsFormPayload.viewAssignmentsFormData())
+                                           .when()
+                                             .post(Routs.post_url_viewAssignmentsForm);
 
             logger.info("POST request completed with status code: {}", response.getStatusCode());
-        } catch (Exception e) {
-            logger.error("Exception occurred for the ", Routs.post_url_viewAssignmentsForm, " ",e);
-            throw e;
-        }
 
         return response;
     }
@@ -79,16 +71,12 @@ public class ViewAssignmentsFormEndPointsImpl implements ViewAssignmentsFormEndP
     public Response viewAssignmentsFormEndPointHeaderDELETE() {
         logger.info("Initiating DELETE request to view assignments form endpoint.");
 
-        ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        StudentModel requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
-
-        logger.debug("Request payload for DELETE (if applicable): {}", requestBody);
 
         Response response;
         try {
             response = RestAssured.given()
                     .header("Content-Type", "application/json")
-                    .body(requestBody)
+                    .body(viewAssignmentsFormPayload.viewAssignmentsFormData())
                     .when()
                     .delete(Routs.post_url_viewAssignmentsForm);
 

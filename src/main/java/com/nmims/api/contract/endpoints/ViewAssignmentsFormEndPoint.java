@@ -4,14 +4,14 @@ import io.restassured.response.Response;
 
 public interface ViewAssignmentsFormEndPoint {
 
-	Response viewAssignmentsFormEndPointHeaderPost();
+	public Response viewAssignmentsFormEndPointHeaderPost();
 
-	Response viewAssignmentsFormEndPointHeaderGET();
+	public Response viewAssignmentsFormEndPointHeaderGET();
 
-	Response viewAssignmentsFormEndPointHeaderDELETE();
+	public Response viewAssignmentsFormEndPointHeaderDELETE();
 
-	Response viewAssignmentsFormEmptyPayload();
+	public Response viewAssignmentsFormEmptyPayload();
 
-	Response viewAssignmentsFormInvalidPayload();
+	public Response viewAssignmentsFormInvalidPayload();
 
 }

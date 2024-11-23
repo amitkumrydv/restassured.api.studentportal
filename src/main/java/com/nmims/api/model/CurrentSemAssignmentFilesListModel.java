@@ -247,5 +247,5 @@ public class CurrentSemAssignmentFilesListModel {
     @JsonProperty("level")
     private String level;
 
-    // Add other fields similarly...
+
 }

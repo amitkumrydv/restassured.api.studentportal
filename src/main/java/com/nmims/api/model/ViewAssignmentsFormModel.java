@@ -14,141 +14,62 @@ Ignore all others JSON.
 //@JsonIgnoreProperties(ignoreUnknown = true)
 public class ViewAssignmentsFormModel {
 
-	@JsonProperty("count")
-	private Integer count;
+	 @JsonProperty("month")
+	    private String month;
 
-	@JsonProperty("year")
-	private String year;
+	    @JsonProperty("year")
+	    private String year;
 
-	@JsonProperty("month")
-	private String month;
+	    @JsonProperty("currentYearList")
+	    private Object currentYearList;
 
-	@JsonProperty("subject")
-	private String subject;
+	    @JsonProperty("subjectList")
+	    private Object subjectList;
 
-	@JsonProperty("sem")
-	private String sem;
+	    @JsonProperty("error")
+	    private Object error;
 
-	@JsonProperty("startDate")
-	private String startDate;
+	    @JsonProperty("yearMonth")
+	    private Object yearMonth;
 
-	@JsonProperty("endDate")
-	private String endDate;
+	    @JsonProperty("failSubjectsCount")
+	    private int failSubjectsCount;
 
-	@JsonProperty("createdBy")
-	private String createdBy;
+	    @JsonProperty("failSubjectSubmissionCount")
+	    private int failSubjectSubmissionCount;
 
-	@JsonProperty("createdDate")
-	private String createdDate;
+	    @JsonProperty("currentSemEndDateTime")
+	    private String  currentSemEndDateTime;
 
-	@JsonProperty("lastModifiedBy")
-	private String lastModifiedBy;
+	    @JsonProperty("failSubjectsEndDateTime")
+	    private String failSubjectsEndDateTime;
 
-	@JsonProperty("lastModifiedDate")
-	private String lastModifiedDate;
+	    @JsonProperty("timeExtendedStudentIdSubjectList")
+	    private Object timeExtendedStudentIdSubjectList;
 
-	@JsonProperty("sapId")
-	private String sapId;
+	    @JsonProperty("applicableSubjects")
+	    private Object applicableSubjects;
 
-	@JsonProperty("questionFilePreviewPath")
-	private String questionFilePreviewPath;
+	    @JsonProperty("subjectsNotAllowedToSubmit")
+	    private Object subjectsNotAllowedToSubmit;
 
-	@JsonProperty("attempts")
-	private String attempts;
+	    @JsonProperty("assignmentFile")
+	    private Object assignmentFile;
 
-	@JsonProperty("status")
-	private String status;
+	    @JsonProperty("subject")
+	    private Object subject;
 
-	@JsonProperty("attemptsLeft")
-	private String attemptsLeft;
+	    @JsonProperty("allAssignmentFilesList")
+	    private Object allAssignmentFilesList;
 
-	@JsonProperty("errorMessage")
-	private String errorMessage;
+	    @JsonProperty("errorMessage")
+	    private Object errorMessage;
 
-	@JsonProperty("errorRecord")
-	private Boolean errorRecord;
 
-	@JsonProperty("evaluated")
-	private String evaluated;
-
-	@JsonProperty("evaluationCount")
-	private String evaluationCount;
-
-	@JsonProperty("markedForRevaluation")
-	private String markedForRevaluation;
-
-	@JsonProperty("revaluated")
-	private String revaluated;
-
-	@JsonProperty("revaluationCount")
-	private String revaluationCount;
-
-	@JsonProperty("revisited")
-	private String revisited;
-
-	@JsonProperty("faculty2EvaluationCount")
-	private String faculty2EvaluationCount;
-
-	@JsonProperty("faculty3EvaluationCount")
-	private String faculty3EvaluationCount;
-
-	@JsonProperty("minMatchPercent")
-	private Integer minMatchPercent;
-
-	@JsonProperty("toBeEvaluated")
-	private String toBeEvaluated;
-
-	@JsonProperty("submissionAllowed")
-	private Boolean submissionAllowed;
-
-	@JsonProperty("submissionAllow")
-	private String submissionAllow;
-
-	@JsonProperty("threshold2")
-	private Integer threshold2;
-
-	@JsonProperty("currentSemSubject")
-	private String currentSemSubject;
-
-//	    @JsonProperty("currentSemAssignmentFilesListModel")
-//	    private ArrayList<CurrentSemAssignmentFilesListModel> currentSemAssignmentFilesListModel;
-
-	@JsonProperty("numberOfAssignments")
-	private ArrayList<Integer> numberOfAssignments;
-
-	@JsonProperty("unMarkCCList")
-	private ArrayList<Integer> unMarkCCList;
-
-	@JsonProperty("failSubjectSubmissionCount")
-	private int failSubjectSubmissionCount;
-
-	@JsonProperty("failSubjectsEndDateTime")
-	private String failSubjectsEndDateTime;
-
-	@JsonProperty("currentSemEndDateTime")
-	private String currentSemEndDateTime;
-
-	@JsonProperty("failSubjectsCount")
-	private int failSubjectsCount;
-
-	@JsonProperty("successMessage")
-	private String successMessage;
-
-	@JsonProperty("faculties")
-	private ArrayList<String> faculties;
-
-	@JsonProperty("indexes")
-	private ArrayList<String> indexes;
-
-	@JsonProperty("revalAssignments")
-	private ArrayList<String> revalAssignments;
-	
 	@JsonProperty("currentSemAssignmentFilesListModel")
 	private ArrayList<CurrentSemAssignmentFilesListModel> currentSemAssignmentFilesListModel;
-	
+
 	@JsonProperty("failSubjectsAssignmentFilesListModel")
 	private ArrayList<FailSubjectsAssignmentFilesListModel> failSubjectsAssignmentFilesListModel;
-	
-	
 
 }
