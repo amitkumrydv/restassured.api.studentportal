@@ -3,11 +3,11 @@
 <suite name="Failed suite [Api test Dasboard]" guice-stage="DEVELOPMENT" allow-return-values="true" verbose="100">
   <test thread-count="5" name="API list(failed)" verbose="100">
     <classes>
-      <class name="com.api.test.GetVideosForHomeTest">
+      <class name="com.nmims.api.test.GetVideosForHomeTest">
         <methods>
           <include name="getVideosForHomeTestAPI"/>
         </methods>
-      </class> <!-- com.api.test.GetVideosForHomeTest -->
+      </class> <!-- com.nmims.api.test.GetVideosForHomeTest -->
     </classes>
   </test> <!-- API list(failed) -->
 </suite> <!-- Failed suite [Api test Dasboard] -->

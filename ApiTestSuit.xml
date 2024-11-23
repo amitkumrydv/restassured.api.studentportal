@@ -12,7 +12,7 @@
 
 		<classes>
 
-			<class name="com.api.test.AuthenticateTest">
+			<class name="com.nmims.api.test.AuthenticateTest">
 		<!-- 		<methods>
 					<include name="authenticatePOSTHeaderTest"></include>
 					<include name="authenticateGETHeaderTest"></include>
@@ -20,7 +20,7 @@
 				</methods> -->
            </class>
            
-			<class name="com.api.test.GetVideosForHomeTest">
+			<class name="com.nmims.api.test.GetVideosForHomeTest">
 			
 			<!--      <methods>
 					<include name="getVideosForHomePostHeaderTest"></include>
@@ -29,7 +29,7 @@
 				</methods> -->
            </class>
            
-			<class name="com.api.test.ViewAssignmentsFormTest">
+			<class name="com.nmims.api.test.ViewAssignmentsFormTest">
              <!--     <methods>
 					<include name="viewAssignmentsFormPOSTHeaderTest"></include>
 					<include name="viewAssignmentsFormGETHeaderTest"></include>

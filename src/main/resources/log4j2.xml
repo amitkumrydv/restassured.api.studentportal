@@ -84,20 +84,20 @@
             <!-- Reference to the async file appender for this package -->
         </Logger>
         
-          <Logger name="com.api.payload" level="debug" additivity="false">
+          <Logger name="com.nmims.api.payload" level="debug" additivity="false">
             <!-- Package-specific logger set to 'debug' level -->
             <AppenderRef ref="AsyncFileAppender" />
             <!-- Reference to the async file appender for this package -->
         </Logger>
         
-         <Logger name="com.api.jsonPath" level="debug" additivity="false">
+         <Logger name="com.nmims.api.jsonPath" level="debug" additivity="false">
             <!-- Package-specific logger set to 'debug' level -->
             <AppenderRef ref="AsyncFileAppender" />
             <!-- Reference to the async file appender for this package -->
         </Logger>
         
 
-        <Logger name="com.api.test" level="debug" additivity="false">
+        <Logger name="com.nmims.api.test" level="debug" additivity="false">
             <!-- Logger for test classes set to 'debug' level -->
             <AppenderRef ref="TestRollingFileAppender" />
             <!-- Reference to the test rolling file appender -->

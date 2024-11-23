@@ -1,153 +1,149 @@
-2024-11-22 09:49:33 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 09:49:34 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 09:59:49 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 10:00:54 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 10:22:08 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 10:29:00 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 10:47:14 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 10:47:16 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 10:53:29 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 10:53:30 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 11:00:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:00:30 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 11:15:02 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:15:03 [main] ERROR AuthenticateTest - Assertion error: Error during validation: class com.api.pojoClass.AuthenticationPojo cannot be cast to class java.util.Map (com.api.pojoClass.AuthenticationPojo is in unnamed module of loader 'app'; java.util.Map is in module java.base of loader 'bootstrap')
-2024-11-22 11:16:23 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:16:24 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 11:16:32 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:16:33 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 11:19:14 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:19:15 [main] ERROR AuthenticateTest - Assertion error: Error during validation: class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')
-2024-11-22 11:21:34 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:21:35 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 11:28:02 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:28:04 [main] ERROR AuthenticateTest - Assertion error: Type mismatch for field 'regData'.
-2024-11-22 11:32:59 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:33:00 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 11:46:29 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:46:30 [main] ERROR AuthenticateTest - Assertion error: Type mismatch for field 'regOrder'.
-2024-11-22 11:49:39 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:49:40 [main] ERROR AuthenticateTest - Assertion error: Type mismatch for field 'maxOrderWhereContentLive'.
-2024-11-22 11:50:36 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:50:38 [main] ERROR AuthenticateTest - Assertion error: Type mismatch for field 'featureViseAccess'.
-2024-11-22 11:53:21 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 11:53:22 [main] ERROR AuthenticateTest - Assertion error: JSON field 'defaultinternalassessmentyUrl' is not present in the POJO.
-2024-11-22 12:01:34 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:16:32 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:19:08 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:19:10 [main] ERROR AuthenticateTest - Assertion error: Field 'waivedOffSubjects' is present in POJO but missing in the JSON response.
-2024-11-22 12:20:26 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:20:27 [main] ERROR AuthenticateTest - Assertion error: Field 'subjectsCount' is present in POJO but missing in the JSON response.
-2024-11-22 12:30:30 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:30:32 [main] ERROR AuthenticateTest - Assertion error: Field 'linkedinUrl' is present in POJO but missing in the JSON response.
-2024-11-22 12:32:07 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:32:08 [main] ERROR AuthenticateTest - Assertion error: Field 'onesignalId' is present in POJO but missing in the JSON response.
-2024-11-22 12:43:33 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:43:34 [main] ERROR AuthenticateTest - Assertion error: Field 'year' is present in POJO but missing in the JSON response.
-2024-11-22 12:51:32 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:56:50 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:58:48 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 12:58:49 [main] ERROR AuthenticateTest - Assertion error: Field 'year' is present in POJO but missing in the JSON response.
-2024-11-22 13:00:39 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:00:40 [main] ERROR AuthenticateTest - Assertion error: Field 'companyName' is present in POJO but missing in the JSON response.
-2024-11-22 13:02:07 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:02:09 [main] ERROR AuthenticateTest - Assertion error: Field 'isReReg' is present in POJO but missing in the JSON response.
-2024-11-22 13:47:19 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:47:21 [main] ERROR AuthenticateTest - Assertion error: Field 'isReReg' is present in POJO but missing in the JSON response.
-2024-11-22 13:48:11 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:48:12 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:48:12 [main] INFO  AuthenticateTest - cookieValue:4D6BBBB466D47DD2CB68EBCDB3561735
-2024-11-22 13:48:13 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:48:13 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:21:18 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 09:21:20 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 09:21:20 [main] INFO  AuthenticateTest - cookieValue:A61009A12AB3216CBCAE3D13465F7A3E
+2024-11-23 09:21:20 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 09:21:20 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-22 13:48:13 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 13:48:13 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:21:20 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 09:21:20 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 13:48:13 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 13:48:13 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:21:20 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 09:21:20 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 13:48:13 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 13:48:13 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-22 13:54:41 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:54:42 [main] ERROR AuthenticateTest - Assertion error: Type mismatch for field 'regOrder'.
-2024-11-22 13:56:04 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:56:05 [main] ERROR AuthenticateTest - Assertion error: Type mismatch for field 'regOrder'.
-2024-11-22 13:57:50 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 13:57:51 [main] ERROR AuthenticateTest - Assertion error: Type mismatch for field 'maxOrderWhereContentLive'.
-2024-11-22 14:04:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:04:29 [main] ERROR AuthenticateTest - Assertion error: Type mismatch for field 'regOrder'.
-2024-11-22 14:04:56 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:04:57 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:04:57 [main] INFO  AuthenticateTest - cookieValue:0E1BE311A3BFF3A515FC133A536C0B5D
-2024-11-22 14:04:57 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:04:58 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:21:20 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 09:21:20 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-23 09:21:20 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-23 09:21:20 [main] INFO  GetVideosForHomeTest - cookieValue: 8626685473D808672FBBA093DB8180A7
+2024-11-23 09:21:20 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-22 14:04:58 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 14:04:58 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:21:20 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 09:21:20 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 14:04:58 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 14:04:58 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:21:21 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 09:21:21 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 14:04:58 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 14:04:58 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-22 14:10:06 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:10:08 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:10:08 [main] INFO  AuthenticateTest - cookieValue:324C859CE8200CA331701BE2B1282F17
-2024-11-22 14:10:08 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:10:08 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:21:21 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 09:21:21 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-23 09:21:21 [main] INFO  ViewAssignmentsFormTest - Initiating POST request to view assignments form endpoint.
+2024-11-23 09:21:21 [main] DEBUG ViewAssignmentsFormTest - Request payload for POST: com.nmims.api.model.StudentModel@f49e81a
+2024-11-23 09:21:21 [main] INFO  ViewAssignmentsFormTest - POST request completed with status code: 500
+2024-11-23 09:21:21 [main] ERROR ViewAssignmentsFormTest - Assertion error: Status code validation expected [200] but found [500]
+2024-11-23 09:39:54 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 09:39:55 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 09:39:56 [main] INFO  AuthenticateTest - cookieValue:05BB303A0719671B69B56AEB0C3250B1
+2024-11-23 09:39:56 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 09:39:56 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-22 14:10:08 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 14:10:08 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:39:56 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 09:39:56 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 14:10:08 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 14:10:08 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:39:56 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 09:39:56 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 14:10:08 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 14:10:08 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-22 14:30:09 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:34:52 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 14:38:52 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 15:12:36 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 15:13:19 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 15:13:20 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 15:13:21 [main] INFO  AuthenticateTest - cookieValue:45E6E4ACD7089A407CBB6C30C3C01C2D
-2024-11-22 15:13:21 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 15:13:21 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:39:56 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 09:39:56 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-23 09:39:56 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-23 09:39:56 [main] INFO  GetVideosForHomeTest - cookieValue: E7F9520C4EA00BA8F86BA0E6B8BCECCC
+2024-11-23 09:39:56 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-22 15:13:21 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 15:13:21 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:39:56 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 09:39:56 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 15:13:21 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 15:13:22 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:39:56 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 09:39:56 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 15:13:22 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 15:13:22 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-22 15:34:55 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 15:34:56 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 15:34:57 [main] INFO  AuthenticateTest - cookieValue:4FF2FC71FADBC3D670F81F9FE7DDFFEA
-2024-11-22 15:34:57 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-22 15:34:57 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 09:39:56 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 09:39:56 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-23 09:39:56 [main] INFO  ViewAssignmentsFormTest - Initiating POST request to view assignments form endpoint.
+2024-11-23 09:39:56 [main] DEBUG ViewAssignmentsFormTest - Request payload for POST: com.nmims.api.model.StudentModel@61c4cebd
+2024-11-23 09:39:57 [main] INFO  ViewAssignmentsFormTest - POST request completed with status code: 500
+2024-11-23 09:39:57 [main] ERROR ViewAssignmentsFormTest - Assertion error: Status code validation expected [200] but found [500]
+2024-11-23 11:42:49 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 11:42:50 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 11:42:50 [main] INFO  AuthenticateTest - cookieValue:B5AD0D6786B3AF2E41053117A34D897F
+2024-11-23 11:42:51 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 11:42:51 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-22 15:34:57 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 15:34:57 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 11:42:51 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 11:42:51 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 15:34:57 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 15:34:57 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-23 11:42:51 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 11:42:51 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-22 15:34:57 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-22 15:34:57 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-23 11:42:51 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 11:42:51 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-23 11:45:12 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 11:45:13 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 11:45:13 [main] INFO  AuthenticateTest - cookieValue:4B5E3419C3E05045F5D62C64C3504871
+2024-11-23 11:45:13 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 11:45:13 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-23 11:45:13 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 11:45:13 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-23 11:45:13 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 11:45:13 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-23 11:45:13 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 11:45:14 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-23 11:59:22 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 12:04:32 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 12:04:33 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 12:04:33 [main] INFO  AuthenticateTest - cookieValue:06D686DFBE0E354AD14733A4AE8DA8C8
+2024-11-23 12:04:33 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-23 12:04:33 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-23 12:04:33 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 12:04:34 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-23 12:04:34 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 12:04:34 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-23 12:04:34 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-23 12:04:34 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-23 12:04:34 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-23 12:04:34 [main] INFO  GetVideosForHomeTest - cookieValue: AF8DF2D8016612B4C5E1DBD43A4B28EF
+2024-11-23 12:04:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-23 12:04:34 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 12:04:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-23 12:04:34 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 12:04:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-23 12:04:34 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-23 12:04:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-23 12:04:34 [main] INFO  ViewAssignmentsFormTest - Initiating POST request to view assignments form endpoint.
+2024-11-23 12:04:34 [main] DEBUG ViewAssignmentsFormTest - Request payload for POST: com.nmims.api.model.StudentModel@5d3b6585
+2024-11-23 12:04:34 [main] INFO  ViewAssignmentsFormTest - POST request completed with status code: 500
+2024-11-23 12:04:34 [main] ERROR ViewAssignmentsFormTest - Assertion error: Status code validation expected [200] but found [500]

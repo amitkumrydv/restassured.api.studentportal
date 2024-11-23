@@ -1,1 +1,1 @@
-{"uuid":"8ad6d526-7cf3-46a7-a86b-f8cefd08d105","name":"com.api.test.AuthenticateTest","children":["32182b11-2c1f-40ef-a31a-7ffa32260400"],"befores":[],"afters":[],"start":1732185700161,"stop":1732185701938}
+{"uuid":"8ad6d526-7cf3-46a7-a86b-f8cefd08d105","name":"com.nmims.api.test.AuthenticateTest","children":["32182b11-2c1f-40ef-a31a-7ffa32260400"],"befores":[],"afters":[],"start":1732185700161,"stop":1732185701938}
