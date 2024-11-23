@@ -23,7 +23,7 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 	    @Override
 	    public  Response authenticateResponseForPOST() {
 
-	    	logger.info("Sending authentication request.");
+	    	logger.info("Sending POST request for authentication .");
 	        
 	        Response response = RestAssured.given()
 	                .contentType(ContentType.JSON)
@@ -44,7 +44,7 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
         public  Response authenticateResponseForGET() {
 	        AuthenticatePayload authenticate = new AuthenticatePayload();
 
-	        logger.info("Sending authentication request to URL: {}", Routs.Authenticate_url);
+	        logger.info("Sending Get request for authentication ");
 	        
 	        Response response = RestAssured.given()
 	                .contentType(ContentType.JSON)
@@ -62,7 +62,7 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 	    public Response authenticateResponseForDELETE() {
 	        AuthenticatePayload authenticate = new AuthenticatePayload();
 
-	        logger.info("Sending authentication request to URL: {}", Routs.Authenticate_url);
+	        logger.info("Sending DELETE request for authentication ");
 	        
 	        Response response = RestAssured.given()
 	                .contentType(ContentType.JSON)
@@ -80,6 +80,8 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 	    @Override
 	    public  Response authenticateResponseForEmptyPayload() {
 	        // Sending an empty payload
+	    	
+	    	logger.info("Sending empty payload request for authentication ");
 	        String emptyPayload = "";
 
 	        Response response = RestAssured.given()
@@ -99,6 +101,8 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
         //Invalid Payload
 	    @Override
 	    public  Response authenticateResponseForInvalidPayload() {
+	    	
+	    	logger.info("Sending Invalid Payload request for authentication ");
 	        // Sending an invalid payload (malformed JSON)
 	        String invalidPayload = "{ invalidJson ";
 
@@ -119,6 +123,8 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 	    // Missing "body"
 	    @Override
 	    public  Response authenticateResponseForMissingFieldsPayload() {
+	    	
+	    	logger.info("Sending Missing payload body request for authentication ");
 	        // Sending a payload with missing required fields (assuming "title" and "body" are required)
 	        
 	        

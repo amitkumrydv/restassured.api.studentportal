@@ -8,18 +8,16 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nmims.api.comman.JsonPojoArrayValidator;
 import com.nmims.api.model.GetVideosForHomeModel;
-import com.nmims.api.response.validation.GetVideosForHomeResponsValidation;
 
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 
-public class GetVideosForHomeMapper implements GetVideosForHomeResponsValidation {
+public class GetVideosForHomeMapper  {
 
 	private static final Logger logger = LoggerFactory.getLogger(GetVideosForHomeMapper.class);
 	ObjectMapper mapper = new ObjectMapper();
 	JsonPojoArrayValidator jsonPojoArrayValidator = new JsonPojoArrayValidator(mapper);
 	
-	    @Override
 	    public void GetVideosForHomeResponsValidation(Response response) 
 	            throws JsonMappingException, JsonProcessingException {
 	        

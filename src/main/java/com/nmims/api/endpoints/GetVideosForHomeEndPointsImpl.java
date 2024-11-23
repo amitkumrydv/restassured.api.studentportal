@@ -32,13 +32,13 @@ public class GetVideosForHomeEndPointsImpl implements GetVideosForHomeEndPoints{
                              .post(Routs.post_url_getVideosForHome);
 
         logger.info("Received response with status code: " + response.statusCode());
-        
-        System.out.println("getVideosForHomeHeaderPost body---------> " + response.asPrettyString());
-
 
         return response;
     }
 
+	
+	
+	
 	@Override
     public Response getVideosForHomeHeaderGet() {
         logger.info("Sending GET request to get videos for home header");
@@ -56,6 +56,10 @@ public class GetVideosForHomeEndPointsImpl implements GetVideosForHomeEndPoints{
 
         return response;
     }
+	
+	
+	
+	
 
 	@Override
     public Response getVideosForHomeHeaderDELETE() {
@@ -80,6 +84,8 @@ public class GetVideosForHomeEndPointsImpl implements GetVideosForHomeEndPoints{
     // Empty payload
 	@Override
     public Response getVideosForHomeEmptyPayload() {
+		
+		logger.info("Sending Empty payload request to get videos for home header");
         // Sending an empty payload
         String emptyPayload = "";
 
@@ -130,8 +136,6 @@ public class GetVideosForHomeEndPointsImpl implements GetVideosForHomeEndPoints{
                 .when()
                 .post(Routs.post_url_getVideosForHome);
 
-
-       
         logger.info("Expected status code :{}",response.statusCode());
         return response;
     } 

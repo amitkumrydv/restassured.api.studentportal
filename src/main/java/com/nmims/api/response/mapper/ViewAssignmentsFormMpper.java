@@ -6,11 +6,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -20,10 +18,10 @@ import com.nmims.api.model.FailSubjectsAssignmentFilesListModel;
 import com.nmims.api.model.RegDataModel;
 import com.nmims.api.model.StudentModel;
 import com.nmims.api.model.ViewAssignmentsFormModel;
-import com.nmims.api.response.validation.ViewAssignmentsFormResponseValidation;
 
 
-public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseValidation{
+
+public class ViewAssignmentsFormMpper {
 	
 	
 	 static final Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormMpper.class);
@@ -114,7 +112,7 @@ public class ViewAssignmentsFormMpper implements ViewAssignmentsFormResponseVali
 	
 	
 	
-	@Override	
+	
 	public void ViewAssignmentsFormMapperResponsValidation(String responseBodyData)
 	        throws JsonMappingException, JsonProcessingException {
 
