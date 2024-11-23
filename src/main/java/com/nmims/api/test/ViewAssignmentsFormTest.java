@@ -32,6 +32,7 @@ public class ViewAssignmentsFormTest {
 	private static Logger logger = LoggerFactory.getLogger(ViewAssignmentsFormTest.class);
 	HeaderValidatorComman headerValidatorComman = new HeaderValidatorComman();
 	ViewAssignmentsFormMpper viewAssignment = new ViewAssignmentsFormMpper();
+	ViewAssignmentsFormEndPointsImpl viewAssignmentsFormEndPointsImpl = new ViewAssignmentsFormEndPointsImpl();
 	
 	
 	@Test(priority=1)
@@ -39,7 +40,7 @@ public class ViewAssignmentsFormTest {
 	public void viewAssignmentsFormPOSTHeaderTest() {
 		
 		
-		Response response= ViewAssignmentsFormEndPointsImpl.viewAssignmentsFormEndPointHeaderPost();
+		Response response= viewAssignmentsFormEndPointsImpl.viewAssignmentsFormEndPointHeaderPost();
 		Long responseTime = response.getTime();
 		
 		try {
@@ -86,7 +87,7 @@ public class ViewAssignmentsFormTest {
 	@Description("Send a GET request to the ViewAssignmentsFormTest URL and validate the response")
 	public void viewAssignmentsFormGETHeaderTest() {
 		
-		Response response= ViewAssignmentsFormEndPointsImpl.viewAssignmentsFormEndPointHeaderGET();
+		Response response= viewAssignmentsFormEndPointsImpl.viewAssignmentsFormEndPointHeaderGET();
 		Long responseTime = response.getTime();
 		try {
 			response.then()
@@ -122,7 +123,7 @@ public class ViewAssignmentsFormTest {
 	@Description("Send a DELETE request to the ViewAssignmentsFormTest URL and validate the response")
 	public void viewAssignmentsFormDELETEHeaderTest() {
 		
-		Response response= ViewAssignmentsFormEndPointsImpl.viewAssignmentsFormEndPointHeaderDELETE();
+		Response response= viewAssignmentsFormEndPointsImpl.viewAssignmentsFormEndPointHeaderDELETE();
 		Long responseTime = response.getTime();
 		try {
 			response.then()
@@ -162,7 +163,7 @@ public class ViewAssignmentsFormTest {
 		logger.info("Start ViewAssignmentsForm API Response For Empty Payload test");
       try {
 		// @formatter:off
-    	  Response response= ViewAssignmentsFormEndPointsImpl.viewAssignmentsFormEmptyPayload();
+    	  Response response= viewAssignmentsFormEndPointsImpl.viewAssignmentsFormEmptyPayload();
 		Long responseTime = response.getTime();
 	
 			response.then()
@@ -201,7 +202,7 @@ public class ViewAssignmentsFormTest {
 		logger.info("Start ViewAssignmentsForm API Response For Empty Payload test");
       try {
 		// @formatter:off
-    	  Response response= ViewAssignmentsFormEndPointsImpl. viewAssignmentsFormInvalidPayload();
+    	  Response response= viewAssignmentsFormEndPointsImpl. viewAssignmentsFormInvalidPayload();
 		Long responseTime = response.getTime();
 	
 			response.then()
