@@ -1,5 +1,6 @@
 package com.nmims.api.comman;
 
+import com.google.common.net.HttpHeaders;
 
 public class HeaderConstantsComman {
 
@@ -57,6 +58,7 @@ public class HeaderConstantsComman {
     public static final String VIA = "Via";
     public static final String WARNING = "Warning";
     
+    HttpHeaders
 
     // Prevent instantiation
     private HeaderConstantsComman() {
