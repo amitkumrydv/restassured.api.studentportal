@@ -1,251 +1,590 @@
 package com.nmims.api.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.util.List;
 
 public class CurrentSemAssignmentFilesListModel {
 
-    @JsonProperty("id")
-    private String id;
 
-    @JsonProperty("consumerProgramStructureId")
-    private String consumerProgramStructureId;
+	    @JsonProperty("id")
+	    private String id;
 
-    @JsonProperty("consumerTypeId")
-    private String consumerTypeId;
+	    @JsonProperty("consumerProgramStructureId")
+	    private String consumerProgramStructureId;
 
-    @JsonProperty("programId")
-    private String programId;
+	    @JsonProperty("consumerTypeId")
+	    private String consumerTypeId;
 
-    @JsonProperty("programStructureId")
-    private String programStructureId;
+	    @JsonProperty("programId")
+	    private String programId;
 
-    @JsonProperty("count")
-    private int count;
+	    @JsonProperty("programStructureId")
+	    private String programStructureId;
 
-    @JsonProperty("consumerType")
-    private String consumerType;
+	    @JsonProperty("count")
+	    private int count;
 
-    @JsonProperty("programStructure")
-    private String programStructure;
+	    @JsonProperty("consumerType")
+	    private String consumerType;
 
-    @JsonProperty("searchType")
-    private String searchType;
+	    @JsonProperty("programStructure")
+	    private String programStructure;
 
-    @JsonProperty("year")
-    private String year;
+	    @JsonProperty("searchType")
+	    private String searchType;
 
-    @JsonProperty("month")
-    private String month;
+	    @JsonProperty("year")
+	    private String year;
 
-    @JsonProperty("fileData")
-    private String fileData;
+	    @JsonProperty("month")
+	    private String month;
 
-    @JsonProperty("subject")
-    private String subject;
+	    @JsonProperty("fileData")
+	    private String fileData;
 
-    @JsonProperty("sem")
-    private String sem;
+	    @JsonProperty("subject")
+	    private String subject;
 
-    @JsonProperty("startDate")
-    private String startDate;
+	    @JsonProperty("sem")
+	    private String sem;
 
-    @JsonProperty("endDate")
-    private String endDate;
+	    @JsonProperty("startDate")
+	    private String startDate;
 
-    @JsonProperty("instructions")
-    private String instructions;
+	    @JsonProperty("endDate")
+	    private String endDate;
 
-    @JsonProperty("filePath")
-    private String filePath;
+	    @JsonProperty("instructions")
+	    private String instructions;
 
-    @JsonProperty("studentFilePath")
-    private String studentFilePath;
+	    @JsonProperty("filePath")
+	    private String filePath;
 
-    @JsonProperty("createdBy")
-    private String createdBy;
+	    @JsonProperty("studentFilePath")
+	    private String studentFilePath;
 
-    @JsonProperty("createdDate")
-    private String createdDate;
+	    @JsonProperty("createdBy")
+	    private String createdBy;
 
-    @JsonProperty("lastModifiedBy")
-    private String lastModifiedBy;
+	    @JsonProperty("createdDate")
+	    private String createdDate;
 
-    @JsonProperty("lastModifiedDate")
-    private String lastModifiedDate;
+	    @JsonProperty("lastModifiedBy")
+	    private String lastModifiedBy;
 
-    @JsonProperty("sapId")
-    private String sapId;
+	    @JsonProperty("lastModifiedDate")
+	    private String lastModifiedDate;
 
-    @JsonProperty("previewPath")
-    private String previewPath;
+	    @JsonProperty("sapId")
+	    private String sapId;
 
-    @JsonProperty("questionFilePreviewPath")
-    private String questionFilePreviewPath;
+	    @JsonProperty("previewPath")
+	    private String previewPath;
 
-    @JsonProperty("attempts")
-    private String attempts;
+	    @JsonProperty("questionFilePreviewPath")
+	    private String questionFilePreviewPath;
 
-    @JsonProperty("status")
-    private String status;
+	    @JsonProperty("attempts")
+	    private String attempts;
 
-    @JsonProperty("attemptsLeft")
-    private String attemptsLeft;
+	    @JsonProperty("status")
+	    private String status;
 
-    @JsonProperty("weightage")
-    private String weightage;
+	    @JsonProperty("attemptsLeft")
+	    private String attemptsLeft;
 
-    @JsonProperty("errorMessage")
-    private String errorMessage;
+	    @JsonProperty("weightage")
+	    private String weightage;
 
-    @JsonProperty("errorRecord")
-    private boolean errorRecord;
+	    @JsonProperty("errorMessage")
+	    private String errorMessage;
 
-    @JsonProperty("subjectCodeId")
-    private String subjectCodeId;
+	    @JsonProperty("errorRecord")
+	    private boolean errorRecord;
 
-    @JsonProperty("lastName")
-    private String lastName;
+	    @JsonProperty("subjectCodeId")
+	    private String subjectCodeId;
 
-    @JsonProperty("firstName")
-    private String firstName;
+	    @JsonProperty("lastName")
+	    private String lastName;
 
-    @JsonProperty("program")
-    private String program;
+	    @JsonProperty("firstName")
+	    private String firstName;
 
-    @JsonProperty("enrollmentMonth")
-    private String enrollmentMonth;
+	    @JsonProperty("program")
+	    private String program;
 
-    @JsonProperty("enrollmentYear")
-    private String enrollmentYear;
+	    @JsonProperty("enrollmentMonth")
+	    private String enrollmentMonth;
 
-    @JsonProperty("emailId")
-    private String emailId;
+	    @JsonProperty("enrollmentYear")
+	    private String enrollmentYear;
 
-    @JsonProperty("mobile")
-    private String mobile;
+	    @JsonProperty("emailId")
+	    private String emailId;
 
-    @JsonProperty("altPhone")
-    private String altPhone;
+	    @JsonProperty("mobile")
+	    private String mobile;
 
-    @JsonProperty("centerCode")
-    private String centerCode;
+	    @JsonProperty("altPhone")
+	    private String altPhone;
 
-    @JsonProperty("centerName")
-    private String centerName;
+	    @JsonProperty("centerCode")
+	    private String centerCode;
 
-    @JsonProperty("validityEndMonth")
-    private String validityEndMonth;
+	    @JsonProperty("centerName")
+	    private String centerName;
 
-    @JsonProperty("validityEndYear")
-    private String validityEndYear;
+	    @JsonProperty("validityEndMonth")
+	    private String validityEndMonth;
 
-    @JsonProperty("prgmStructApplicable")
-    private String prgmStructApplicable;
+	    @JsonProperty("validityEndYear")
+	    private String validityEndYear;
 
-    @JsonProperty("lc")
-    private String lc;
+	    @JsonProperty("prgmStructApplicable")
+	    private String prgmStructApplicable;
 
-    @JsonProperty("facultyId")
-    private String facultyId;
+	    @JsonProperty("lc")
+	    private String lc;
 
-    @JsonProperty("faculty1")
-    private String faculty1;
+	    @JsonProperty("facultyId")
+	    private String facultyId;
 
-    @JsonProperty("faculty2")
-    private String faculty2;
+	    @JsonProperty("faculty1")
+	    private String faculty1;
 
-    @JsonProperty("faculty3")
-    private String faculty3;
+	    @JsonProperty("faculty2")
+	    private String faculty2;
 
-    @JsonProperty("facultyIdRevaluation")
-    private String facultyIdRevaluation;
+	    @JsonProperty("faculty3")
+	    private String faculty3;
 
-    @JsonProperty("faculty1Name")
-    private String faculty1Name;
+	    @JsonProperty("facultyIdRevaluation")
+	    private String facultyIdRevaluation;
 
-    @JsonProperty("faculty2Name")
-    private String faculty2Name;
+	    @JsonProperty("faculty1Name")
+	    private String faculty1Name;
 
-    @JsonProperty("faculty3Name")
-    private String faculty3Name;
+	    @JsonProperty("faculty2Name")
+	    private String faculty2Name;
 
-    @JsonProperty("facultyRevaluationName")
-    private String facultyRevaluationName;
+	    @JsonProperty("faculty3Name")
+	    private String faculty3Name;
 
-    @JsonProperty("email")
-    private String email;
+	    @JsonProperty("facultyRevaluationName")
+	    private String facultyRevaluationName;
 
-    @JsonProperty("evaluated")
-    private String evaluated;
+	    @JsonProperty("email")
+	    private String email;
 
-    @JsonProperty("remarks")
-    private String remarks;
+	    @JsonProperty("evaluated")
+	    private String evaluated;
 
-    @JsonProperty("score")
-    private String score;
+	    @JsonProperty("remarks")
+	    private String remarks;
 
-    @JsonProperty("evaluationCount")
-    private String evaluationCount;
+	    @JsonProperty("score")
+	    private String score;
 
-    @JsonProperty("revaluationScore")
-    private String revaluationScore;
+	    @JsonProperty("evaluationCount")
+	    private String evaluationCount;
 
-    @JsonProperty("markedForRevaluation")
-    private String markedForRevaluation;
+	    @JsonProperty("revaluationScore")
+	    private String revaluationScore;
 
-    @JsonProperty("revaluated")
-    private String revaluated;
+	    @JsonProperty("markedForRevaluation")
+	    private String markedForRevaluation;
 
-    @JsonProperty("revaluationRemarks")
-    private String revaluationRemarks;
+	    @JsonProperty("revaluated")
+	    private String revaluated;
 
-    @JsonProperty("revaluationCount")
-    private String revaluationCount;
+	    @JsonProperty("revaluationRemarks")
+	    private String revaluationRemarks;
 
-    @JsonProperty("revaluationReason")
-    private String revaluationReason;
+	    @JsonProperty("revaluationCount")
+	    private String revaluationCount;
 
-    @JsonProperty("revaluationDate")
-    private String revaluationDate;
+	    @JsonProperty("revaluationReason")
+	    private String revaluationReason;
 
-    @JsonProperty("revisitScore")
-    private String revisitScore;
+	    @JsonProperty("revaluationDate")
+	    private String revaluationDate;
 
-    @JsonProperty("revisitRemarks")
-    private String revisitRemarks;
+	    @JsonProperty("revisitScore")
+	    private String revisitScore;
 
-    @JsonProperty("revisited")
-    private String revisited;
+	    @JsonProperty("revisitRemarks")
+	    private String revisitRemarks;
 
-    @JsonProperty("isPass")
-    private String isPass;
+	    @JsonProperty("revisited")
+	    private String revisited;
 
-    @JsonProperty("sfName")
-    private String sfName;
+	    @JsonProperty("isPass")
+	    private String isPass;
 
-    @JsonProperty("slName")
-    private String slName;
+	    @JsonProperty("sfName")
+	    private String sfName;
 
-    @JsonProperty("reason")
-    private String reason;
+	    @JsonProperty("slName")
+	    private String slName;
 
-    @JsonProperty("faculties")
-    private List<String> faculties;
+	    @JsonProperty("reason")
+	    private String reason;
 
-    @JsonProperty("numberOfAssignments")
-    private List<String> numberOfAssignments;
+	    @JsonProperty("faculties")
+	    private String[] faculties;
 
-    @JsonProperty("indexes")
-    private List<String> indexes;
+	    @JsonProperty("numberOfAssignments")
+	    private String[] numberOfAssignments;
 
-    @JsonProperty("revalAssignments")
-    private List<String> revalAssignments;
+	    @JsonProperty("indexes")
+	    private String[] indexes;
 
-    @JsonProperty("unMarkCCList")
-    private List<String> unMarkCCList;
+	    @JsonProperty("revalAssignments")
+	    private String[] revalAssignments;
 
-    @JsonProperty("level")
-    private String level;
+	    @JsonProperty("unMarkCCList")
+	    private String[] unMarkCCList;
+
+	    @JsonProperty("level")
+	    private String level;
+
+	    @JsonProperty("q1Marks")
+	    private String q1Marks;
+
+	    @JsonProperty("q1Remarks")
+	    private String q1Remarks;
+
+	    @JsonProperty("q2Marks")
+	    private String q2Marks;
+
+	    @JsonProperty("q3Marks")
+	    private String q3Marks;
+
+	    @JsonProperty("q4Marks")
+	    private String q4Marks;
+
+	    @JsonProperty("q5Marks")
+	    private String q5Marks;
+
+	    @JsonProperty("q6Marks")
+	    private String q6Marks;
+
+	    @JsonProperty("q7Marks")
+	    private String q7Marks;
+
+	    @JsonProperty("q8Marks")
+	    private String q8Marks;
+
+	    @JsonProperty("q9Marks")
+	    private String q9Marks;
+
+	    @JsonProperty("q10Marks")
+	    private String q10Marks;
+
+	    @JsonProperty("q2Remarks")
+	    private String q2Remarks;
+
+	    @JsonProperty("q3Remarks")
+	    private String q3Remarks;
+
+	    @JsonProperty("q4Remarks")
+	    private String q4Remarks;
+
+	    @JsonProperty("q5Remarks")
+	    private String q5Remarks;
+
+	    @JsonProperty("q6Remarks")
+	    private String q6Remarks;
+
+	    @JsonProperty("q7Remarks")
+	    private String q7Remarks;
+
+	    @JsonProperty("q8Remarks")
+	    private String q8Remarks;
+
+	    @JsonProperty("q9Remarks")
+	    private String q9Remarks;
+
+	    @JsonProperty("q10Remarks")
+	    private String q10Remarks;
+
+	    @JsonProperty("q1RevalMarks")
+	    private String q1RevalMarks;
+	    
+	    @JsonProperty("q2RevalMarks")
+	    private String q2RevalMarks;
+
+	    @JsonProperty("q1RevalRemarks")
+	    private String q1RevalRemarks;
+	    
+	    @JsonProperty("q3RevalMarks")
+	    private String q3RevalMarks;
+
+	    @JsonProperty("q4RevalMarks")
+	    private String q4RevalMarks;
+
+	    @JsonProperty("q5RevalMarks")
+	    private String q5RevalMarks;
+
+	    @JsonProperty("q6RevalMarks")
+	    private String q6RevalMarks;
+
+	    @JsonProperty("q7RevalMarks")
+	    private String q7RevalMarks;
+
+	    @JsonProperty("q8RevalMarks")
+	    private String q8RevalMarks;
+
+	    @JsonProperty("q9RevalMarks")
+	    private String q9RevalMarks;
+
+	    @JsonProperty("q10RevalMarks")
+	    private String q10RevalMarks;
+
+	    @JsonProperty("q2RevalRemarks")
+	    private String q2RevalRemarks;
+
+	    @JsonProperty("q3RevalRemarks")
+	    private String q3RevalRemarks;
+
+	    @JsonProperty("q4RevalRemarks")
+	    private String q4RevalRemarks;
+
+	    @JsonProperty("q5RevalRemarks")
+	    private String q5RevalRemarks;
+
+	    @JsonProperty("q6RevalRemarks")
+	    private String q6RevalRemarks;
+
+	    @JsonProperty("q7RevalRemarks")
+	    private String q7RevalRemarks;
+
+	    @JsonProperty("q8RevalRemarks")
+	    private String q8RevalRemarks;
+
+	    @JsonProperty("q9RevalRemarks")
+	    private String q9RevalRemarks;
+
+	    @JsonProperty("q10RevalRemarks")
+	    private String q10RevalRemarks;
+
+	    @JsonProperty("evaluationDate")
+	    private Object evaluationDate;
+
+	    @JsonProperty("faculty2Score")
+	    private Object faculty2Score;
+
+	    @JsonProperty("faculty2Remarks")
+	    private Object faculty2Remarks;
+
+	    @JsonProperty("faculty2Reason")
+	    private Object faculty2Reason;
+
+	    @JsonProperty("faculty2EvaluationCount")
+	    private Object faculty2EvaluationCount;
+
+	    @JsonProperty("faculty2EvaluationDate")
+	    private Object faculty2EvaluationDate;
+
+	    @JsonProperty("faculty2Evaluated")
+	    private Object faculty2Evaluated;
+
+	    @JsonProperty("faculty3Score")
+	    private Object faculty3Score;
+
+	    @JsonProperty("faculty3Remarks")
+	    private Object faculty3Remarks;
+
+	    @JsonProperty("faculty3Reason")
+	    private Object faculty3Reason;
+
+	    @JsonProperty("faculty3EvaluationCount")
+	    private Object faculty3EvaluationCount;
+
+	    @JsonProperty("faculty3EvaluationDate")
+	    private Object faculty3EvaluationDate;
+
+	    @JsonProperty("faculty3Evaluated")
+	    private Object faculty3Evaluated;
+
+	    @JsonProperty("minMatchPercent")
+	    private Object minMatchPercent;
+
+	    @JsonProperty("finalScore")
+	    private Object finalScore;
+
+	    @JsonProperty("finalReason")
+	    private Object finalReason;
+
+	    @JsonProperty("finalRemarks")
+	    private Object finalRemarks;
+
+	    @JsonProperty("toBeEvaluated")
+	    private Object toBeEvaluated;
+
+	    @JsonProperty("sapIdList")
+	    private Object sapIdList;
+
+	    @JsonProperty("percentDifference")
+	    private Object percentDifference;
+
+	    @JsonProperty("mean")
+	    private Object mean;
+
+	    @JsonProperty("stddev")
+	    private Object stddev;
+
+	    @JsonProperty("normalizedScore")
+	    private Object normalizedScore;
+
+	    @JsonProperty("roundedNormalizedScore")
+	    private Object roundedNormalizedScore;
+
+	    @JsonProperty("populationCount")
+	    private Object populationCount;
+
+	    @JsonProperty("weightedMean")
+	    private Object weightedMean;
+
+	    @JsonProperty("weightedstddev")
+	    private Object weightedstddev;
+
+	    @JsonProperty("offlineAssignmentLive")
+	    private Object offlineAssignmentLive;
+
+	    @JsonProperty("trackId")
+	    private Object trackId;
+
+	    @JsonProperty("amount")
+	    private Object amount;
+
+	    @JsonProperty("tranDateTime")
+	    private Object tranDateTime;
+
+	    @JsonProperty("bookingCompleteTime")
+	    private Object bookingCompleteTime;
+
+	    @JsonProperty("tranStatus")
+	    private Object tranStatus;
+
+	    @JsonProperty("booked")
+	    private Object booked;
+
+	    @JsonProperty("transactionID")
+	    private Object transactionID;
+
+	    @JsonProperty("requestID")
+	    private Object requestID;
+
+	    @JsonProperty("merchantRefNo")
+	    private Object merchantRefNo;
+
+	    @JsonProperty("secureHash")
+	    private Object secureHash;
+
+	    @JsonProperty("respAmount")
+	    private Object respAmount;
+
+	    @JsonProperty("description")
+	    private Object description;
+
+	    @JsonProperty("responseCode")
+	    private Object responseCode;
+
+	    @JsonProperty("respPaymentMethod")
+	    private Object respPaymentMethod;
+
+	    @JsonProperty("isFlagged")
+	    private Object isFlagged;
+
+	    @JsonProperty("paymentID")
+	    private Object paymentID;
+
+	    @JsonProperty("responseMessage")
+	    private Object responseMessage;
+
+	    @JsonProperty("error")
+	    private Object error;
+
+	    @JsonProperty("respTranDateTime")
+	    private Object respTranDateTime;
+
+	    @JsonProperty("paymentApplicable")
+	    private Object paymentApplicable;
+
+	    @JsonProperty("paymentDone")
+	    private Object paymentDone;
+
+	    @JsonProperty("assignmentscore")
+	    private Object assignmentscore;
+
+	    @JsonProperty("submissionAllowed")
+	    private Boolean submissionAllowed;  // Keep as Boolean since it may have a true/false value
+
+	    @JsonProperty("submissionAllow")
+	    private Object submissionAllow;
+
+	    @JsonProperty("evaluatedFaculty")
+	    private Object evaluatedFaculty;
+
+	    @JsonProperty("acadYear")
+	    private Object acadYear;
+
+	    @JsonProperty("acadMonth")
+	    private Object acadMonth;
+
+	    @JsonProperty("threshold2")
+	    private Object threshold2;
+
+	    @JsonProperty("copyResultList2")
+	    private Object copyResultList2;
+
+	    @JsonProperty("studentName")
+	    private Object studentName;
+
+	    @JsonProperty("faculty1Evaluated")
+	    private Object faculty1Evaluated;
+
+	    @JsonProperty("faculty1Score")
+	    private Object faculty1Score;
+
+	    @JsonProperty("faculty1Remarks")
+	    private Object faculty1Remarks;
+
+	    @JsonProperty("faculty1Reason")
+	    private Object faculty1Reason;
+
+	    @JsonProperty("facultyName")
+	    private Object facultyName;
+
+	    @JsonProperty("currentSemSubject")
+	    private Object currentSemSubject;
+
+	    @JsonProperty("submissionDate")
+	    private Object submissionDate;
+
+	    @JsonProperty("ids")
+	    private Object ids;
+
+	    @JsonProperty("subjectList")
+	    private Object subjectList;
+
+	    @JsonProperty("plagiarismType")
+	    private Object plagiarismType;
+
+	    @JsonProperty("successMessage")
+	    private String successMessage; // Can remain as String since it's most likely a text field
+
+	    @JsonProperty("title")
+	    private Object title;
+
+	    @JsonProperty("specialization")
+	    private Object specialization;
+
+	    @JsonProperty("optedForReval")
+	    private Object optedForReval;
+
+
+
 
 
 }

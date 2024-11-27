@@ -61,7 +61,7 @@ public class HeaderConstantsComman {
     HttpHeaders
 
     // Prevent instantiation
-    private HeaderConstantsComman() {
+     HeaderConstantsComman() {
         throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
     }
 }

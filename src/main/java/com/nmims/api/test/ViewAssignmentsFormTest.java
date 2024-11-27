@@ -6,11 +6,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.nmims.api.Listener.ViewAssignmentsFormListener;
 import com.nmims.api.comman.ApplySeverityLevel;
 import com.nmims.api.comman.HeaderValidationCommanImpl;
 import com.nmims.api.comman.HttpStatusConstants;
 import com.nmims.api.endpoints.ViewAssignmentsFormEndPointsImpl;
 import com.nmims.api.response.mapper.ViewAssignmentsFormMpper;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -30,13 +33,15 @@ public class ViewAssignmentsFormTest {
 	HeaderValidationCommanImpl headerValidationCommanImpl = new HeaderValidationCommanImpl();
 	ViewAssignmentsFormMpper viewAssignment = new ViewAssignmentsFormMpper();
 	ViewAssignmentsFormEndPointsImpl viewAssignmentsFormEndPointsImpl = new ViewAssignmentsFormEndPointsImpl();
+	ViewAssignmentsFormListener viewAssignmentsFormListener = new ViewAssignmentsFormListener();
 	
 	
 	@Test(priority=1)
 	@Description("Send a POST request to the ViewAssignmentsFormTest API and validate the response")
 	public void viewAssignmentsFormPOSTHeaderTest() {
 		
-		
+		if(viewAssignmentsFormListener.skipTestForViewAssignmentsForm()) {
+
 		Response response= viewAssignmentsFormEndPointsImpl.viewAssignmentsFormEndPointHeaderPost();
 		Long responseTime = response.getTime();
 		
@@ -49,7 +54,7 @@ public class ViewAssignmentsFormTest {
 			// Convert response body into String
 			ResponseBody responsebody = response.body();
 			String data =responsebody.asString();
-			viewAssignment.ViewAssignmentsFormMapperResponsValidation(data);
+			viewAssignment.validateViewAssignmentsFormResponse(data);
 			
 			ApplySeverityLevel.setSeverityForPostUsingAnotherMethod(response.getStatusCode());
 			String cookieValue = response.getCookie("SESSION");
@@ -73,8 +78,8 @@ public class ViewAssignmentsFormTest {
 			logger.warn("An error occurred: " + e.getMessage());
 
 			throw new RuntimeException(e); // Mark as failed due to a non-assertion error
+		  }
 		}
-
 	}
 		
 	

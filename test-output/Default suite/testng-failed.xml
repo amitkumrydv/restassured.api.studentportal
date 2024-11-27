@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nmims.api.test.AuthenticateTest">
+      <class name="com.nmims.api.test.ViewAssignmentsFormTest">
         <methods>
-          <include name="authenticateResponseForEmptyPayloadTest"/>
-          <include name="authenticateResponseForInvalidPayloadTest"/>
-          <include name="authenticatePOSTHeaderTest"/>
-          <include name="authenticateDELETEHeaderTest"/>
+          <include name="viewAssignmentsFormPOSTHeaderTest"/>
+          <include name="viewAssignmentsFormDELETEHeaderTest"/>
         </methods>
-      </class> <!-- com.nmims.api.test.AuthenticateTest -->
+      </class> <!-- com.nmims.api.test.ViewAssignmentsFormTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

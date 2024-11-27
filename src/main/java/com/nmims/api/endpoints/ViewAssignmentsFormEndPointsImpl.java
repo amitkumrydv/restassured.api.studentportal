@@ -2,12 +2,8 @@ package com.nmims.api.endpoints;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.nmims.api.contract.endpoints.ViewAssignmentsFormEndPoint;
-import com.nmims.api.model.StudentModel;
 import com.nmims.api.payload.ViewAssignmentsFormPayload;
-import com.nmims.api.test.ViewAssignmentsFormTest;
-
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -35,6 +31,7 @@ public class ViewAssignmentsFormEndPointsImpl implements ViewAssignmentsFormEndP
                                              .post(Routs.post_url_viewAssignmentsForm);
 
             logger.info("POST request completed with status code: {}", response.getStatusCode());
+            System.out.println();
 
         return response;
     }
@@ -45,17 +42,17 @@ public class ViewAssignmentsFormEndPointsImpl implements ViewAssignmentsFormEndP
         logger.info("Initiating GET request to view assignments form endpoint.");
 
         ViewAssignmentsFormPayload viewAssignmentsFormPayload = new ViewAssignmentsFormPayload();
-        StudentModel requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
+        String requestBody = viewAssignmentsFormPayload.viewAssignmentsFormData();
 
         logger.debug("Request payload for GET (will be ignored by most GET requests): {}", requestBody);
 
         Response response;
         try {
             response = RestAssured.given()
-                    .header("Content-Type", "application/json")
-                    .body(requestBody)
-                    .when()
-                    .get(Routs.post_url_viewAssignmentsForm);
+                                     .header("Content-Type", "application/json")
+                                     .body(requestBody)
+                                  .when()
+                                     .get(Routs.post_url_viewAssignmentsForm);
 
             logger.info("GET request completed with status code: {}", response.getStatusCode());
         } catch (Exception e) {

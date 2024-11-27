@@ -1,6 +1,7 @@
 package com.nmims.api.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -14,62 +15,76 @@ Ignore all others JSON.
 //@JsonIgnoreProperties(ignoreUnknown = true)
 public class ViewAssignmentsFormModel {
 
-	 @JsonProperty("month")
+	  @JsonProperty("month")
 	    private String month;
 
 	    @JsonProperty("year")
 	    private String year;
 
 	    @JsonProperty("currentYearList")
-	    private Object currentYearList;
+	    private List<Integer> currentYearList;
 
 	    @JsonProperty("subjectList")
-	    private Object subjectList;
+	    private List<String> subjectList;
 
 	    @JsonProperty("error")
-	    private Object error;
+	    private String error;
 
 	    @JsonProperty("yearMonth")
-	    private Object yearMonth;
+	    private String yearMonth;
+
+	    @JsonProperty("success")
+	    private Boolean success;
+
+	    @JsonProperty("successMessage")
+	    private String successMessage;
+
+	    @JsonProperty("maxAttempts")
+	    private Integer maxAttempts;
+
+	    @JsonProperty("currentSemSubjectsCount")
+	    private Integer currentSemSubjectsCount;
+
+	    @JsonProperty("currentSemSubmissionCount")
+	    private Integer currentSemSubmissionCount;
 
 	    @JsonProperty("failSubjectsCount")
-	    private int failSubjectsCount;
+	    private Integer failSubjectsCount;
 
 	    @JsonProperty("failSubjectSubmissionCount")
-	    private int failSubjectSubmissionCount;
+	    private Integer failSubjectSubmissionCount;
 
 	    @JsonProperty("currentSemEndDateTime")
-	    private String  currentSemEndDateTime;
+	    private String currentSemEndDateTime;
 
 	    @JsonProperty("failSubjectsEndDateTime")
 	    private String failSubjectsEndDateTime;
 
 	    @JsonProperty("timeExtendedStudentIdSubjectList")
-	    private Object timeExtendedStudentIdSubjectList;
+	    private List<String> timeExtendedStudentIdSubjectList;
 
 	    @JsonProperty("applicableSubjects")
-	    private Object applicableSubjects;
+	    private List<String> applicableSubjects;
 
 	    @JsonProperty("subjectsNotAllowedToSubmit")
-	    private Object subjectsNotAllowedToSubmit;
+	    private List<String> subjectsNotAllowedToSubmit;
 
 	    @JsonProperty("assignmentFile")
-	    private Object assignmentFile;
+	    private String assignmentFile;
 
 	    @JsonProperty("subject")
-	    private Object subject;
+	    private String subject;
 
 	    @JsonProperty("allAssignmentFilesList")
-	    private Object allAssignmentFilesList;
+	    private List<String> allAssignmentFilesList;
 
 	    @JsonProperty("errorMessage")
-	    private Object errorMessage;
+	    private String errorMessage;
 
+	@JsonProperty("currentSemAssignmentFilesList")
+	private List<CurrentSemAssignmentFilesListModel> currentSemAssignmentFilesListModel;
 
-	@JsonProperty("currentSemAssignmentFilesListModel")
-	private ArrayList<CurrentSemAssignmentFilesListModel> currentSemAssignmentFilesListModel;
-
-	@JsonProperty("failSubjectsAssignmentFilesListModel")
-	private ArrayList<FailSubjectsAssignmentFilesListModel> failSubjectsAssignmentFilesListModel;
+	@JsonProperty("failSubjectsAssignmentFilesList")
+	private List<FailSubjectsAssignmentFilesListModel> failSubjectsAssignmentFilesListModel;
 
 }
