@@ -13,7 +13,7 @@ import io.restassured.response.ResponseBody;
 public class AuthenticateMapper  {
 	
 	
-	private static final Logger logger = LoggerFactory.getLogger(GetVideosForHomeMapper.class);
+	private static final Logger logger = LoggerFactory.getLogger(AuthenticateMapper.class);
 	ObjectMapper mapper = new ObjectMapper();
 	JsonPojoArrayValidator jsonPojoArrayValidator = new JsonPojoArrayValidator(mapper);
 
@@ -26,7 +26,7 @@ public class AuthenticateMapper  {
         ResponseBody responsebody = response.body();
 		String responseBodyData =responsebody.asString();
 		
-		jsonPojoArrayValidator.validateJsonWithPojo(responseBodyData, AuthenticationModel.class);		
+		jsonPojoArrayValidator.validateAuthenticateJsonWithPojo(responseBodyData, AuthenticationModel.class);		
 		
 	}
 	

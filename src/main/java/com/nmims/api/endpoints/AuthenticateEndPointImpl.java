@@ -19,7 +19,7 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 	    private static  final Logger  logger = LoggerFactory.getLogger(AuthenticateEndPointImpl.class);
 	    public static AuthenticationModel authenticationModel;
 	    public static AuthenticatePayload authenticate = new AuthenticatePayload();
-	    public static StudentModel studentModelData;
+	//    public static StudentModel studentModelData;
 	    
 
 	    @Override
@@ -37,7 +37,9 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 
 	        logger.info("Received response with status code: {}", response.getStatusCode());
 	        authenticationModel=response.as(AuthenticationModel.class);
-	        studentModelData=response.as(StudentModel.class);
+	    //    studentModelData=response.as(StudentModel.class);
+	   //     String programCleared= studentModelData.getProgramCleared();
+	   //     System.out.println("programCleared   ------------ "+programCleared);
 
 	        return response;
     }

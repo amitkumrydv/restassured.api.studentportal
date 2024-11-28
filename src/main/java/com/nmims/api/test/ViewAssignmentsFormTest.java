@@ -40,7 +40,7 @@ public class ViewAssignmentsFormTest {
 	@Description("Send a POST request to the ViewAssignmentsFormTest API and validate the response")
 	public void viewAssignmentsFormPOSTHeaderTest() {
 		
-		if(viewAssignmentsFormListener.skipTestForViewAssignmentsForm()) {
+	//	if(viewAssignmentsFormListener.skipTestForViewAssignmentsForm()) {
 
 		Response response= viewAssignmentsFormEndPointsImpl.viewAssignmentsFormEndPointHeaderPost();
 		Long responseTime = response.getTime();
@@ -79,7 +79,7 @@ public class ViewAssignmentsFormTest {
 
 			throw new RuntimeException(e); // Mark as failed due to a non-assertion error
 		  }
-		}
+	//	}
 	}
 		
 	

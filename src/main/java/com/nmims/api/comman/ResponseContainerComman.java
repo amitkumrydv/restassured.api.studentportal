@@ -11,7 +11,7 @@ public class ResponseContainerComman {
 	
 	
 	 public static AuthenticationModel responseData = AuthenticateEndPointImpl.authenticationModel;
-	 public static StudentModel studentData = AuthenticateEndPointImpl.studentModelData;
+//	 public static StudentModel studentData = AuthenticateEndPointImpl.studentModelData;
 
 	public static AuthenticationModel programValidityEndDate() {
 		responseData.getValidityEndDate();	
@@ -22,11 +22,11 @@ public class ResponseContainerComman {
 	
 	
 	
-	public static String isprogramCleared() {
-		String isProgramClearedResponse=studentData.getProgramCleared();
-		Assert.notNull(isProgramClearedResponse, "Program validity End Date Empty.");
-		return isProgramClearedResponse;
-	}
+//	public static String isprogramCleared() {
+//		String isProgramClearedResponse=studentData.getProgramCleared();
+//		Assert.notNull(isProgramClearedResponse, "Program validity End Date Empty.");
+//		return isProgramClearedResponse;
+//	}
 	
 	
 	

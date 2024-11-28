@@ -1,328 +1,805 @@
-2024-11-27 12:51:01 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 12:51:01 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 12:51:01 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+2024-11-28 09:07:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 09:07:30 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 09:07:30 [main] INFO  GetVideosForHomeTest - cookieValue: D4852EE63E4F2CA32153A591534E8A1B
+2024-11-28 09:07:30 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 12:51:01 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 12:51:01 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 12:51:01 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 12:51:01 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 13:02:11 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 13:02:11 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 13:02:11 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 13:02:11 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 13:02:11 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 13:02:11 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 13:02:11 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:14:52 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:14:52 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:14:52 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:14:52 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:14:52 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:14:52 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:14:52 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:15:11 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:15:12 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:15:12 [main] INFO  AuthenticateTest - cookieValue:E9659C9478FD006E4BDDDFA6AC3D212E
-2024-11-27 15:15:12 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:15:12 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:15:12 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:15:12 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:07:30 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:07:30 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:15:12 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:15:12 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:07:30 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:07:30 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:15:12 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:15:12 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-27 15:15:13 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
-2024-11-27 15:15:13 [main] INFO  GetVideosForHomeTest - cookieValue: E73086544FE4A3DE3B29BAFA8E24B124
-2024-11-27 15:15:13 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:15:13 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:15:13 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:15:13 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:15:13 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:15:13 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:15:13 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:07:30 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:07:31 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-2024-11-27 15:15:13 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:15:13 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:15:13 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+2024-11-28 09:10:32 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 09:10:33 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 09:10:33 [main] INFO  GetVideosForHomeTest - cookieValue: CF9107D29B6FA7ACD5FD583B0CB9BCD7
+2024-11-28 09:10:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 15:15:13 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:15:13 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:15:13 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:15:13 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:17:17 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:17:18 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:17:18 [main] INFO  AuthenticateTest - cookieValue:DFCFFEAF1AC9EC35AD8DEF8FAD3501D3
-2024-11-27 15:17:18 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:17:18 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:17:18 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:17:18 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:10:34 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:10:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:17:18 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:17:18 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:10:34 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:10:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:17:18 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:17:18 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-27 15:17:19 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
-2024-11-27 15:17:19 [main] INFO  GetVideosForHomeTest - cookieValue: B2A81814BBB314335FCF7C7E53502587
-2024-11-27 15:17:19 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:17:19 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:17:19 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:17:19 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:17:19 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:17:19 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:17:19 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:10:34 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:10:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-2024-11-27 15:17:19 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:17:19 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:17:19 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+2024-11-28 09:13:49 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 09:13:51 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 09:13:51 [main] INFO  GetVideosForHomeTest - cookieValue: 9172883E1F778B0E08A194DB0C3D2D77
+2024-11-28 09:13:51 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 15:17:19 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:17:19 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:17:19 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:17:19 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:19:34 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:19:35 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:19:35 [main] INFO  AuthenticateTest - cookieValue:745BB131BAAA9A325C96092A4F463ACF
-2024-11-27 15:19:35 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:19:35 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:19:35 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:19:35 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:13:51 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:13:51 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:19:35 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:19:35 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:13:51 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:13:51 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:19:35 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:19:36 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-27 15:19:36 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
-2024-11-27 15:19:36 [main] INFO  GetVideosForHomeTest - cookieValue: 3F97130AD968B80030A8928A6BF35146
-2024-11-27 15:19:36 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:19:36 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:19:36 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:19:36 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:19:36 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:19:36 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:19:37 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:13:51 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:13:52 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-2024-11-27 15:19:37 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:19:37 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:19:37 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+2024-11-28 09:13:52 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 09:13:52 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 09:13:52 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 15:19:37 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:19:37 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:19:37 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:19:37 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:28:37 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:28:38 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:28:38 [main] INFO  AuthenticateTest - cookieValue:A1B3E6F2622F32A9B727B86B9C0DD7DF
-2024-11-27 15:28:38 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:28:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:13:52 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 09:13:52 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 09:13:52 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 09:13:52 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 09:33:32 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 09:33:33 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 09:33:33 [main] INFO  GetVideosForHomeTest - cookieValue: 42D97B37B04394AFD7FCFC382648FFC8
+2024-11-28 09:33:33 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 15:28:38 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:28:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:33:33 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:33:33 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:28:38 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:28:39 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:33:33 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:33:33 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:28:39 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:28:39 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-27 15:28:39 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
-2024-11-27 15:28:39 [main] INFO  GetVideosForHomeTest - cookieValue: 7BA46EBA88F293167482369F902A93CE
-2024-11-27 15:28:39 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:28:39 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:28:39 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:28:39 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:28:39 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:28:39 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:28:40 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:33:33 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:33:34 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-2024-11-27 15:28:40 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:28:40 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:28:40 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+2024-11-28 09:33:34 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 09:33:34 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 09:33:34 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 15:28:40 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:28:40 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:28:40 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:28:40 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:30:35 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:30:37 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:30:37 [main] INFO  AuthenticateTest - cookieValue:0AFEA8B83BCEC2D45805AE6FAF012E5B
-2024-11-27 15:30:37 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 15:30:37 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:33:34 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 09:33:34 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 09:33:34 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 09:33:34 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 09:34:01 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 09:34:03 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 09:34:03 [main] INFO  GetVideosForHomeTest - cookieValue: C22219859D66183F472B5B53C8C29913
+2024-11-28 09:34:03 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 15:30:37 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:30:37 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:34:03 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:34:03 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:30:37 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:30:37 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:34:03 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:34:03 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 15:30:37 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 15:30:37 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-27 15:30:38 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
-2024-11-27 15:30:38 [main] INFO  GetVideosForHomeTest - cookieValue: ADD0DD129C25700671F00F27FEE134D1
-2024-11-27 15:30:38 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <405> but was <500>.
-
-2024-11-27 15:30:38 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:30:38 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:30:38 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:30:38 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 15:30:38 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 15:30:38 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:34:03 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:34:03 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-2024-11-27 15:30:38 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:30:38 [main] INFO  ViewAssignmentsFormTest - cookieValue 
-2024-11-27 15:30:38 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+2024-11-28 09:34:03 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 09:34:03 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 09:34:03 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 15:30:38 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:30:39 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 15:30:39 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
-2024-11-27 15:30:39 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
-2024-11-27 16:01:53 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 16:01:54 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 16:01:55 [main] INFO  AuthenticateTest - cookieValue:E3AE71470521CABC80DDADBA071C82F3
-2024-11-27 16:01:55 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 16:01:55 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:34:03 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 09:34:03 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 09:34:03 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 09:34:03 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 09:50:31 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 09:50:32 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 09:50:32 [main] INFO  AuthenticateTest - cookieValue:52393AA56B7C80DFAFE93CAB812FBB06
+2024-11-28 09:50:32 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 09:50:32 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 16:01:55 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 16:01:55 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:50:32 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 09:50:33 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 16:01:55 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 16:01:55 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:50:33 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 09:50:33 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 16:01:55 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 16:01:55 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-27 16:01:56 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
-2024-11-27 16:01:56 [main] INFO  GetVideosForHomeTest - cookieValue: D7B4D4A184BBDE843D7CDB44C6E580B2
-2024-11-27 16:01:56 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:50:33 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 09:50:33 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 09:50:33 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 09:50:33 [main] INFO  GetVideosForHomeTest - cookieValue: 6AE0ABA2D22B823CFB2AFDA7B9A7102E
+2024-11-28 09:50:33 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 16:01:56 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 16:01:56 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:50:33 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:50:33 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 16:01:56 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 16:01:56 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:50:33 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:50:33 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 16:01:56 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 16:01:56 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:50:33 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 09:50:33 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-2024-11-27 16:08:15 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 16:08:16 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 16:08:17 [main] INFO  AuthenticateTest - cookieValue:4E15BE14DD9354E3C751BBCDA61A50CD
-2024-11-27 16:08:17 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 16:08:17 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+2024-11-28 09:50:33 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 09:50:33 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 09:50:33 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 16:08:17 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 16:08:17 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 16:08:17 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 16:08:17 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
-Expected status code <400> but was <405>.
-
-2024-11-27 16:08:17 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
-2024-11-27 16:08:17 [main] INFO  AuthenticateTest - cookieValue:null
-2024-11-27 16:08:17 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
-2024-11-27 16:08:17 [main] INFO  GetVideosForHomeTest - cookieValue: 136730FA38082BB43A5D59FD9AFFCDBA
-2024-11-27 16:08:17 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 09:50:33 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 09:50:34 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 09:50:34 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 09:50:34 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 10:32:34 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 10:32:35 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 10:32:35 [main] INFO  AuthenticateTest - cookieValue:6992D7BA7F5E9582FF69806980560ADF
+2024-11-28 10:32:35 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 10:32:35 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 16:08:17 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 16:08:17 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 10:32:35 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 10:32:35 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 16:08:17 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 16:08:17 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 10:32:35 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 10:32:35 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 16:08:17 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 16:08:17 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 10:32:35 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 10:32:35 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 10:32:36 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 10:32:36 [main] INFO  GetVideosForHomeTest - cookieValue: 2C700DB034F8114CFEAE954CD3BF03D2
+2024-11-28 10:32:36 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 10:32:36 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 10:32:36 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 10:32:36 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 10:32:36 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 10:32:36 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 10:32:36 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-2024-11-27 17:44:34 [main] INFO  AuthenticateTest - Start authenticateTestApi test
-2024-11-27 17:44:35 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
-2024-11-27 17:44:36 [main] INFO  GetVideosForHomeTest - cookieValue: E19D5E553C607DE0695B023E41D18285
-2024-11-27 17:44:36 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 10:32:36 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 10:32:37 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 10:32:37 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
 Expected status code <405> but was <500>.
 
-2024-11-27 17:44:36 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 17:44:37 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 10:32:37 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 10:32:37 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 10:32:37 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 10:32:37 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 11:04:29 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 11:04:30 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 11:04:30 [main] INFO  AuthenticateTest - cookieValue:DE7F33B5BBDB4DE2FD51E7DF6DB86C5C
+2024-11-28 11:04:30 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 11:04:30 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 11:04:30 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 11:04:31 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 17:44:37 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 17:44:37 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 11:04:31 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 11:04:31 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <405>.
 
-2024-11-27 17:44:37 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
-2024-11-27 17:44:37 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+2024-11-28 11:04:31 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 11:04:31 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 11:04:31 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 11:04:31 [main] INFO  GetVideosForHomeTest - cookieValue: 5B49B352B59A9278D65B141A1BC3BF0C
+2024-11-28 11:04:31 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 11:04:31 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 11:04:31 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 11:04:31 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 11:04:31 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 11:04:31 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 11:04:31 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
 Expected status code <400> but was <200>.
 
+2024-11-28 11:04:31 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 11:04:32 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 11:04:32 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 11:04:32 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 11:04:32 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 11:04:32 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 11:04:32 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 11:54:56 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 11:54:57 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 11:54:57 [main] INFO  AuthenticateTest - cookieValue:75BB7B4AD6F2AB104314173C43BA9139
+2024-11-28 11:54:57 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 11:54:57 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 11:54:57 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 11:54:57 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 11:54:57 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 11:54:57 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 11:54:57 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 11:54:57 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 11:54:58 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 11:54:58 [main] INFO  GetVideosForHomeTest - cookieValue: D90185058460B8A369A19E827CA2CB7C
+2024-11-28 11:54:58 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 11:54:58 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 11:54:59 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 11:54:59 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 11:54:59 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 11:54:59 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 11:54:59 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 11:54:59 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 11:54:59 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 11:54:59 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 11:54:59 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 11:54:59 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 11:54:59 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 11:54:59 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 12:53:07 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 12:53:08 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 12:53:09 [main] INFO  AuthenticateTest - cookieValue:77949752616DE89A1C9B78E15257C929
+2024-11-28 12:53:09 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 12:53:09 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 12:53:09 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 12:53:09 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 12:53:09 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 12:53:09 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 12:53:09 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 12:53:09 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 12:53:09 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 12:53:09 [main] INFO  GetVideosForHomeTest - cookieValue: BCB5337D8301F9CF6F866DB554091407
+2024-11-28 12:53:09 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 12:53:09 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 12:53:09 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 12:53:09 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 12:53:09 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 12:53:09 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 12:53:09 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 12:53:10 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 12:53:10 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 12:53:10 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 12:53:10 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 12:53:10 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 12:53:10 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 12:53:10 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 12:55:27 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 12:55:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 12:55:28 [main] INFO  AuthenticateTest - cookieValue:C53A00942AAFD0787F5CC1EC6B4BBEAE
+2024-11-28 12:55:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 12:55:28 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 12:55:28 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 12:55:28 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 12:55:28 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 12:55:28 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 12:55:28 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 12:55:28 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 12:55:29 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 12:55:29 [main] INFO  GetVideosForHomeTest - cookieValue: 95690CAB214046A012BCA0F5095C7C83
+2024-11-28 12:55:29 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 12:55:29 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 12:55:29 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 12:55:29 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 12:55:29 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 12:55:29 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 12:55:29 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 12:55:29 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 12:55:29 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 12:55:29 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 12:55:29 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 12:55:29 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 12:55:29 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 12:55:29 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 13:46:35 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 13:46:37 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 13:46:37 [main] INFO  AuthenticateTest - cookieValue:AB8E9987B589F53D433E81CEE9F9989C
+2024-11-28 13:46:37 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 13:46:37 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 13:46:37 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 13:46:37 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 13:46:37 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 13:46:37 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 13:46:37 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 13:46:37 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 13:46:38 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 13:46:38 [main] INFO  GetVideosForHomeTest - cookieValue: 23D0EC736645ABA444D8E615CED3EE82
+2024-11-28 13:46:38 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 13:46:38 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 13:46:38 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 13:46:38 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 13:46:38 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 13:46:38 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 13:46:38 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 13:46:38 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 13:46:38 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 13:46:38 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 13:46:38 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 13:46:38 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 13:46:38 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 13:46:38 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 14:36:27 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 14:36:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 14:36:28 [main] INFO  AuthenticateTest - cookieValue:2660DFCD4E457D3C18C82433A73D911F
+2024-11-28 14:36:28 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 14:36:28 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 14:36:29 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 14:36:29 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 14:36:29 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 14:36:29 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 14:36:29 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 14:36:29 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 14:36:29 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 14:36:29 [main] INFO  GetVideosForHomeTest - cookieValue: 706E02E26AC63CFDE20518035776C3CF
+2024-11-28 14:36:29 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 14:36:29 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 14:36:29 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 14:36:29 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 14:36:29 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 14:36:29 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 14:36:29 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 14:36:29 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 14:36:30 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 14:36:30 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 14:36:30 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 14:36:30 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 14:36:30 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 14:36:30 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 14:57:00 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 14:57:01 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 14:57:02 [main] INFO  AuthenticateTest - cookieValue:115548FDE30351F62C779F8DF9E7FCD6
+2024-11-28 14:57:02 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 14:57:02 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 14:57:02 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 14:57:02 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 14:57:02 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 14:57:02 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 14:57:02 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 14:57:02 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 14:57:02 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 14:57:02 [main] INFO  GetVideosForHomeTest - cookieValue: DF63F3C039573F71B75BE932A5148CEB
+2024-11-28 14:57:03 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 14:57:03 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 14:57:03 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 14:57:03 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 14:57:03 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 14:57:03 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 14:57:03 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 14:57:03 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 14:57:03 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 14:57:03 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 14:57:03 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 14:57:03 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 14:57:03 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 14:57:03 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:03:01 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:03:02 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:03:03 [main] INFO  AuthenticateTest - cookieValue:66379CC63A811911D750CA1B6F0B9382
+2024-11-28 15:03:03 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:03:03 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:03:03 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:03:03 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:03:03 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:03:04 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:03:04 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:03:04 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 15:03:04 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 15:03:04 [main] INFO  GetVideosForHomeTest - cookieValue: 0197125613061A85A712871A12AD72A4
+2024-11-28 15:03:04 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:03:04 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:03:04 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:03:04 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:03:04 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:03:04 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:03:04 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 15:03:04 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:03:04 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:03:04 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:03:04 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:03:05 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:03:05 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:03:05 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:07:00 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:07:01 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:07:01 [main] INFO  AuthenticateTest - cookieValue:A3BA83290F9DB48317D7EF962CE0EEB9
+2024-11-28 15:07:01 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:07:01 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:07:01 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:07:01 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:07:01 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:07:01 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:07:01 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:07:01 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 15:07:01 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 15:07:02 [main] INFO  GetVideosForHomeTest - cookieValue: 8747E8CBCACCBF69784AF3C70BA5F621
+2024-11-28 15:07:02 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:07:02 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:07:02 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:07:02 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:07:02 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:07:02 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:07:02 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 15:07:02 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:07:02 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:07:02 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:07:02 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:07:02 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:07:02 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:07:02 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:23:43 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:23:45 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:23:45 [main] INFO  AuthenticateTest - cookieValue:A6378AC707144BE9493704614CACAD36
+2024-11-28 15:23:45 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:23:45 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:23:45 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:23:45 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:23:45 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:23:45 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:23:45 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:23:45 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 15:23:45 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 15:23:45 [main] INFO  GetVideosForHomeTest - cookieValue: 2C6A1EC3E9F0BDD192B1606AB48243EA
+2024-11-28 15:23:46 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:23:46 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:23:46 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:23:46 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:23:46 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:23:46 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:23:46 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 15:23:46 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:23:46 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:23:46 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:23:46 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:23:46 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:23:46 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:23:46 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:32:55 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:32:56 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:32:57 [main] INFO  AuthenticateTest - cookieValue:2370D8D759B5FFFEBF98043BF9BDFB5A
+2024-11-28 15:32:57 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:32:57 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:32:57 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:32:57 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:32:57 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:32:58 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:32:58 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:32:58 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 15:32:58 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 15:32:58 [main] INFO  GetVideosForHomeTest - cookieValue: 10C7F9AEEE8ED90EBB8269D952A77268
+2024-11-28 15:32:58 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:32:58 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:32:58 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:32:58 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:32:58 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:32:58 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:32:58 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 15:32:58 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:32:58 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:32:58 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:32:58 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:32:58 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:32:58 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:32:59 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:47:38 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:47:40 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:47:40 [main] INFO  AuthenticateTest - cookieValue:6E868A79EAFCC2CDAF222918C5E58B9C
+2024-11-28 15:47:40 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 15:47:40 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:47:40 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:47:40 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:47:40 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:47:40 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:47:40 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 15:47:40 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 15:47:40 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 15:47:40 [main] INFO  GetVideosForHomeTest - cookieValue: 7A76995F81DEE18BCF6C22647687CDCD
+2024-11-28 15:47:41 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:47:41 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:47:41 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:47:41 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:47:41 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 15:47:41 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 15:47:41 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 15:47:41 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:47:41 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 15:47:41 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 15:47:41 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:47:41 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 15:47:41 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 15:47:41 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 16:13:43 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 16:13:44 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 16:13:44 [main] INFO  AuthenticateTest - cookieValue:90714BFEAADFD5D008ACF9AAD55CAEAA
+2024-11-28 16:13:44 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 16:13:44 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 16:13:44 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 16:13:44 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 16:13:44 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 16:13:45 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 16:13:45 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 16:13:45 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 16:13:45 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 16:13:45 [main] INFO  GetVideosForHomeTest - cookieValue: D5F6AFB039718F6E95A7C683A5FC393C
+2024-11-28 16:13:45 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 16:13:45 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 16:13:45 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 16:13:45 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 16:13:45 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 16:13:46 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 16:13:46 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 16:13:46 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 16:13:46 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 16:13:46 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 16:13:46 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 16:13:46 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 16:13:46 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 16:13:46 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 16:44:37 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 16:44:38 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 16:44:38 [main] INFO  AuthenticateTest - cookieValue:6F3EBEDC65961D671150C21DDEF0E484
+2024-11-28 16:44:38 [main] INFO  AuthenticateTest - Start authenticateTestApi test
+2024-11-28 16:44:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 16:44:38 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 16:44:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 16:44:38 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 16:44:38 [main] ERROR AuthenticateTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 16:44:38 [main] INFO  AuthenticateTest - Start authenticate Response For Empty Payload test
+2024-11-28 16:44:38 [main] INFO  AuthenticateTest - cookieValue:null
+2024-11-28 16:44:39 [main] INFO  GetVideosForHomeTest - Severity level: NORMAL
+2024-11-28 16:44:39 [main] INFO  GetVideosForHomeTest - cookieValue: C60714EF3CAB328B4EB6E1C57644BA42
+2024-11-28 16:44:39 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 16:44:39 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 16:44:39 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 16:44:39 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 16:44:39 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <405>.
+
+2024-11-28 16:44:39 [main] INFO  GetVideosForHomeTest - Start getVideosForHome API Response For Empty Payload test
+2024-11-28 16:44:39 [main] ERROR GetVideosForHomeTest - Assertion error: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+2024-11-28 16:44:39 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 16:44:39 [main] INFO  ViewAssignmentsFormTest - cookieValue 
+2024-11-28 16:44:39 [main] ERROR ViewAssignmentsFormTest - Assertion error: 1 expectation failed.
+Expected status code <405> but was <500>.
+
+2024-11-28 16:44:39 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 16:44:39 [main] INFO  ViewAssignmentsFormTest - cookieValue:null
+2024-11-28 16:44:39 [main] INFO  ViewAssignmentsFormTest - Start ViewAssignmentsForm API Response For Empty Payload test
+2024-11-28 16:44:39 [main] INFO  ViewAssignmentsFormTest - cookieValue:null

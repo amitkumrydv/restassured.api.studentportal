@@ -13,10 +13,14 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nmims.api.model.FeatureViseAccessModel;
 import com.nmims.api.model.RegDataModel;
 import com.nmims.api.model.StudentModel;
+
+import io.restassured.response.ResponseBody;
 
 public class JsonPojoArrayValidator {
 
@@ -26,7 +30,11 @@ public class JsonPojoArrayValidator {
 	public JsonPojoArrayValidator(ObjectMapper objectMapper) {
 		this.objectMapper = objectMapper;
 	}
-	
+
+	/**
+	 * Maps a POJO field to its JSON property name, handles annotations
+	 * like @JsonProperty.
+	 */
 	private String getJsonPropertyName(Field field) {
 		JsonProperty jsonProperty = field.getAnnotation(JsonProperty.class);
 		return (jsonProperty != null) ? jsonProperty.value() : field.getName();
@@ -53,8 +61,8 @@ public class JsonPojoArrayValidator {
 					String jsonfieldName = entry.getKey();
 					Object jsonFieldValue = entry.getValue();
 					jsonFieldsEncountered.add(jsonfieldName);
-					
-					System.out.println("jsonFieldsEncountered--- "+ jsonFieldsEncountered);
+
+					System.out.println("jsonFieldsEncountered--- " + jsonFieldsEncountered);
 
 					if (jsonFieldValue == null) {
 						logger.warn("Field {} in JSON object is null.", jsonfieldName);
@@ -94,7 +102,8 @@ public class JsonPojoArrayValidator {
 			for (String pojoFieldName : pojoFieldNames) {
 				if (!jsonFieldsEncountered.contains(pojoFieldName)) {
 					logger.warn("Field {} is present in POJO but missing in the JSON response.", pojoFieldName);
-					//Assert.fail("Field is present in POJO but missing in the JSON response." + pojoFieldName);
+					// Assert.fail("Field is present in POJO but missing in the JSON response." +
+					// pojoFieldName);
 				}
 			}
 
@@ -105,47 +114,44 @@ public class JsonPojoArrayValidator {
 		}
 	}
 
-
 	
-	
-	public <T> void validateJsonWithPojo(String responseBodyData, Class<T> authenticationPojo) {
+	public <T> void validateAuthenticateJsonWithPojo(String responseBodyData, Class<T> authenticationPojo) {
 	    try {
-	        // Extract all fields in the POJO class and map them to their JSON property names
+	        // Step 1: Extract all fields from the POJO and map them to their JSON property names
 	        Field[] pojoFields = authenticationPojo.getDeclaredFields();
 	        Set<String> pojoFieldNames = Arrays.stream(pojoFields)
 	                                           .map(this::getJsonPropertyName)
 	                                           .collect(Collectors.toSet());
 
-	        // Convert the JSON string to a Map for comparison
+	        // Step 2: Convert the JSON response to a Map for comparison
 	        Map<String, Object> jsonMap = objectMapper.readValue(responseBodyData, Map.class);
 
-	        // Track JSON fields encountered for reverse validation
+	        // Set to track encountered JSON fields for reverse validation
 	        Set<String> jsonFieldsEncountered = new HashSet<>();
 
 	        for (Map.Entry<String, Object> entry : jsonMap.entrySet()) {
 	            String jsonFieldName = entry.getKey();
 	            Object jsonFieldValue = entry.getValue();
 	            jsonFieldsEncountered.add(jsonFieldName);
+	           
 
-	            logger.info("Processing JSON field: {}", jsonFieldName);
-
+	            // Skip null or empty JSON field values
 	            if (jsonFieldValue == null) {
-	                logger.warn("Field {} in JSON object is null.", jsonFieldName);
+	                logger.warn("Field '{}' in JSON object is null.", jsonFieldName);
 	                continue;
 	            }
-
 	            if (jsonFieldValue.equals("")) {
-	                logger.warn("Field {} in JSON object is empty.", jsonFieldName);
+	                logger.warn("Field '{}' in JSON object is empty.", jsonFieldName);
 	                continue;
 	            }
 
-	            // Validate if the JSON field exists in the POJO
+	            // Step 3: Validate if the JSON field exists in the POJO
 	            if (!pojoFieldNames.contains(jsonFieldName)) {
 	                logger.error("JSON field '{}' is not present in POJO: {}", jsonFieldName, authenticationPojo.getSimpleName());
 	                Assert.fail("JSON field '" + jsonFieldName + "' is not present in the POJO.");
 	            }
 
-	            // Retrieve and validate the field type
+	            // Step 4: Validate field type compatibility
 	            try {
 	                Field pojoField = Arrays.stream(pojoFields)
 	                                        .filter(f -> getJsonPropertyName(f).equals(jsonFieldName))
@@ -154,17 +160,18 @@ public class JsonPojoArrayValidator {
 
 	                Class<?> pojoFieldType = pojoField.getType();
 
-	                // Add logic for nested POJOs
-	                if (pojoFieldType.equals(StudentModel.class)) {
-	                    objectMapper.readValue(objectMapper.writeValueAsString(jsonFieldValue), StudentModel.class);
-	                } else if (pojoFieldType.equals(RegDataModel.class)) {
-	                    objectMapper.readValue(objectMapper.writeValueAsString(jsonFieldValue), RegDataModel.class);
-	                } else if (pojoFieldType.equals(FeatureViseAccessModel.class)) {
-	                    objectMapper.readValue(objectMapper.writeValueAsString(jsonFieldValue), FeatureViseAccessModel.class);
-	                
-	                }
-	                else {
-	                    // Standard type validation
+	                // Handle nested POJO fields using recursive deserialization
+	                if (isNestedPojo(pojoFieldType)) {
+	                	  
+	                    objectMapper.readValue(objectMapper.writeValueAsString(jsonFieldValue), pojoFieldType);
+	                    
+	                    	// Get the program cleared value
+	        				if ("student".equals(jsonFieldName)) {
+	        					processStudentNode(jsonFieldValue);
+	        				}
+	                    
+	                } else {
+	                    // Validate standard type compatibility
 	                    Class<?> jsonFieldType = jsonFieldValue.getClass();
 	                    if (!pojoFieldType.isAssignableFrom(jsonFieldType)) {
 	                        logger.error("Type mismatch for field '{}': JSON Type: {}, POJO Type: {}",
@@ -173,12 +180,15 @@ public class JsonPojoArrayValidator {
 	                    }
 	                }
 	            } catch (NoSuchFieldException e) {
-	                logger.error("Field '{}' not found in POJO class: {}", jsonFieldName, authenticationPojo.getSimpleName());
+	                logger.error("Field '{}' not found in POJO class: {}", jsonFieldName, authenticationPojo.getSimpleName(), e);
 	                Assert.fail("Field '" + jsonFieldName + "' not found in POJO class.");
+	            } catch (Exception e) {
+	                logger.error("Error processing field '{}': {}", jsonFieldName, e.getMessage(), e);
+	                Assert.fail("Error processing field '" + jsonFieldName + "': " + e.getMessage());
 	            }
 	        }
 
-	        // Verify if any POJO fields are missing in the JSON response
+	        // Step 5: Verify if any POJO fields are missing in the JSON response
 	        for (String pojoFieldName : pojoFieldNames) {
 	            if (!jsonFieldsEncountered.contains(pojoFieldName)) {
 	                logger.warn("Field '{}' is present in POJO but missing in the JSON response.", pojoFieldName);
@@ -188,19 +198,47 @@ public class JsonPojoArrayValidator {
 
 	        logger.info("Validation completed successfully for POJO: {}", authenticationPojo.getSimpleName());
 	    } catch (Exception e) {
-	        logger.error("Error during validation: {}", e.getMessage(), e);
-	        Assert.fail("Error during validation: " + e.getMessage());
+	        // Handle unexpected exceptions and log the error details
+	        logger.error("Error during JSON validation: {}", e.getMessage(), e);
+	        Assert.fail("Error during JSON validation: " + e.getMessage());
 	    }
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-}
-	 
+	/**
+	 * Checks if the given class represents a nested POJO that requires special handling.
+	 */
+	private boolean isNestedPojo(Class<?> pojoFieldType) {
+	    return pojoFieldType.equals(StudentModel.class) || 
+	           pojoFieldType.equals(RegDataModel.class) || 
+	           pojoFieldType.equals(FeatureViseAccessModel.class);
+	}
 
+	/**
+	 * Processes the 'student' node in the JSON and validates specific fields like
+	 * 'programCleared'.
+	 */
+	private void processStudentNode(Object studentNode) {
+		try {
+			// Deserialize the 'student' node into a map
+			Map<String, Object> studentMap = objectMapper.convertValue(studentNode, Map.class);
+
+			// Extract and validate 'programCleared'
+			if (studentMap.containsKey("programCleared")) {
+				Object programCleared = studentMap.get("programCleared");
+				if (programCleared == null || programCleared.toString().isEmpty()) {
+					logger.warn("'programCleared' field is null or empty in 'student' node.");
+					Assert.fail("'programCleared' field is null or empty.");
+				} else {
+					logger.info("'programCleared' field value: {}", programCleared);
+				}
+			} else {
+				logger.warn("'programCleared' field is missing in 'student' node.");
+				Assert.fail("'programCleared' field is missing in 'student' node.");
+			}
+		} catch (Exception e) {
+			logger.error("Error processing 'student' node: {}", e.getMessage(), e);
+			Assert.fail("Error processing 'student' node: " + e.getMessage());
+		}
+	}
+
+}
