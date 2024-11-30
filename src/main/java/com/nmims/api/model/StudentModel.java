@@ -926,8 +926,8 @@ public class StudentModel {
 			return programCleared;
 		}
 
-		public void setProgramCleared(String programCleared) {
-			this.programCleared = programCleared;
+		public void setProgramCleared(String programCleared2) {
+			this.programCleared = programCleared2;
 		}
 
 		public String getDeRegistered() {

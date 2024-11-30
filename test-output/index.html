@@ -245,7 +245,7 @@ Expected status code &lt;405&gt; but was &lt;500&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.nmims.api.test.ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest(ViewAssignmentsFormTest.java:133)
+	at com.nmims.api.test.ViewAssignmentsFormTest.viewAssignmentsFormDELETEHeaderTest(ViewAssignmentsFormTest.java:132)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -522,7 +522,7 @@ Expected status code &lt;405&gt; but was &lt;500&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeDELETEHeaderTest(GetVideosForHomeTest.java:123)
+	at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeDELETEHeaderTest(GetVideosForHomeTest.java:130)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -586,7 +586,7 @@ Expected status code &lt;400&gt; but was &lt;405&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeEmptyPayloadTest(GetVideosForHomeTest.java:160)
+	at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeEmptyPayloadTest(GetVideosForHomeTest.java:167)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -650,7 +650,7 @@ Expected status code &lt;400&gt; but was &lt;405&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeInvalidPayloadTest(GetVideosForHomeTest.java:199)
+	at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeInvalidPayloadTest(GetVideosForHomeTest.java:206)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -714,7 +714,7 @@ Expected status code &lt;400&gt; but was &lt;200&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeMissingFieldsTest(GetVideosForHomeTest.java:235)
+	at com.nmims.api.test.GetVideosForHomeTest.getVideosForHomeMissingFieldsTest(GetVideosForHomeTest.java:242)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -894,71 +894,71 @@ data.addRows(17);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'authenticatePOSTHeaderTest')
 data.setCell(0, 2, 'com.nmims.api.test.AuthenticateTest')
-data.setCell(0, 3, 1240);
+data.setCell(0, 3, 1210);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'authenticateGETHeaderTest')
 data.setCell(1, 2, 'com.nmims.api.test.AuthenticateTest')
-data.setCell(1, 3, 127);
+data.setCell(1, 3, 139);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'viewAssignmentsFormPOSTHeaderTest')
 data.setCell(2, 2, 'com.nmims.api.test.ViewAssignmentsFormTest')
-data.setCell(2, 3, 103);
+data.setCell(2, 3, 108);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'viewAssignmentsFormGETHeaderTest')
-data.setCell(3, 2, 'com.nmims.api.test.ViewAssignmentsFormTest')
-data.setCell(3, 3, 90);
+data.setCell(3, 1, 'getVideosForHomePostHeaderTest')
+data.setCell(3, 2, 'com.nmims.api.test.GetVideosForHomeTest')
+data.setCell(3, 3, 102);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'authenticateResponseForMissingFieldsTest')
-data.setCell(4, 2, 'com.nmims.api.test.AuthenticateTest')
-data.setCell(4, 3, 87);
+data.setCell(4, 1, 'getVideosForHomeGetHeaderTest')
+data.setCell(4, 2, 'com.nmims.api.test.GetVideosForHomeTest')
+data.setCell(4, 3, 91);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getVideosForHomeGetHeaderTest')
-data.setCell(5, 2, 'com.nmims.api.test.GetVideosForHomeTest')
-data.setCell(5, 3, 86);
+data.setCell(5, 1, 'viewAssignmentsFormGETHeaderTest')
+data.setCell(5, 2, 'com.nmims.api.test.ViewAssignmentsFormTest')
+data.setCell(5, 3, 89);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getVideosForHomePostHeaderTest')
-data.setCell(6, 2, 'com.nmims.api.test.GetVideosForHomeTest')
-data.setCell(6, 3, 85);
+data.setCell(6, 1, 'authenticateResponseForInvalidPayloadTest')
+data.setCell(6, 2, 'com.nmims.api.test.AuthenticateTest')
+data.setCell(6, 3, 88);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getVideosForHomeMissingFieldsTest')
-data.setCell(7, 2, 'com.nmims.api.test.GetVideosForHomeTest')
-data.setCell(7, 3, 78);
+data.setCell(7, 1, 'authenticateResponseForMissingFieldsTest')
+data.setCell(7, 2, 'com.nmims.api.test.AuthenticateTest')
+data.setCell(7, 3, 87);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'authenticateResponseForInvalidPayloadTest')
-data.setCell(8, 2, 'com.nmims.api.test.AuthenticateTest')
-data.setCell(8, 3, 77);
+data.setCell(8, 1, 'ViewAssignmentsFormEmptyPayloadTest')
+data.setCell(8, 2, 'com.nmims.api.test.ViewAssignmentsFormTest')
+data.setCell(8, 3, 83);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'authenticateResponseForEmptyPayloadTest')
-data.setCell(9, 2, 'com.nmims.api.test.AuthenticateTest')
-data.setCell(9, 3, 76);
+data.setCell(9, 1, 'getVideosForHomeMissingFieldsTest')
+data.setCell(9, 2, 'com.nmims.api.test.GetVideosForHomeTest')
+data.setCell(9, 3, 82);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'getVideosForHomeEmptyPayloadTest')
-data.setCell(10, 2, 'com.nmims.api.test.GetVideosForHomeTest')
-data.setCell(10, 3, 76);
+data.setCell(10, 1, 'authenticateDELETEHeaderTest')
+data.setCell(10, 2, 'com.nmims.api.test.AuthenticateTest')
+data.setCell(10, 3, 78);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'getVideosForHomeInvalidPayloadTest')
 data.setCell(11, 2, 'com.nmims.api.test.GetVideosForHomeTest')
-data.setCell(11, 3, 75);
+data.setCell(11, 3, 78);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'ViewAssignmentsFormInvalidPayloadTest')
 data.setCell(12, 2, 'com.nmims.api.test.ViewAssignmentsFormTest')
-data.setCell(12, 3, 73);
+data.setCell(12, 3, 77);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'ViewAssignmentsFormEmptyPayloadTest')
-data.setCell(13, 2, 'com.nmims.api.test.ViewAssignmentsFormTest')
-data.setCell(13, 3, 71);
+data.setCell(13, 1, 'authenticateResponseForEmptyPayloadTest')
+data.setCell(13, 2, 'com.nmims.api.test.AuthenticateTest')
+data.setCell(13, 3, 77);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'authenticateDELETEHeaderTest')
-data.setCell(14, 2, 'com.nmims.api.test.AuthenticateTest')
-data.setCell(14, 3, 70);
+data.setCell(14, 1, 'getVideosForHomeEmptyPayloadTest')
+data.setCell(14, 2, 'com.nmims.api.test.GetVideosForHomeTest')
+data.setCell(14, 3, 74);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'getVideosForHomeDELETEHeaderTest')
 data.setCell(15, 2, 'com.nmims.api.test.GetVideosForHomeTest')
-data.setCell(15, 3, 65);
+data.setCell(15, 3, 61);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'viewAssignmentsFormDELETEHeaderTest')
 data.setCell(16, 2, 'com.nmims.api.test.ViewAssignmentsFormTest')
-data.setCell(16, 3, 60);
+data.setCell(16, 3, 55);
 window.suiteTableData['Student_portal_Dashboard_API_List']= { tableData: data, tableDiv: 'times-div-Student_portal_Dashboard_API_List'}
 return data;
 }
@@ -996,89 +996,89 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">authenticateGETHeaderTest</span>
-                <span class="method-start">1282 ms</span>
+                <span class="method-start">1254 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">authenticateDELETEHeaderTest</span>
-                <span class="method-start">1412 ms</span>
+                <span class="method-start">1396 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">authenticateResponseForEmptyPayloadTest</span>
-                <span class="method-start">1487 ms</span>
+                <span class="method-start">1477 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">authenticateResponseForInvalidPayloadTest</span>
-                <span class="method-start">1566 ms</span>
+                <span class="method-start">1557 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">authenticateResponseForMissingFieldsTest</span>
-                <span class="method-start">1645 ms</span>
+                <span class="method-start">1647 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.nmims.api.test.GetVideosForHomeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getVideosForHomePostHeaderTest</span>
-                <span class="method-start">1734 ms</span>
+                <span class="method-start">1736 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getVideosForHomeGetHeaderTest</span>
-                <span class="method-start">1820 ms</span>
+                <span class="method-start">1840 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getVideosForHomeDELETEHeaderTest</span>
-                <span class="method-start">1908 ms</span>
+                <span class="method-start">1936 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getVideosForHomeEmptyPayloadTest</span>
-                <span class="method-start">1976 ms</span>
+                <span class="method-start">1999 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getVideosForHomeInvalidPayloadTest</span>
-                <span class="method-start">2055 ms</span>
+                <span class="method-start">2075 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getVideosForHomeMissingFieldsTest</span>
-                <span class="method-start">2135 ms</span>
+                <span class="method-start">2155 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.nmims.api.test.ViewAssignmentsFormTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">viewAssignmentsFormPOSTHeaderTest</span>
-                <span class="method-start">2216 ms</span>
+                <span class="method-start">2241 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">viewAssignmentsFormGETHeaderTest</span>
-                <span class="method-start">2321 ms</span>
+                <span class="method-start">2351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">viewAssignmentsFormDELETEHeaderTest</span>
-                <span class="method-start">2413 ms</span>
+                <span class="method-start">2442 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ViewAssignmentsFormEmptyPayloadTest</span>
-                <span class="method-start">2476 ms</span>
+                <span class="method-start">2499 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ViewAssignmentsFormInvalidPayloadTest</span>
-                <span class="method-start">2550 ms</span>
+                <span class="method-start">2586 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

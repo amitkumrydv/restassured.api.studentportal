@@ -5,9 +5,9 @@ import org.slf4j.LoggerFactory;
 
 import com.nmims.api.contract.endpoints.AuthenticateEndpoint;
 import com.nmims.api.model.AuthenticationModel;
-import com.nmims.api.model.StudentModel;
 import com.nmims.api.payload.AuthenticatePayload;
 
+import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -19,15 +19,16 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 	    private static  final Logger  logger = LoggerFactory.getLogger(AuthenticateEndPointImpl.class);
 	    public static AuthenticationModel authenticationModel;
 	    public static AuthenticatePayload authenticate = new AuthenticatePayload();
-	//    public static StudentModel studentModelData;
 	    
+	    Response postResponse;
 
 	    @Override
+	    @Step("Send the request with post  ")
 	    public  Response authenticateResponseForPOST() {
 
 	    	logger.info("Sending POST request for authentication .");
 	        
-	        Response response = RestAssured.given()
+	       postResponse = RestAssured.given()
 	                .contentType(ContentType.JSON)
 	                .accept(ContentType.JSON)
 	                .log().headers()
@@ -35,61 +36,62 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 	                .when()
 	                .post(Routs.Authenticate_url);
 
-	        logger.info("Received response with status code: {}", response.getStatusCode());
-	        authenticationModel=response.as(AuthenticationModel.class);
-	    //    studentModelData=response.as(StudentModel.class);
-	   //     String programCleared= studentModelData.getProgramCleared();
-	   //     System.out.println("programCleared   ------------ "+programCleared);
-
-	        return response;
+	        logger.info("Received response with status code: {}", postResponse.getStatusCode());
+	        authenticationModel=postResponse.as(AuthenticationModel.class);
+	        
+	        
+	        return postResponse;
     }
 	
 	    
-	    @Override   
+	    @Override
+	    @Step("Send the request with get  ")
         public  Response authenticateResponseForGET() {
 	        AuthenticatePayload authenticate = new AuthenticatePayload();
 
 	        logger.info("Sending Get request for authentication ");
 	        
-	        Response response = RestAssured.given()
+	        Response getResponse = RestAssured.given()
 	                .contentType(ContentType.JSON)
 	                .accept(ContentType.JSON)
 	                .body(authenticate.authenticatePyloadData())
 	                .when()
 	                .get(Routs.Authenticate_url);
 
-	        logger.info("Received response with status code: {}", response.getStatusCode());
+	        logger.info("Received response with status code: {}", getResponse.getStatusCode());
 
-	        return response;
+	        return getResponse;
 	    }
 	    
 	    @Override
+	    @Step("Send the request with delete  ")
 	    public Response authenticateResponseForDELETE() {
 	        AuthenticatePayload authenticate = new AuthenticatePayload();
 
 	        logger.info("Sending DELETE request for authentication ");
 	        
-	        Response response = RestAssured.given()
+	        Response deleteResponse = RestAssured.given()
 	                .contentType(ContentType.JSON)
 	                .accept(ContentType.JSON)
 	                .body(authenticate.authenticatePyloadData())
 	                .when()
 	                .delete(Routs.Authenticate_url);
 
-	        logger.info("Actual status code: {}", response.getStatusCode());
+	        logger.info("Actual status code: {}", deleteResponse.getStatusCode());
 
-	        return response;
+	        return deleteResponse;
 	    }
 	    
 	    // Empty payload
 	    @Override
+	    @Step("Send the request with Empty payload  ")
 	    public  Response authenticateResponseForEmptyPayload() {
 	        // Sending an empty payload
 	    	
 	    	logger.info("Sending empty payload request for authentication ");
 	        String emptyPayload = "";
 
-	        Response response = RestAssured.given()
+	        Response EmptyPayloadResponse = RestAssured.given()
 	                .contentType(ContentType.JSON)
 	                .accept(ContentType.JSON)
 	                .body(emptyPayload)
@@ -98,20 +100,21 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 
 
 	      
-	        logger.info("Actual status code :{}",response.statusCode());
+	        logger.info("Actual status code :{}",EmptyPayloadResponse.statusCode());
 	        
-	        return response;
+	        return EmptyPayloadResponse;
 	    }
 
         //Invalid Payload
 	    @Override
+	    @Step("Send the request with Invalid Payload  ")
 	    public  Response authenticateResponseForInvalidPayload() {
 	    	
 	    	logger.info("Sending Invalid Payload request for authentication ");
 	        // Sending an invalid payload (malformed JSON)
 	        String invalidPayload = "{ invalidJson ";
 
-	        Response response = RestAssured.given()
+	        Response invalidPayloadresponse = RestAssured.given()
 	                .contentType(ContentType.JSON)
 	                .accept(ContentType.JSON)
 	                .body(invalidPayload)
@@ -120,20 +123,21 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 
 
 	        
-	        logger.info("Actual status code :{}",response.statusCode());
-	        return response;
+	        logger.info("Actual status code :{}",invalidPayloadresponse.statusCode());
+	        return invalidPayloadresponse;
 	    }
 
 
 	    // Missing "body"
 	    @Override
+	    @Step("Send the request with Missing body  ")
 	    public  Response authenticateResponseForMissingFieldsPayload() {
 	    	
 	    	logger.info("Sending Missing payload body request for authentication ");
 	        // Sending a payload with missing required fields (assuming "title" and "body" are required)
 	        
 	        
-	        Response response = RestAssured.given()
+	        Response nissingBodyResponse = RestAssured.given()
 	                .contentType(ContentType.JSON)
 	                .accept(ContentType.JSON)
 	                .body(authenticate.authenticatePyloadDataForMissingFields())
@@ -142,8 +146,8 @@ public class AuthenticateEndPointImpl implements AuthenticateEndpoint{
 
 
 	       
-	        logger.info("Actual status code :{}",response.statusCode());
-	        return response;
+	        logger.info("Actual status code :{}",nissingBodyResponse.statusCode());
+	        return nissingBodyResponse;
 	    }
 	    
 	    

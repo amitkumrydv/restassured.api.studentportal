@@ -10,83 +10,18 @@ import org.slf4j.LoggerFactory;
 
 import com.nmims.api.comman.ResponseContainerComman;
 import com.nmims.api.model.AuthenticationModel;
-import com.nmims.api.test.ViewAssignmentsFormTest;
+
+import io.qameta.allure.Step;
+
 
 public class DateValidations {
 	
 	
-//	ResponseContainerComman responseContainerCommanImpl = new ResponseContainerComman();
-//	
-//	public void programEndDateValidation() {
-//		
-//		AuthenticationModel programValidityDate=responseContainerCommanImpl.programValidityEndDate();	
-//	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-//	
-//	LocalDate currentDate=LocalDate.now();
-//	
-//	LocalDate comparedDate= LocalDate.parse(programValidityDate, formatter);
-//	
-//	  // Calculate the difference
-//    long daysDifference = ChronoUnit.DAYS.between(currentDate, comparedDate);
-//	
-//	 if (daysDifference > 0) {
-//         System.out.println("The date " + comparedDate + " is " + daysDifference + " days in the future.");
-//     } else if (daysDifference < 0) {
-//         System.out.println("The date " + comparedDate + " was " + Math.abs(daysDifference) + " days ago.");
-//     } else {
-//         System.out.println("The date " + comparedDate + " is today.");
-//     }
-//
-//
-// }
-//	
 	private static Logger logger = LoggerFactory.getLogger(DateValidations.class);
-	ResponseContainerComman responseContainerCommanImpl = new ResponseContainerComman();
-	
-//	public void programEndDateValidation() {
-//	    try {
-//	        // Fetch program validity date from the model
-//	        AuthenticationModel programValidityDate = responseContainerCommanImpl.programValidityEndDate();
-//
-//	        // Assuming the date is stored as a String in "yyyy-MM-dd" format
-//	        String programEndDateStr = programValidityDate.getValidityEndDate(); // Replace with the actual getter for the date field
-//
-//	        // Validate if the date string is not null or empty
-//	        if (programEndDateStr == null || programEndDateStr.isEmpty()) {
-//	            System.err.println("Program end date is null or empty.");
-//	            return;
-//	        }
-//
-//	        // Define date formatter
-//	        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-//
-//	        // Parse dates
-//	        LocalDate currentDate = LocalDate.now();
-//	        LocalDate comparedDate = LocalDate.parse(programEndDateStr, formatter);
-//
-//	        // Debug logs for verification
-//	        System.out.println("Current Date: " + currentDate);
-//	        System.out.println("Program End Date: " + comparedDate);
-//
-//	        // Calculate the difference in days
-//	        long daysDifference = ChronoUnit.DAYS.between(currentDate, comparedDate);
-//
-//	        // Output results
-//	        if (daysDifference > 0) {
-//	            System.out.println("The program end date ----------> " + comparedDate + " is " + daysDifference + " days in the future.");
-//	        } else if (daysDifference < 0) {
-//	            System.out.println("The program end date ----------> " + comparedDate + " was " + Math.abs(daysDifference) + " days ago.");
-//	        } else {
-//	            System.out.println("The program end date ----------> " + comparedDate + " is today.");
-//	        }
-//	    } catch (DateTimeParseException e) {
-//	        System.err.println("Error parsing the program end date: " + e.getMessage());
-//	    } catch (Exception e) {
-//	        System.err.println("Error validating program end date: " + e.getMessage());
-//	    }
-//	}
+	public ResponseContainerComman responseContainerCommanImpl = new ResponseContainerComman();
 
 	
+	 @Step("Validating program end date")
 	public Boolean programEndDateValidation() {
 	    try {
 	        // Fetch program validity date from the model
@@ -94,42 +29,47 @@ public class DateValidations {
 
 	        // Assuming the date is stored as a String
 	        String programEndDateStr = programValidityDate.getValidityEndDate(); // Replace with the actual getter for the date field
-
+	        
 	        // Validate if the date string is not null or empty
 	        if (programEndDateStr == null || programEndDateStr.isEmpty()) {
-	            System.err.println("Program end date is null or empty.");
-	            return false ;
+	            logger.error("Program end date is null or empty.");
+	           
+	            return false;
 	        }
 
 	        // Define date formatter matching the actual format
-	        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+	        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/M/d");
 
 	        // Parse dates
 	        LocalDate currentDate = LocalDate.now();
-	        LocalDate comparedDate = LocalDate.parse(programEndDateStr, formatter);
+	        LocalDate comparedDate;
+	        try {
+	            comparedDate = LocalDate.parse(programEndDateStr, formatter);
+	        } catch (DateTimeParseException e) {
+	            logger.error("Error parsing the program end date '{}': {}", programEndDateStr, e.getMessage(), e);
+	            return false;
+	        }
 
 	        // Calculate the difference in days
 	        long daysDifference = ChronoUnit.DAYS.between(currentDate, comparedDate);
 
 	        // Output results
 	        if (daysDifference > 0 || currentDate.equals(comparedDate)) {
-	            logger.info("The program end date ----------> " + comparedDate + " is " + daysDifference + " days in the future.");
-	            return true ;
+	            logger.info("The program end date {} is {} days in the future.", comparedDate, daysDifference);
+	            return true;
 	        } else if (daysDifference < 0) {
-	            System.out.println("The program end date ----------> " + comparedDate + " was " + Math.abs(daysDifference) + " days ago.");
-	            return false ;
+	            logger.info("The program end date {} was {} days ago.", comparedDate, Math.abs(daysDifference));
+	            return false;
 	        } else {
-	            System.out.println("The program end date ----------> " + comparedDate + " is today.");
-	            return false ;
+	            logger.info("The program end date {} is today.", comparedDate);
+	            return false;
 	        }
-	    } catch (DateTimeParseException e) {
-	        logger.error("Error parsing the program end date: " , e.getMessage());
 	    } catch (Exception e) {
-	        logger.error("Error parsing the program end date: " , e.getMessage());
+	        logger.error("Unexpected error while validating program end date: {}", e.getMessage(), e);
+	        return false;
 	    }
-	    
-	    return false;
 	}
+
 
 	
 	

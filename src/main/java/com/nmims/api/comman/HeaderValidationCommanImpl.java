@@ -4,11 +4,13 @@ import org.hamcrest.Matchers;
 
 import com.nmims.api.contract.validations.HeaderResponceValidation;
 
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 public class HeaderValidationCommanImpl implements HeaderResponceValidation {
 
 	//@formatter:off
+	@Step("Validate Headers")
 	@Override
 	public void commonHeadersValidation(Response response) {
 	  response.then()
@@ -21,6 +23,7 @@ public class HeaderValidationCommanImpl implements HeaderResponceValidation {
                 .header(HeaderConstantsComman.REFERRER_POLICY, Matchers.equalTo("origin"));
 	}
 
+	@Step("Validate Headers")
 	@Override
 	public void authenticateHeadersValidation(Response response) {
       response.then()
@@ -35,6 +38,7 @@ public class HeaderValidationCommanImpl implements HeaderResponceValidation {
 		
 	}
 
+	@Step("Validate Headers")
 	@Override
 	public void getVideosForHomeHeadersValidation(Response response) {
 

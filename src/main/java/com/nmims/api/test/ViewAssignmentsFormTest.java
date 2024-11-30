@@ -1,19 +1,16 @@
 package com.nmims.api.test;
 
 import static org.testng.Assert.assertTrue;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.nmims.api.Listener.ViewAssignmentsFormListener;
+import com.nmims.api.Listener.SkipTestListener;
 import com.nmims.api.comman.ApplySeverityLevel;
 import com.nmims.api.comman.HeaderValidationCommanImpl;
 import com.nmims.api.comman.HttpStatusConstants;
 import com.nmims.api.endpoints.ViewAssignmentsFormEndPointsImpl;
 import com.nmims.api.response.mapper.ViewAssignmentsFormMpper;
-
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -33,7 +30,8 @@ public class ViewAssignmentsFormTest {
 	HeaderValidationCommanImpl headerValidationCommanImpl = new HeaderValidationCommanImpl();
 	ViewAssignmentsFormMpper viewAssignment = new ViewAssignmentsFormMpper();
 	ViewAssignmentsFormEndPointsImpl viewAssignmentsFormEndPointsImpl = new ViewAssignmentsFormEndPointsImpl();
-	ViewAssignmentsFormListener viewAssignmentsFormListener = new ViewAssignmentsFormListener();
+	SkipTestListener skipTest= new SkipTestListener();
+	
 	
 	
 	@Test(priority=1)
@@ -46,6 +44,7 @@ public class ViewAssignmentsFormTest {
 		Long responseTime = response.getTime();
 		
 		try {
+			skipTest.skipTestForValidityEndAndProgramCleared();
 			
 			// Validate the response status code
 			Assert.assertEquals(response.getStatusCode(), 200, "Status code validation");			

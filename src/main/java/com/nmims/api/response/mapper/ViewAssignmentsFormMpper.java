@@ -21,6 +21,8 @@ import com.nmims.api.model.CurrentSemAssignmentFilesListModel;
 import com.nmims.api.model.FailSubjectsAssignmentFilesListModel;
 import com.nmims.api.model.ViewAssignmentsFormModel;
 
+import io.qameta.allure.Step;
+
 
 
 public class ViewAssignmentsFormMpper {
@@ -35,6 +37,7 @@ public class ViewAssignmentsFormMpper {
 	}
 	
 	
+	@Step("Validate JSON response field name or type with POJO class")
 	public void validateViewAssignmentsFormResponse(String responseBodyData) throws JsonMappingException, JsonProcessingException {
 	    logger.info("Starting validation of current semester assignments...");
 

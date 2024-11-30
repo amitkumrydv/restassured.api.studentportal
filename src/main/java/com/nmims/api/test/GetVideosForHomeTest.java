@@ -1,6 +1,7 @@
 package com.nmims.api.test;
 
 import static org.testng.Assert.assertTrue;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -8,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
+import com.nmims.api.Listener.SkipTestListener;
 import com.nmims.api.comman.ApplySeverityLevel;
 import com.nmims.api.comman.HeaderValidationCommanImpl;
 import com.nmims.api.comman.HttpStatusConstants;
@@ -29,6 +31,9 @@ public class GetVideosForHomeTest {
 	// @formatter:off
 	private static final Logger logger = LoggerFactory.getLogger(GetVideosForHomeTest.class);
 	GetVideosForHomeEndPointsImpl getVideosForHomeEndPointsImpl = new GetVideosForHomeEndPointsImpl();
+    HeaderValidationCommanImpl headerValidationCommanImpl = new HeaderValidationCommanImpl();
+    GetVideosForHomeMapper getVideosForHomeMapper = new GetVideosForHomeMapper();
+    SkipTestListener skipTest= new SkipTestListener();
 	/*
 	 * This test method depends on the response of the authenticatePOSTHeaderTest.
 	 * The response from that method is used as payload data for this test.
@@ -36,13 +41,15 @@ public class GetVideosForHomeTest {
 	@Test(priority = 1)
 	@Description("Send a POST request to the getVideosForHome URL and validate the response")
 	public void getVideosForHomePostHeaderTest() throws JsonMappingException, JsonProcessingException {
-	    HeaderValidationCommanImpl headerValidationCommanImpl = new HeaderValidationCommanImpl();
-	    GetVideosForHomeMapper getVideosForHomeMapper = new GetVideosForHomeMapper();
+
 
 	    Response response = getVideosForHomeEndPointsImpl.getVideosForHomeHeaderPost();
 	    Long responseTime = response.getTime();
 
 	    try {
+	    	
+	    	skipTest.skipTestForValidityEndAndProgramCleared();
+	    	
 	    	// Set severity Dynamically
 	    	ApplySeverityLevel.severityForPOST(response.getStatusCode());
 	        // Validate that the response status code is 200
